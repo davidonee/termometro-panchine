@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T21:19+01:00",
+ "aggiornato": "2026-11-01T00:44+01:00",
  "allenatori": [
   {
    "squadra": "Udinese",
@@ -69,12 +69,12 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
-     42.04
+     "2026-11-01T00:44",
+     41.51
     ]
    ],
-   "p": 42.04,
-   "variazione": 14.22,
+   "p": 41.51,
+   "variazione": 13.69,
    "ufficiale": false,
    "prossima": "2026-11-06 20:45",
    "prossima_avversario": "Venezia",
@@ -175,12 +175,12 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
-     3.81
+     "2026-11-01T00:44",
+     3.74
     ]
    ],
-   "p": 3.81,
-   "variazione": 3.81,
+   "p": 3.74,
+   "variazione": 3.73,
    "ufficiale": false,
    "prossima": "2026-11-07 15:00",
    "prossima_avversario": "Cesena",
@@ -266,12 +266,12 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
-     1.46
+     "2026-11-01T00:44",
+     1.44
     ]
    ],
-   "p": 1.46,
-   "variazione": 1.26,
+   "p": 1.44,
+   "variazione": 1.23,
    "ufficiale": false,
    "prossima": "2026-11-08 15:00",
    "prossima_avversario": "Atalanta",
@@ -362,12 +362,12 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
-     1.0
+     "2026-11-01T00:44",
+     0.98
     ]
    ],
-   "p": 1.0,
-   "variazione": 0.98,
+   "p": 0.98,
+   "variazione": 0.96,
    "ufficiale": false,
    "prossima": "2026-11-07 15:00",
    "prossima_avversario": "Empoli",
@@ -392,102 +392,6 @@
      "data": "2026-10-31",
      "causa": "Pareggio: Catanzaro–Padova 1-1",
      "p": 1.0
-    }
-   ]
-  },
-  {
-   "squadra": "Fiorentina",
-   "campionato": "Serie A",
-   "allenatore": "Paolo Vanoli",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     0.03
-    ],
-    [
-     "2026-10-24T08:11",
-     0.02
-    ],
-    [
-     "2026-10-24T15:09",
-     0.01
-    ],
-    [
-     "2026-10-24T21:10",
-     0.0
-    ],
-    [
-     "2026-10-25T08:10",
-     0.0
-    ],
-    [
-     "2026-10-27T23:11",
-     0.1
-    ],
-    [
-     "2026-10-28T08:13",
-     0.06
-    ],
-    [
-     "2026-10-28T14:31",
-     0.03
-    ],
-    [
-     "2026-10-28T21:30",
-     0.01
-    ],
-    [
-     "2026-10-29T08:13",
-     0.0
-    ],
-    [
-     "2026-10-29T14:16",
-     0.0
-    ],
-    [
-     "2026-10-29T23:13",
-     5.45
-    ],
-    [
-     "2026-10-30T08:15",
-     4.68
-    ],
-    [
-     "2026-10-30T14:26",
-     4.11
-    ],
-    [
-     "2026-10-31T17:09",
-     1.39
-    ],
-    [
-     "2026-10-31T21:19",
-     0.93
-    ]
-   ],
-   "p": 0.93,
-   "variazione": -3.18,
-   "ufficiale": false,
-   "prossima": "2026-11-02 18:30",
-   "prossima_avversario": "Sassuolo",
-   "prossima_casa": false,
-   "eventi": [
-    {
-     "data": "2026-10-18",
-     "causa": "Sconfitta: Fiorentina–Como 1-3",
-     "p": 0.9
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Sconfitta: Inter–Fiorentina 2-1",
-     "p": 0.8
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Pareggio: Fiorentina–Atalanta 2-2",
-     "p": 5.6
     }
    ]
   },
@@ -559,12 +463,12 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
-     0.76
+     "2026-11-01T00:44",
+     0.75
     ]
    ],
-   "p": 0.76,
-   "variazione": 0.76,
+   "p": 0.75,
+   "variazione": 0.74,
    "ufficiale": false,
    "prossima": "2026-11-07 19:30",
    "prossima_avversario": "Avellino",
@@ -655,12 +559,12 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
-     0.76
+     "2026-11-01T00:44",
+     0.75
     ]
    ],
-   "p": 0.76,
-   "variazione": 0.67,
+   "p": 0.75,
+   "variazione": 0.66,
    "ufficiale": false,
    "prossima": "2026-11-08 19:30",
    "prossima_avversario": "Vicenza",
@@ -690,6 +594,102 @@
      "data": "2026-10-31",
      "causa": "Vittoria: Cremonese–Benevento 2-0",
      "p": 0.8
+    }
+   ]
+  },
+  {
+   "squadra": "Fiorentina",
+   "campionato": "Serie A",
+   "allenatore": "Paolo Vanoli",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     0.03
+    ],
+    [
+     "2026-10-24T08:11",
+     0.02
+    ],
+    [
+     "2026-10-24T15:09",
+     0.01
+    ],
+    [
+     "2026-10-24T21:10",
+     0.0
+    ],
+    [
+     "2026-10-25T08:10",
+     0.0
+    ],
+    [
+     "2026-10-27T23:11",
+     0.1
+    ],
+    [
+     "2026-10-28T08:13",
+     0.06
+    ],
+    [
+     "2026-10-28T14:31",
+     0.03
+    ],
+    [
+     "2026-10-28T21:30",
+     0.01
+    ],
+    [
+     "2026-10-29T08:13",
+     0.0
+    ],
+    [
+     "2026-10-29T14:16",
+     0.0
+    ],
+    [
+     "2026-10-29T23:13",
+     5.45
+    ],
+    [
+     "2026-10-30T08:15",
+     4.68
+    ],
+    [
+     "2026-10-30T14:26",
+     4.11
+    ],
+    [
+     "2026-10-31T17:09",
+     1.39
+    ],
+    [
+     "2026-11-01T00:44",
+     0.62
+    ]
+   ],
+   "p": 0.62,
+   "variazione": -3.5,
+   "ufficiale": false,
+   "prossima": "2026-11-02 18:30",
+   "prossima_avversario": "Sassuolo",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-10-18",
+     "causa": "Sconfitta: Fiorentina–Como 1-3",
+     "p": 0.9
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Sconfitta: Inter–Fiorentina 2-1",
+     "p": 0.8
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Pareggio: Fiorentina–Atalanta 2-2",
+     "p": 5.6
     }
    ]
   },
@@ -761,12 +761,12 @@
      0.68
     ],
     [
-     "2026-10-31T21:19",
-     0.53
+     "2026-11-01T00:44",
+     0.42
     ]
    ],
-   "p": 0.53,
-   "variazione": -1.31,
+   "p": 0.42,
+   "variazione": -1.42,
    "ufficiale": false,
    "prossima": "2026-11-02 18:30",
    "prossima_avversario": "Fiorentina",
@@ -786,6 +786,107 @@
      "data": "2026-10-27",
      "causa": "Sconfitta: Sassuolo–Lazio 2-6",
      "p": 12.3
+    }
+   ]
+  },
+  {
+   "squadra": "Inter",
+   "campionato": "Serie A",
+   "allenatore": "Cristian Chivu",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     0.0
+    ],
+    [
+     "2026-10-24T08:11",
+     0.0
+    ],
+    [
+     "2026-10-24T15:09",
+     0.0
+    ],
+    [
+     "2026-10-24T21:10",
+     0.0
+    ],
+    [
+     "2026-10-25T08:10",
+     0.0
+    ],
+    [
+     "2026-10-27T23:11",
+     0.0
+    ],
+    [
+     "2026-10-28T08:13",
+     0.0
+    ],
+    [
+     "2026-10-28T14:31",
+     0.0
+    ],
+    [
+     "2026-10-28T21:30",
+     0.03
+    ],
+    [
+     "2026-10-29T08:13",
+     0.02
+    ],
+    [
+     "2026-10-29T14:16",
+     0.02
+    ],
+    [
+     "2026-10-29T23:13",
+     0.02
+    ],
+    [
+     "2026-10-30T08:15",
+     0.01
+    ],
+    [
+     "2026-10-30T14:26",
+     0.01
+    ],
+    [
+     "2026-10-31T17:09",
+     0.0
+    ],
+    [
+     "2026-11-01T00:44",
+     0.42
+    ]
+   ],
+   "p": 0.42,
+   "variazione": 0.42,
+   "ufficiale": false,
+   "prossima": "2026-11-08 18:00",
+   "prossima_avversario": "Como",
+   "prossima_casa": true,
+   "eventi": [
+    {
+     "data": "2026-10-17",
+     "causa": "Vittoria: Bologna–Inter 1-3",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Vittoria: Inter–Fiorentina 2-1",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Vittoria: Venezia–Inter 0-2",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Sconfitta: Milan–Inter 3-1",
+     "p": 0.4
     }
    ]
   },
@@ -857,12 +958,12 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
-     0.31
+     "2026-11-01T00:44",
+     0.3
     ]
    ],
-   "p": 0.31,
-   "variazione": 0.19,
+   "p": 0.3,
+   "variazione": 0.18,
    "ufficiale": false,
    "prossima": "2026-11-07 17:15",
    "prossima_avversario": "Verona",
@@ -953,12 +1054,12 @@
      0.44
     ],
     [
-     "2026-10-31T21:19",
-     0.29
+     "2026-11-01T00:44",
+     0.19
     ]
    ],
-   "p": 0.3,
-   "variazione": -1.04,
+   "p": 0.2,
+   "variazione": -1.14,
    "ufficiale": false,
    "prossima": "2026-11-02 20:45",
    "prossima_avversario": "Parma",
@@ -983,233 +1084,6 @@
      "data": "2026-10-29",
      "causa": "Pareggio: Fiorentina–Atalanta 2-2 (chiusa fiducia)",
      "p": 1.8
-    }
-   ]
-  },
-  {
-   "squadra": "Arezzo",
-   "campionato": "Serie B",
-   "allenatore": "Cristian Bucchi",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     0.0
-    ],
-    [
-     "2026-10-24T08:11",
-     0.0
-    ],
-    [
-     "2026-10-24T15:09",
-     0.0
-    ],
-    [
-     "2026-10-24T21:10",
-     0.0
-    ],
-    [
-     "2026-10-25T08:10",
-     0.0
-    ],
-    [
-     "2026-10-27T23:11",
-     0.01
-    ],
-    [
-     "2026-10-28T08:13",
-     0.0
-    ],
-    [
-     "2026-10-28T14:31",
-     0.0
-    ],
-    [
-     "2026-10-28T21:30",
-     0.0
-    ],
-    [
-     "2026-10-29T08:13",
-     6.44
-    ],
-    [
-     "2026-10-29T14:16",
-     5.69
-    ],
-    [
-     "2026-10-29T23:13",
-     11.29
-    ],
-    [
-     "2026-10-30T08:15",
-     8.23
-    ],
-    [
-     "2026-10-30T14:26",
-     6.01
-    ],
-    [
-     "2026-10-31T17:09",
-     0.68
-    ],
-    [
-     "2026-10-31T21:19",
-     0.27
-    ]
-   ],
-   "p": 0.27,
-   "variazione": -5.74,
-   "ufficiale": false,
-   "prossima": "2026-11-01 15:00",
-   "prossima_avversario": "Ascoli",
-   "prossima_casa": true,
-   "eventi": [
-    {
-     "data": "2026-10-18",
-     "causa": "Vittoria: Sampdoria–Arezzo 1-2",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Sconfitta: Arezzo–Benevento 0-3",
-     "p": 1.5
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Sconfitta: Carrarese–Arezzo 2-1",
-     "p": 3.9
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Panchina in discussione",
-     "p": 7.5
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Segnali dalla società",
-     "p": 12.7
-    }
-   ]
-  },
-  {
-   "squadra": "Juventus",
-   "campionato": "Serie A",
-   "allenatore": "Luciano Spalletti",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     0.34
-    ],
-    [
-     "2026-10-24T08:11",
-     0.25
-    ],
-    [
-     "2026-10-24T15:09",
-     0.14
-    ],
-    [
-     "2026-10-24T21:10",
-     0.05
-    ],
-    [
-     "2026-10-25T08:10",
-     0.0
-    ],
-    [
-     "2026-10-27T23:11",
-     0.02
-    ],
-    [
-     "2026-10-28T08:13",
-     0.0
-    ],
-    [
-     "2026-10-28T14:31",
-     0.0
-    ],
-    [
-     "2026-10-28T21:30",
-     0.0
-    ],
-    [
-     "2026-10-29T08:13",
-     13.38
-    ],
-    [
-     "2026-10-29T14:16",
-     23.87
-    ],
-    [
-     "2026-10-29T23:13",
-     19.86
-    ],
-    [
-     "2026-10-30T08:15",
-     12.81
-    ],
-    [
-     "2026-10-30T14:26",
-     9.48
-    ],
-    [
-     "2026-10-31T17:09",
-     1.1
-    ],
-    [
-     "2026-10-31T21:19",
-     0.22
-    ]
-   ],
-   "p": 0.22,
-   "variazione": -9.26,
-   "ufficiale": false,
-   "prossima": "2026-11-01 20:45",
-   "prossima_avversario": "Napoli",
-   "prossima_casa": true,
-   "eventi": [
-    {
-     "data": "2026-10-18",
-     "causa": "Sconfitta: Juventus–Lazio 0-3",
-     "p": 12.6
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Vittoria: Lecce–Juventus 0-2",
-     "p": 1.2
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Sconfitta: Genoa–Juventus 2-0",
-     "p": 13.4
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Panchina in discussione",
-     "p": 15.4
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Notizie sul sostituto",
-     "p": 17.3
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Segnali dalla società",
-     "p": 24.0
-    },
-    {
-     "data": "2026-10-30",
-     "causa": "Ultimatum: decisiva la prossima partita",
-     "p": 16.5
-    },
-    {
-     "data": "2026-10-31",
-     "causa": "Fiducia dalla società",
-     "p": 1.2
     }
    ]
   },
@@ -1281,7 +1155,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.18
     ]
    ],
@@ -1311,6 +1185,147 @@
      "data": "2026-10-31",
      "causa": "Pareggio: Modena–Mantova 1-1",
      "p": 0.2
+    }
+   ]
+  },
+  {
+   "squadra": "Milan",
+   "campionato": "Serie A",
+   "allenatore": "Rúben Amorim",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     0.01
+    ],
+    [
+     "2026-10-24T08:11",
+     0.0
+    ],
+    [
+     "2026-10-24T15:09",
+     0.0
+    ],
+    [
+     "2026-10-24T21:10",
+     0.0
+    ],
+    [
+     "2026-10-25T08:10",
+     0.0
+    ],
+    [
+     "2026-10-27T23:11",
+     0.0
+    ],
+    [
+     "2026-10-28T08:13",
+     0.0
+    ],
+    [
+     "2026-10-28T14:31",
+     0.0
+    ],
+    [
+     "2026-10-28T21:30",
+     1.36
+    ],
+    [
+     "2026-10-29T08:13",
+     1.13
+    ],
+    [
+     "2026-10-29T14:16",
+     0.97
+    ],
+    [
+     "2026-10-29T23:13",
+     0.74
+    ],
+    [
+     "2026-10-30T08:15",
+     0.24
+    ],
+    [
+     "2026-10-30T14:26",
+     0.14
+    ],
+    [
+     "2026-10-31T17:09",
+     0.0
+    ],
+    [
+     "2026-11-01T00:44",
+     0.1
+    ]
+   ],
+   "p": 0.1,
+   "variazione": -0.04,
+   "ufficiale": false,
+   "prossima": "2026-11-08 15:00",
+   "prossima_avversario": "Genoa",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-10-18",
+     "causa": "Vittoria: Milan–Atalanta 3-2",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Segnali dalla società",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Ultimatum: decisiva la prossima partita",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Ultimatum: decisiva la prossima partita",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Fiducia dalla società",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Vittoria: Udinese–Milan 0-2 (chiusi ultimatum e fiducia)",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Segnali dalla società",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Sconfitta: Milan–Bologna 2-4",
+     "p": 1.4
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Ultimatum: decisiva la prossima partita",
+     "p": 0.9
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Panchina in discussione",
+     "p": 1.0
+    },
+    {
+     "data": "2026-10-30",
+     "causa": "Fiducia dalla società",
+     "p": 0.3
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Vittoria: Milan–Inter 3-1 (chiusi ultimatum e fiducia)",
+     "p": 0.1
     }
    ]
   },
@@ -1382,12 +1397,12 @@
      0.14
     ],
     [
-     "2026-10-31T21:19",
-     0.11
+     "2026-11-01T00:44",
+     0.09
     ]
    ],
-   "p": 0.11,
-   "variazione": -0.37,
+   "p": 0.09,
+   "variazione": -0.39,
    "ufficiale": false,
    "prossima": "2026-11-02 20:45",
    "prossima_avversario": "Atalanta",
@@ -1412,193 +1427,6 @@
      "data": "2026-10-28",
      "causa": "Pareggio: Parma–Udinese 0-0 (chiusa fiducia)",
      "p": 1.4
-    }
-   ]
-  },
-  {
-   "squadra": "Lecce",
-   "campionato": "Serie A",
-   "allenatore": "Eusebio Di Francesco",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     0.0
-    ],
-    [
-     "2026-10-24T08:11",
-     0.0
-    ],
-    [
-     "2026-10-24T15:09",
-     0.0
-    ],
-    [
-     "2026-10-24T21:10",
-     0.0
-    ],
-    [
-     "2026-10-25T08:10",
-     0.0
-    ],
-    [
-     "2026-10-27T23:11",
-     0.09
-    ],
-    [
-     "2026-10-28T08:13",
-     0.05
-    ],
-    [
-     "2026-10-28T14:31",
-     0.03
-    ],
-    [
-     "2026-10-28T21:30",
-     0.01
-    ],
-    [
-     "2026-10-29T08:13",
-     0.0
-    ],
-    [
-     "2026-10-29T14:16",
-     0.0
-    ],
-    [
-     "2026-10-29T23:13",
-     1.67
-    ],
-    [
-     "2026-10-30T08:15",
-     1.4
-    ],
-    [
-     "2026-10-30T14:26",
-     1.2
-    ],
-    [
-     "2026-10-31T17:09",
-     0.25
-    ],
-    [
-     "2026-10-31T21:19",
-     0.1
-    ]
-   ],
-   "p": 0.1,
-   "variazione": -1.1,
-   "ufficiale": false,
-   "prossima": "2026-11-01 18:00",
-   "prossima_avversario": "Genoa",
-   "prossima_casa": true,
-   "eventi": [
-    {
-     "data": "2026-10-18",
-     "causa": "Vittoria: Udinese–Lecce 0-3",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Sconfitta: Lecce–Juventus 0-2",
-     "p": 0.7
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Sconfitta: Frosinone–Lecce 1-0",
-     "p": 1.7
-    }
-   ]
-  },
-  {
-   "squadra": "Empoli",
-   "campionato": "Serie B",
-   "allenatore": "Matteo Andreoletti",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     5.52
-    ],
-    [
-     "2026-10-24T08:11",
-     4.76
-    ],
-    [
-     "2026-10-24T15:09",
-     4.11
-    ],
-    [
-     "2026-10-24T21:10",
-     6.02
-    ],
-    [
-     "2026-10-25T08:10",
-     4.1
-    ],
-    [
-     "2026-10-27T23:11",
-     7.07
-    ],
-    [
-     "2026-10-28T08:13",
-     6.16
-    ],
-    [
-     "2026-10-28T14:31",
-     5.47
-    ],
-    [
-     "2026-10-28T21:30",
-     4.69
-    ],
-    [
-     "2026-10-29T08:13",
-     3.36
-    ],
-    [
-     "2026-10-29T14:16",
-     2.57
-    ],
-    [
-     "2026-10-29T23:13",
-     1.39
-    ],
-    [
-     "2026-10-30T08:15",
-     1.02
-    ],
-    [
-     "2026-10-30T14:26",
-     0.82
-    ],
-    [
-     "2026-10-31T17:09",
-     0.15
-    ],
-    [
-     "2026-10-31T21:19",
-     0.06
-    ]
-   ],
-   "p": 0.06,
-   "variazione": -0.76,
-   "ufficiale": false,
-   "prossima": "2026-11-01 15:00",
-   "prossima_avversario": "Juve Stabia",
-   "prossima_casa": true,
-   "eventi": [
-    {
-     "data": "2026-10-23",
-     "causa": "Sconfitta: Empoli–Vicenza 0-2",
-     "p": 9.4
-    },
-    {
-     "data": "2026-10-27",
-     "causa": "Sconfitta: Cesena–Empoli 2-1",
-     "p": 7.2
     }
    ]
   },
@@ -1670,12 +1498,12 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.05
     ]
    ],
    "p": 0.05,
-   "variazione": 0.05,
+   "variazione": 0.04,
    "ufficiale": false,
    "prossima": "2026-11-07 20:45",
    "prossima_avversario": "Sassuolo",
@@ -1700,102 +1528,6 @@
      "data": "2026-10-31",
      "causa": "Vittoria: Udinese–Roma 2-5",
      "p": 0.1
-    }
-   ]
-  },
-  {
-   "squadra": "Venezia",
-   "campionato": "Serie A",
-   "allenatore": "Davide Nicola",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     0.01
-    ],
-    [
-     "2026-10-24T08:11",
-     0.0
-    ],
-    [
-     "2026-10-24T15:09",
-     0.0
-    ],
-    [
-     "2026-10-24T21:10",
-     0.0
-    ],
-    [
-     "2026-10-25T08:10",
-     0.0
-    ],
-    [
-     "2026-10-27T23:11",
-     0.03
-    ],
-    [
-     "2026-10-28T08:13",
-     0.0
-    ],
-    [
-     "2026-10-28T14:31",
-     0.0
-    ],
-    [
-     "2026-10-28T21:30",
-     1.26
-    ],
-    [
-     "2026-10-29T08:13",
-     1.07
-    ],
-    [
-     "2026-10-29T14:16",
-     0.94
-    ],
-    [
-     "2026-10-29T23:13",
-     0.74
-    ],
-    [
-     "2026-10-30T08:15",
-     0.53
-    ],
-    [
-     "2026-10-30T14:26",
-     0.37
-    ],
-    [
-     "2026-10-31T17:09",
-     0.04
-    ],
-    [
-     "2026-10-31T21:19",
-     0.02
-    ]
-   ],
-   "p": 0.02,
-   "variazione": -0.36,
-   "ufficiale": false,
-   "prossima": "2026-11-01 12:30",
-   "prossima_avversario": "Como",
-   "prossima_casa": false,
-   "eventi": [
-    {
-     "data": "2026-10-17",
-     "causa": "Vittoria: Venezia–Napoli 1-0",
-     "p": 0.2
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Sconfitta: Genoa–Venezia 1-0",
-     "p": 1.5
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Sconfitta: Venezia–Inter 0-2",
-     "p": 1.3
     }
    ]
   },
@@ -1867,7 +1599,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.02
     ]
    ],
@@ -1897,102 +1629,6 @@
      "data": "2026-10-31",
      "causa": "Vittoria: Bologna–Monza 2-1",
      "p": 0.0
-    }
-   ]
-  },
-  {
-   "squadra": "Cagliari",
-   "campionato": "Serie A",
-   "allenatore": "Fabio Pisacane",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     0.0
-    ],
-    [
-     "2026-10-24T08:11",
-     0.0
-    ],
-    [
-     "2026-10-24T15:09",
-     0.0
-    ],
-    [
-     "2026-10-24T21:10",
-     1.12
-    ],
-    [
-     "2026-10-25T08:10",
-     0.93
-    ],
-    [
-     "2026-10-27T23:11",
-     2.09
-    ],
-    [
-     "2026-10-28T08:13",
-     1.8
-    ],
-    [
-     "2026-10-28T14:31",
-     1.59
-    ],
-    [
-     "2026-10-28T21:30",
-     1.36
-    ],
-    [
-     "2026-10-29T08:13",
-     0.96
-    ],
-    [
-     "2026-10-29T14:16",
-     0.73
-    ],
-    [
-     "2026-10-29T23:13",
-     0.39
-    ],
-    [
-     "2026-10-30T08:15",
-     0.29
-    ],
-    [
-     "2026-10-30T14:26",
-     0.23
-    ],
-    [
-     "2026-10-31T17:09",
-     0.04
-    ],
-    [
-     "2026-10-31T21:19",
-     0.02
-    ]
-   ],
-   "p": 0.02,
-   "variazione": -0.22,
-   "ufficiale": false,
-   "prossima": "2026-11-01 15:00",
-   "prossima_avversario": "Lazio",
-   "prossima_casa": false,
-   "eventi": [
-    {
-     "data": "2026-10-19",
-     "causa": "Sconfitta: Monza–Cagliari 4-0",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Sconfitta: Cagliari–Bologna 0-2",
-     "p": 1.2
-    },
-    {
-     "data": "2026-10-27",
-     "causa": "Sconfitta: Roma–Cagliari 4-2",
-     "p": 2.1
     }
    ]
   },
@@ -2064,11 +1700,11 @@
      0.01
     ],
     [
-     "2026-10-31T21:19",
-     0.01
+     "2026-11-01T00:44",
+     0.0
     ]
    ],
-   "p": 0.01,
+   "p": 0.0,
    "variazione": -0.12,
    "ufficiale": false,
    "prossima": "2026-11-01 17:15",
@@ -2089,198 +1725,6 @@
      "data": "2026-10-28",
      "causa": "Vittoria: Juve Stabia–Verona 0-1",
      "p": 0.4
-    }
-   ]
-  },
-  {
-   "squadra": "Juve Stabia",
-   "campionato": "Serie B",
-   "allenatore": "Pietro De Giorgio",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     0.0
-    ],
-    [
-     "2026-10-24T08:11",
-     0.0
-    ],
-    [
-     "2026-10-24T15:09",
-     0.0
-    ],
-    [
-     "2026-10-24T21:10",
-     0.07
-    ],
-    [
-     "2026-10-25T08:10",
-     0.06
-    ],
-    [
-     "2026-10-27T23:11",
-     0.0
-    ],
-    [
-     "2026-10-28T08:13",
-     0.0
-    ],
-    [
-     "2026-10-28T14:31",
-     0.0
-    ],
-    [
-     "2026-10-28T21:30",
-     0.0
-    ],
-    [
-     "2026-10-29T08:13",
-     0.59
-    ],
-    [
-     "2026-10-29T14:16",
-     0.52
-    ],
-    [
-     "2026-10-29T23:13",
-     0.41
-    ],
-    [
-     "2026-10-30T08:15",
-     0.29
-    ],
-    [
-     "2026-10-30T14:26",
-     0.21
-    ],
-    [
-     "2026-10-31T17:09",
-     0.02
-    ],
-    [
-     "2026-10-31T21:19",
-     0.01
-    ]
-   ],
-   "p": 0.01,
-   "variazione": -0.2,
-   "ufficiale": false,
-   "prossima": "2026-11-01 15:00",
-   "prossima_avversario": "Empoli",
-   "prossima_casa": false,
-   "eventi": [
-    {
-     "data": "2026-10-18",
-     "causa": "Vittoria: Juve Stabia–Sudtirol 3-0",
-     "p": 0.3
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Vittoria: Cremonese–Juve Stabia 0-1",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Sconfitta: Juve Stabia–Verona 0-1",
-     "p": 0.7
-    }
-   ]
-  },
-  {
-   "squadra": "Avellino",
-   "campionato": "Serie B",
-   "allenatore": "Alessandro Nesta",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     0.0
-    ],
-    [
-     "2026-10-24T08:11",
-     0.0
-    ],
-    [
-     "2026-10-24T15:09",
-     0.0
-    ],
-    [
-     "2026-10-24T21:10",
-     2.41
-    ],
-    [
-     "2026-10-25T08:10",
-     2.0
-    ],
-    [
-     "2026-10-27T23:11",
-     1.7
-    ],
-    [
-     "2026-10-28T08:13",
-     1.47
-    ],
-    [
-     "2026-10-28T14:31",
-     1.3
-    ],
-    [
-     "2026-10-28T21:30",
-     1.11
-    ],
-    [
-     "2026-10-29T08:13",
-     0.78
-    ],
-    [
-     "2026-10-29T14:16",
-     0.6
-    ],
-    [
-     "2026-10-29T23:13",
-     0.32
-    ],
-    [
-     "2026-10-30T08:15",
-     0.23
-    ],
-    [
-     "2026-10-30T14:26",
-     0.19
-    ],
-    [
-     "2026-10-31T17:09",
-     0.03
-    ],
-    [
-     "2026-10-31T21:19",
-     0.01
-    ]
-   ],
-   "p": 0.01,
-   "variazione": -0.18,
-   "ufficiale": false,
-   "prossima": "2026-11-01 15:00",
-   "prossima_avversario": "Pisa",
-   "prossima_casa": true,
-   "eventi": [
-    {
-     "data": "2026-10-18",
-     "causa": "Pareggio: Cesena–Avellino 1-1",
-     "p": 0.2
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Sconfitta: Avellino–Padova 0-1",
-     "p": 2.5
-    },
-    {
-     "data": "2026-10-27",
-     "causa": "Pareggio: Virtus Entella–Avellino 1-1",
-     "p": 1.7
     }
    ]
   },
@@ -2352,7 +1796,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -2377,6 +1821,102 @@
      "data": "2026-10-29",
      "causa": "Vittoria: Frosinone–Lecce 1-0",
      "p": 0.0
+    }
+   ]
+  },
+  {
+   "squadra": "Venezia",
+   "campionato": "Serie A",
+   "allenatore": "Davide Nicola",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     0.01
+    ],
+    [
+     "2026-10-24T08:11",
+     0.0
+    ],
+    [
+     "2026-10-24T15:09",
+     0.0
+    ],
+    [
+     "2026-10-24T21:10",
+     0.0
+    ],
+    [
+     "2026-10-25T08:10",
+     0.0
+    ],
+    [
+     "2026-10-27T23:11",
+     0.03
+    ],
+    [
+     "2026-10-28T08:13",
+     0.0
+    ],
+    [
+     "2026-10-28T14:31",
+     0.0
+    ],
+    [
+     "2026-10-28T21:30",
+     1.26
+    ],
+    [
+     "2026-10-29T08:13",
+     1.07
+    ],
+    [
+     "2026-10-29T14:16",
+     0.94
+    ],
+    [
+     "2026-10-29T23:13",
+     0.74
+    ],
+    [
+     "2026-10-30T08:15",
+     0.53
+    ],
+    [
+     "2026-10-30T14:26",
+     0.37
+    ],
+    [
+     "2026-10-31T17:09",
+     0.04
+    ],
+    [
+     "2026-11-01T00:44",
+     0.0
+    ]
+   ],
+   "p": 0.0,
+   "variazione": -0.37,
+   "ufficiale": false,
+   "prossima": "2026-11-01 12:30",
+   "prossima_avversario": "Como",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-10-17",
+     "causa": "Vittoria: Venezia–Napoli 1-0",
+     "p": 0.2
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Sconfitta: Genoa–Venezia 1-0",
+     "p": 1.5
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Sconfitta: Venezia–Inter 0-2",
+     "p": 1.3
     }
    ]
   },
@@ -2448,7 +1988,7 @@
      0.01
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -2549,7 +2089,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -2640,7 +2180,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -2736,7 +2276,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -2832,7 +2372,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -2857,102 +2397,6 @@
      "data": "2026-10-28",
      "causa": "Pareggio: Pisa–Palermo 3-3",
      "p": 0.1
-    }
-   ]
-  },
-  {
-   "squadra": "Inter",
-   "campionato": "Serie A",
-   "allenatore": "Cristian Chivu",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-10-24T02:00",
-     0.0
-    ],
-    [
-     "2026-10-24T08:11",
-     0.0
-    ],
-    [
-     "2026-10-24T15:09",
-     0.0
-    ],
-    [
-     "2026-10-24T21:10",
-     0.0
-    ],
-    [
-     "2026-10-25T08:10",
-     0.0
-    ],
-    [
-     "2026-10-27T23:11",
-     0.0
-    ],
-    [
-     "2026-10-28T08:13",
-     0.0
-    ],
-    [
-     "2026-10-28T14:31",
-     0.0
-    ],
-    [
-     "2026-10-28T21:30",
-     0.03
-    ],
-    [
-     "2026-10-29T08:13",
-     0.02
-    ],
-    [
-     "2026-10-29T14:16",
-     0.02
-    ],
-    [
-     "2026-10-29T23:13",
-     0.02
-    ],
-    [
-     "2026-10-30T08:15",
-     0.01
-    ],
-    [
-     "2026-10-30T14:26",
-     0.01
-    ],
-    [
-     "2026-10-31T17:09",
-     0.0
-    ],
-    [
-     "2026-10-31T21:19",
-     0.0
-    ]
-   ],
-   "p": 0.0,
-   "variazione": -0.01,
-   "ufficiale": false,
-   "prossima": "2026-10-31 20:45",
-   "prossima_avversario": "Milan",
-   "prossima_casa": false,
-   "eventi": [
-    {
-     "data": "2026-10-17",
-     "causa": "Vittoria: Bologna–Inter 1-3",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Vittoria: Inter–Fiorentina 2-1",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Vittoria: Venezia–Inter 0-2",
-     "p": 0.0
     }
    ]
   },
@@ -3024,7 +2468,7 @@
      0.01
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -3120,12 +2564,12 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
    "p": 0.0,
-   "variazione": -0.03,
+   "variazione": -0.04,
    "ufficiale": false,
    "prossima": "2026-11-01 18:00",
    "prossima_avversario": "Lecce",
@@ -3145,6 +2589,102 @@
      "data": "2026-10-28",
      "causa": "Vittoria: Genoa–Juventus 2-0",
      "p": 0.1
+    }
+   ]
+  },
+  {
+   "squadra": "Lecce",
+   "campionato": "Serie A",
+   "allenatore": "Eusebio Di Francesco",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     0.0
+    ],
+    [
+     "2026-10-24T08:11",
+     0.0
+    ],
+    [
+     "2026-10-24T15:09",
+     0.0
+    ],
+    [
+     "2026-10-24T21:10",
+     0.0
+    ],
+    [
+     "2026-10-25T08:10",
+     0.0
+    ],
+    [
+     "2026-10-27T23:11",
+     0.09
+    ],
+    [
+     "2026-10-28T08:13",
+     0.05
+    ],
+    [
+     "2026-10-28T14:31",
+     0.03
+    ],
+    [
+     "2026-10-28T21:30",
+     0.01
+    ],
+    [
+     "2026-10-29T08:13",
+     0.0
+    ],
+    [
+     "2026-10-29T14:16",
+     0.0
+    ],
+    [
+     "2026-10-29T23:13",
+     1.67
+    ],
+    [
+     "2026-10-30T08:15",
+     1.4
+    ],
+    [
+     "2026-10-30T14:26",
+     1.2
+    ],
+    [
+     "2026-10-31T17:09",
+     0.25
+    ],
+    [
+     "2026-11-01T00:44",
+     0.0
+    ]
+   ],
+   "p": 0.0,
+   "variazione": -1.2,
+   "ufficiale": false,
+   "prossima": "2026-11-01 18:00",
+   "prossima_avversario": "Genoa",
+   "prossima_casa": true,
+   "eventi": [
+    {
+     "data": "2026-10-18",
+     "causa": "Vittoria: Udinese–Lecce 0-3",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Sconfitta: Lecce–Juventus 0-2",
+     "p": 0.7
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Sconfitta: Frosinone–Lecce 1-0",
+     "p": 1.7
     }
    ]
   },
@@ -3216,7 +2756,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -3241,6 +2781,102 @@
      "data": "2026-10-27",
      "causa": "Sconfitta: Padova–Sudtirol 2-0",
      "p": 3.0
+    }
+   ]
+  },
+  {
+   "squadra": "Juve Stabia",
+   "campionato": "Serie B",
+   "allenatore": "Pietro De Giorgio",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     0.0
+    ],
+    [
+     "2026-10-24T08:11",
+     0.0
+    ],
+    [
+     "2026-10-24T15:09",
+     0.0
+    ],
+    [
+     "2026-10-24T21:10",
+     0.07
+    ],
+    [
+     "2026-10-25T08:10",
+     0.06
+    ],
+    [
+     "2026-10-27T23:11",
+     0.0
+    ],
+    [
+     "2026-10-28T08:13",
+     0.0
+    ],
+    [
+     "2026-10-28T14:31",
+     0.0
+    ],
+    [
+     "2026-10-28T21:30",
+     0.0
+    ],
+    [
+     "2026-10-29T08:13",
+     0.59
+    ],
+    [
+     "2026-10-29T14:16",
+     0.52
+    ],
+    [
+     "2026-10-29T23:13",
+     0.41
+    ],
+    [
+     "2026-10-30T08:15",
+     0.29
+    ],
+    [
+     "2026-10-30T14:26",
+     0.21
+    ],
+    [
+     "2026-10-31T17:09",
+     0.02
+    ],
+    [
+     "2026-11-01T00:44",
+     0.0
+    ]
+   ],
+   "p": 0.0,
+   "variazione": -0.21,
+   "ufficiale": false,
+   "prossima": "2026-11-01 15:00",
+   "prossima_avversario": "Empoli",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-10-18",
+     "causa": "Vittoria: Juve Stabia–Sudtirol 3-0",
+     "p": 0.3
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Vittoria: Cremonese–Juve Stabia 0-1",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Sconfitta: Juve Stabia–Verona 0-1",
+     "p": 0.7
     }
    ]
   },
@@ -3312,7 +2948,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -3408,7 +3044,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -3437,15 +3073,15 @@
    ]
   },
   {
-   "squadra": "Milan",
-   "campionato": "Serie A",
-   "allenatore": "Rúben Amorim",
+   "squadra": "Avellino",
+   "campionato": "Serie B",
+   "allenatore": "Alessandro Nesta",
    "interim": 0,
    "debutto_atteso": false,
    "serie": [
     [
      "2026-10-24T02:00",
-     0.01
+     0.0
     ],
     [
      "2026-10-24T08:11",
@@ -3457,118 +3093,78 @@
     ],
     [
      "2026-10-24T21:10",
-     0.0
+     2.41
     ],
     [
      "2026-10-25T08:10",
-     0.0
+     2.0
     ],
     [
      "2026-10-27T23:11",
-     0.0
+     1.7
     ],
     [
      "2026-10-28T08:13",
-     0.0
+     1.47
     ],
     [
      "2026-10-28T14:31",
-     0.0
+     1.3
     ],
     [
      "2026-10-28T21:30",
-     1.36
+     1.11
     ],
     [
      "2026-10-29T08:13",
-     1.13
+     0.78
     ],
     [
      "2026-10-29T14:16",
-     0.97
+     0.6
     ],
     [
      "2026-10-29T23:13",
-     0.74
+     0.32
     ],
     [
      "2026-10-30T08:15",
-     0.24
+     0.23
     ],
     [
      "2026-10-30T14:26",
-     0.14
+     0.19
     ],
     [
      "2026-10-31T17:09",
-     0.0
+     0.03
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
    "p": 0.0,
-   "variazione": -0.14,
+   "variazione": -0.19,
    "ufficiale": false,
-   "prossima": "2026-10-31 20:45",
-   "prossima_avversario": "Inter",
+   "prossima": "2026-11-01 15:00",
+   "prossima_avversario": "Pisa",
    "prossima_casa": true,
    "eventi": [
     {
      "data": "2026-10-18",
-     "causa": "Vittoria: Milan–Atalanta 3-2",
-     "p": 0.1
+     "causa": "Pareggio: Cesena–Avellino 1-1",
+     "p": 0.2
     },
     {
      "data": "2026-10-24",
-     "causa": "Segnali dalla società",
-     "p": 0.0
+     "causa": "Sconfitta: Avellino–Padova 0-1",
+     "p": 2.5
     },
     {
-     "data": "2026-10-24",
-     "causa": "Ultimatum: decisiva la prossima partita",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Ultimatum: decisiva la prossima partita",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Fiducia dalla società",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Vittoria: Udinese–Milan 0-2 (chiusi ultimatum e fiducia)",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Segnali dalla società",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Sconfitta: Milan–Bologna 2-4",
-     "p": 1.4
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Ultimatum: decisiva la prossima partita",
-     "p": 0.9
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Panchina in discussione",
-     "p": 1.0
-    },
-    {
-     "data": "2026-10-30",
-     "causa": "Fiducia dalla società",
-     "p": 0.3
+     "data": "2026-10-27",
+     "causa": "Pareggio: Virtus Entella–Avellino 1-1",
+     "p": 1.7
     }
    ]
   },
@@ -3640,7 +3236,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -3665,6 +3261,112 @@
      "data": "2026-10-27",
      "causa": "Sconfitta: Ascoli–Sampdoria 2-0",
      "p": 9.0
+    }
+   ]
+  },
+  {
+   "squadra": "Arezzo",
+   "campionato": "Serie B",
+   "allenatore": "Cristian Bucchi",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     0.0
+    ],
+    [
+     "2026-10-24T08:11",
+     0.0
+    ],
+    [
+     "2026-10-24T15:09",
+     0.0
+    ],
+    [
+     "2026-10-24T21:10",
+     0.0
+    ],
+    [
+     "2026-10-25T08:10",
+     0.0
+    ],
+    [
+     "2026-10-27T23:11",
+     0.01
+    ],
+    [
+     "2026-10-28T08:13",
+     0.0
+    ],
+    [
+     "2026-10-28T14:31",
+     0.0
+    ],
+    [
+     "2026-10-28T21:30",
+     0.0
+    ],
+    [
+     "2026-10-29T08:13",
+     6.44
+    ],
+    [
+     "2026-10-29T14:16",
+     5.69
+    ],
+    [
+     "2026-10-29T23:13",
+     11.29
+    ],
+    [
+     "2026-10-30T08:15",
+     8.23
+    ],
+    [
+     "2026-10-30T14:26",
+     6.01
+    ],
+    [
+     "2026-10-31T17:09",
+     0.68
+    ],
+    [
+     "2026-11-01T00:44",
+     0.0
+    ]
+   ],
+   "p": 0.0,
+   "variazione": -6.01,
+   "ufficiale": false,
+   "prossima": "2026-11-01 15:00",
+   "prossima_avversario": "Ascoli",
+   "prossima_casa": true,
+   "eventi": [
+    {
+     "data": "2026-10-18",
+     "causa": "Vittoria: Sampdoria–Arezzo 1-2",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Sconfitta: Arezzo–Benevento 0-3",
+     "p": 1.5
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Sconfitta: Carrarese–Arezzo 2-1",
+     "p": 3.9
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Panchina in discussione",
+     "p": 7.5
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Segnali dalla società",
+     "p": 12.7
     }
    ]
   },
@@ -3736,7 +3438,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -3761,6 +3463,314 @@
      "data": "2026-10-27",
      "causa": "Vittoria: Sassuolo–Lazio 2-6",
      "p": 0.0
+    }
+   ]
+  },
+  {
+   "squadra": "Juventus",
+   "campionato": "Serie A",
+   "allenatore": "Luciano Spalletti",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     0.34
+    ],
+    [
+     "2026-10-24T08:11",
+     0.25
+    ],
+    [
+     "2026-10-24T15:09",
+     0.14
+    ],
+    [
+     "2026-10-24T21:10",
+     0.05
+    ],
+    [
+     "2026-10-25T08:10",
+     0.0
+    ],
+    [
+     "2026-10-27T23:11",
+     0.02
+    ],
+    [
+     "2026-10-28T08:13",
+     0.0
+    ],
+    [
+     "2026-10-28T14:31",
+     0.0
+    ],
+    [
+     "2026-10-28T21:30",
+     0.0
+    ],
+    [
+     "2026-10-29T08:13",
+     13.38
+    ],
+    [
+     "2026-10-29T14:16",
+     23.87
+    ],
+    [
+     "2026-10-29T23:13",
+     19.86
+    ],
+    [
+     "2026-10-30T08:15",
+     12.81
+    ],
+    [
+     "2026-10-30T14:26",
+     9.48
+    ],
+    [
+     "2026-10-31T17:09",
+     1.1
+    ],
+    [
+     "2026-11-01T00:44",
+     0.0
+    ]
+   ],
+   "p": 0.0,
+   "variazione": -9.48,
+   "ufficiale": false,
+   "prossima": "2026-11-01 20:45",
+   "prossima_avversario": "Napoli",
+   "prossima_casa": true,
+   "eventi": [
+    {
+     "data": "2026-10-18",
+     "causa": "Sconfitta: Juventus–Lazio 0-3",
+     "p": 12.6
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Vittoria: Lecce–Juventus 0-2",
+     "p": 1.2
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Sconfitta: Genoa–Juventus 2-0",
+     "p": 13.4
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Panchina in discussione",
+     "p": 15.4
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Notizie sul sostituto",
+     "p": 17.3
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Segnali dalla società",
+     "p": 24.0
+    },
+    {
+     "data": "2026-10-30",
+     "causa": "Ultimatum: decisiva la prossima partita",
+     "p": 16.5
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Fiducia dalla società",
+     "p": 1.2
+    }
+   ]
+  },
+  {
+   "squadra": "Cagliari",
+   "campionato": "Serie A",
+   "allenatore": "Fabio Pisacane",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     0.0
+    ],
+    [
+     "2026-10-24T08:11",
+     0.0
+    ],
+    [
+     "2026-10-24T15:09",
+     0.0
+    ],
+    [
+     "2026-10-24T21:10",
+     1.12
+    ],
+    [
+     "2026-10-25T08:10",
+     0.93
+    ],
+    [
+     "2026-10-27T23:11",
+     2.09
+    ],
+    [
+     "2026-10-28T08:13",
+     1.8
+    ],
+    [
+     "2026-10-28T14:31",
+     1.59
+    ],
+    [
+     "2026-10-28T21:30",
+     1.36
+    ],
+    [
+     "2026-10-29T08:13",
+     0.96
+    ],
+    [
+     "2026-10-29T14:16",
+     0.73
+    ],
+    [
+     "2026-10-29T23:13",
+     0.39
+    ],
+    [
+     "2026-10-30T08:15",
+     0.29
+    ],
+    [
+     "2026-10-30T14:26",
+     0.23
+    ],
+    [
+     "2026-10-31T17:09",
+     0.04
+    ],
+    [
+     "2026-11-01T00:44",
+     0.0
+    ]
+   ],
+   "p": 0.0,
+   "variazione": -0.23,
+   "ufficiale": false,
+   "prossima": "2026-11-01 15:00",
+   "prossima_avversario": "Lazio",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-10-19",
+     "causa": "Sconfitta: Monza–Cagliari 4-0",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Sconfitta: Cagliari–Bologna 0-2",
+     "p": 1.2
+    },
+    {
+     "data": "2026-10-27",
+     "causa": "Sconfitta: Roma–Cagliari 4-2",
+     "p": 2.1
+    }
+   ]
+  },
+  {
+   "squadra": "Empoli",
+   "campionato": "Serie B",
+   "allenatore": "Matteo Andreoletti",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-10-24T02:00",
+     5.52
+    ],
+    [
+     "2026-10-24T08:11",
+     4.76
+    ],
+    [
+     "2026-10-24T15:09",
+     4.11
+    ],
+    [
+     "2026-10-24T21:10",
+     6.02
+    ],
+    [
+     "2026-10-25T08:10",
+     4.1
+    ],
+    [
+     "2026-10-27T23:11",
+     7.07
+    ],
+    [
+     "2026-10-28T08:13",
+     6.16
+    ],
+    [
+     "2026-10-28T14:31",
+     5.47
+    ],
+    [
+     "2026-10-28T21:30",
+     4.69
+    ],
+    [
+     "2026-10-29T08:13",
+     3.36
+    ],
+    [
+     "2026-10-29T14:16",
+     2.57
+    ],
+    [
+     "2026-10-29T23:13",
+     1.39
+    ],
+    [
+     "2026-10-30T08:15",
+     1.02
+    ],
+    [
+     "2026-10-30T14:26",
+     0.82
+    ],
+    [
+     "2026-10-31T17:09",
+     0.15
+    ],
+    [
+     "2026-11-01T00:44",
+     0.0
+    ]
+   ],
+   "p": 0.0,
+   "variazione": -0.82,
+   "ufficiale": false,
+   "prossima": "2026-11-01 15:00",
+   "prossima_avversario": "Juve Stabia",
+   "prossima_casa": true,
+   "eventi": [
+    {
+     "data": "2026-10-23",
+     "causa": "Sconfitta: Empoli–Vicenza 0-2",
+     "p": 9.4
+    },
+    {
+     "data": "2026-10-27",
+     "causa": "Sconfitta: Cesena–Empoli 2-1",
+     "p": 7.2
     }
    ]
   },
@@ -3832,7 +3842,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
@@ -3923,7 +3933,7 @@
      0.0
     ],
     [
-     "2026-10-31T21:19",
+     "2026-11-01T00:44",
      0.0
     ]
    ],
