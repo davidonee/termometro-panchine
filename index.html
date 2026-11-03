@@ -6,31 +6,37 @@
 <title>Termometro Panchine</title>
 <meta name="description" content="Probabilità che ogni allenatore di Serie A e Serie B lasci la panchina prima della prossima partita.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0D1117;--surf:#161B22;--line:#262C36;--line2:#1E242D;--tx:#E6EDF3;--mut:#9AA4B2;--soft:#C3CBD5;--up:#3FB950;--dn:#F85149;
+:root{--bg:#0E1322;--surf:#161D30;--surf2:#1C2540;--line:#28324D;--line2:#1F2840;--tx:#F1F4FA;--mut:#9BA6C0;--soft:#C9D1E3;--up:#FF6B4A;--dn:#4FC3F7;
+  --freddo:#4FC3F7;--tiepido:#9BE15D;--caldo:#FFC94A;--rovente:#FF8A3D;--fuoco:#FF4D4D;--grad:linear-gradient(90deg,#4FC3F7,#9BE15D 30%,#FFC94A 55%,#FF8A3D 75%,#FF4D4D);
+  --title:'Bricolage Grotesque',system-ui,sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,monospace;--sans:'IBM Plex Sans',system-ui,sans-serif}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--tx);font-family:var(--sans);-webkit-text-size-adjust:100%}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer}
 .wrap{max-width:560px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column}
-header{padding:20px 16px 12px;border-bottom:1px solid var(--line)}
-h1{margin:0;font-size:22px;font-weight:700;letter-spacing:-.01em}
+header{position:relative;padding:22px 16px 16px;background:radial-gradient(120% 140% at 100% 0%,rgba(255,77,77,.22),transparent 55%),radial-gradient(120% 140% at 0% 0%,rgba(79,195,247,.18),transparent 55%),var(--bg)}
+header::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--grad)}
+.brand{display:flex;align-items:center;gap:10px}
+h1{margin:0;font:800 28px/1.05 var(--title);letter-spacing:-.02em;background:linear-gradient(90deg,#fff 0%,#FFD9C2 45%,#FF8A3D 80%,#FF4D4D);-webkit-background-clip:text;background-clip:text;color:transparent}
 .sub{margin:4px 0 0;font-size:13px;line-height:1.4;color:var(--mut)}
 .agg{margin:4px 0 0;font:500 12px var(--mono);color:var(--mut)}
 .sec{padding:16px 16px 8px}
 .lab{margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.lab.fire{color:#FFB38A}
 .hot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.card{display:flex;flex-direction:column;gap:6px;padding:10px;border-radius:8px;background:var(--surf);border:1px solid var(--line);min-width:0}
+.card{position:relative;display:flex;flex-direction:column;gap:6px;padding:12px 10px 10px;border-radius:12px;background:linear-gradient(180deg,color-mix(in srgb,var(--h) 22%,var(--surf)) 0%,var(--surf) 70%);border:1px solid color-mix(in srgb,var(--h) 45%,var(--line));min-width:0;overflow:hidden}
+.card::before{content:'';position:absolute;left:0;right:0;top:0;height:3px;background:var(--h)}
 .card .nm{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.card .pp{font:600 22px var(--mono)}
+.card .pp{font:600 24px var(--mono);color:var(--h)}
 .seg{display:flex;gap:4px;padding:4px;background:var(--surf);border:1px solid var(--line);border-radius:10px}
 .seg button{flex:1;min-height:40px;border:0;border-radius:7px;font-size:14px;font-weight:600;background:transparent;color:var(--mut)}
-.seg button[aria-pressed=true]{background:var(--tx);color:var(--bg)}
+.seg button[aria-pressed=true]{background:linear-gradient(90deg,#FF8A3D,#FF4D4D);color:#fff;box-shadow:0 2px 10px rgba(255,77,77,.3)}
 .sortr{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
 .pill{min-height:36px;padding:0 12px;border-radius:18px;font-size:13px;background:transparent;color:var(--mut);border:1px solid var(--line);margin-left:6px}
-.pill[aria-pressed=true]{background:var(--line);color:var(--tx);border-color:#4A5361}
+.pill[aria-pressed=true]{background:var(--surf2);color:var(--tx);border-color:#FF8A3D}
 .cols{padding:4px 16px 0;display:flex;justify-content:space-between;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
 ol{list-style:none;margin:8px 0 0;padding:0}
 li{border-top:1px solid var(--line2)}
@@ -39,9 +45,15 @@ li{border-top:1px solid var(--line2)}
 .row .nm{font-size:15px;font-weight:600}
 .row .tm{font-size:12px;color:var(--mut)}
 .row .nums{display:flex;flex-direction:column;align-items:flex-end;gap:3px}
-.row .pp{font:600 20px var(--mono)}
+.row .pp{font:600 20px var(--mono);color:var(--h)}
+.term{display:block;height:6px;margin-top:6px;border-radius:3px;background:var(--line2);overflow:hidden}
+.term i{display:block;height:100%;border-radius:3px;background:var(--grad);background-size:var(--bs) 100%}
+li:nth-child(odd) .row{background:rgba(255,255,255,.015)}
+.row:hover{background:var(--surf)}
 .chg{font:600 12px var(--mono);color:var(--mut)}
 .chg.up{color:var(--up)} .chg.dn{color:var(--dn)}
+.legenda{display:flex;align-items:center;gap:8px;margin-top:10px;font:500 11px var(--mono);color:var(--mut)}
+.legenda i{flex:1;height:6px;border-radius:3px;background:var(--grad)}
 .badge{flex:none;width:32px;height:32px;border-radius:16px;display:inline-flex;align-items:center;justify-content:center;font:600 9px var(--mono);overflow:hidden}
 .badge img{width:100%;height:100%;object-fit:contain;background:transparent}
 .badge.lg{width:40px;height:40px;border-radius:20px;font-size:10px}
@@ -50,17 +62,20 @@ footer{margin-top:auto;padding:20px 16px 28px;border-top:1px solid var(--line);f
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--soft);text-decoration:underline}
 .back{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-size:14px;color:var(--mut)}
 .det{padding:20px 16px 16px;display:flex;flex-direction:column;gap:6px}
-.det h2{margin:0;font-size:26px;font-weight:700}
+.det h2{margin:0;font:800 30px/1.1 var(--title);letter-spacing:-.02em}
+.det{background:radial-gradient(100% 120% at 100% 0%,color-mix(in srgb,var(--h) 20%,transparent),transparent 60%)}
 .big{display:flex;align-items:baseline;gap:12px;margin-top:6px}
-.big .pp{font:600 48px/1 var(--mono)} .big .chg{font-size:16px}
+.big .pp{font:600 52px/1 var(--mono);color:var(--h);text-shadow:0 0 28px color-mix(in srgb,var(--h) 45%,transparent)} .big .chg{font-size:16px}
 .box{margin:0 16px;padding:14px;border-radius:10px;background:var(--surf);border:1px solid var(--line)}
 .box label{display:flex;align-items:center;gap:10px;min-height:44px;font-size:15px;font-weight:500;cursor:pointer}
-.box input{width:20px;height:20px;accent-color:var(--up);margin:0}
+.box input{width:20px;height:20px;accent-color:#FF8A3D;margin:0}
 .ax{display:flex;justify-content:space-between;font:500 11px var(--mono);color:var(--mut);margin-top:4px}
 .ev li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line2)}
 .ev .c{flex:1;display:flex;flex-direction:column;gap:3px}
 .ev .c b{font-size:14px;font-weight:600} .ev .c span{font-size:12px;color:var(--mut)}
-.ev .e{font:600 13px var(--mono)}
+.ev .e{font:600 13px var(--mono);color:var(--h)}
+.ev li{position:relative;padding-left:14px}
+.ev li::before{content:'';position:absolute;left:0;top:17px;width:7px;height:7px;border-radius:50%;background:var(--h)}
 .empty{padding:24px 16px;color:var(--mut);font-size:14px}
 </style>
 </head>
@@ -78,6 +93,10 @@ Palermo:['#E6A1B6','#111'],Pisa:['#1B2D5A','#fff'],Sampdoria:['#1B4F9C','#fff'],
 const SIG={Juventus:'JUV',Inter:'INT',Milan:'MIL','Juve Stabia':'JST','Virtus Entella':'ENT',Sudtirol:'SUD',Sampdoria:'SAM',Sassuolo:'SAS',Catanzaro:'CTZ',Cremonese:'CRE',Cesena:'CES',Carrarese:'CAR'};
 const slug=s=>s.normalize('NFKD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const HEAT=[[0.5,'#4FC3F7'],[2,'#9BE15D'],[5,'#FFC94A'],[12,'#FF8A3D'],[1e9,'#FF4D4D']];
+const heat=a=>a.ufficiale?'#FF4D4D':a.debutto_atteso?'#9BA6C0':HEAT.find(([t])=>a.p<t)[1];
+const fill=p=>Math.max(3,Math.min(100,100*Math.log10(1+p)/Math.log10(41)));   // scala logaritmica: 40% = pieno
+const term=a=>a.debutto_atteso?'':`<span class="term"><i style="width:${a.ufficiale?100:fill(a.p).toFixed(1)}%;--bs:${(10000/(a.ufficiale?100:fill(a.p))).toFixed(0)}%"></i></span>`;
 const pct=x=>(x>=0.1?x.toFixed(1):'<0,1').replace('.',',')+'%';   // mai 0%: statisticamente non è mai zero
 let D=null, st={lega:'Serie A',sort:'p',chart:false,m:'p'};
 try{const v=JSON.parse(localStorage.getItem('bp')||'{}');Object.assign(st,{lega:v.lega||st.lega,sort:v.sort||st.sort,m:STAGIONE_ATTIVA?(v.m||st.m):'p'})}catch(e){}
@@ -95,16 +114,16 @@ function lista(){
   const A=D.allenatori, hot=A.filter(a=>!a.ufficiale&&!a.debutto_atteso).slice().sort((x,y)=>V(y)-V(x)).slice(0,3);
   const rows=A.filter(a=>a.campionato===st.lega).slice().sort((x,y)=>st.sort==='p'?(y.ufficiale-x.ufficiale)||(V(y)-V(x)):(DV(y)-DV(x)));
   const ag=new Date(D.aggiornato);
-  return `<header><h1>Termometro Panchine</h1><p class="sub">Probabilità che l'allenatore lasci la panchina ${st.m==='s'?'entro la fine della stagione':'prima della prossima partita'}</p>
+  return `<header><div class="brand"><svg width="22" height="40" viewBox="0 0 22 40" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FF4D4D"/><stop offset=".5" stop-color="#FFC94A"/><stop offset="1" stop-color="#4FC3F7"/></linearGradient></defs><rect x="7" y="2" width="8" height="26" rx="4" fill="none" stroke="#C9D1E3" stroke-width="1.5"/><rect x="9.5" y="9" width="3" height="20" rx="1.5" fill="url(#tg)"/><circle cx="11" cy="32" r="6" fill="#FF4D4D" stroke="#C9D1E3" stroke-width="1.5"/></svg><h1>Termometro Panchine</h1></div><p class="sub">Probabilità che l'allenatore lasci la panchina ${st.m==='s'?'entro la fine della stagione':'prima della prossima partita'}</p>
   <p class="agg">Numeri aggiornati a ${ag.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',timeZone:'Europe/Rome'})}, ore ${ag.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Rome'})}.</p></header>
   ${STAGIONE_ATTIVA?`<section class="sec" style="padding-bottom:0">${metrica()}</section>`:''}
-  <section class="sec"><h2 class="lab">Panchine più calde</h2><div class="hot">${hot.map(a=>`<a class="card" href="#${slug(a.squadra)}">
+  <section class="sec"><h2 class="lab fire">🔥 Panchine più calde</h2><div class="hot">${hot.map(a=>`<a class="card" style="--h:${heat(a)}" href="#${slug(a.squadra)}">
    <div style="display:flex;align-items:center;gap:6px">${badge(a.squadra)}<span style="font-size:12px;color:var(--mut)">${a.campionato}</span></div>
-   <span class="nm">${esc(a.allenatore)}</span><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</a>`).join('')}</div></section>
+   <span class="nm">${esc(a.allenatore)}</span><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</a>`).join('')}</div><div class="legenda"><span>fredda</span><i></i><span>rovente</span></div></section>
   <nav class="sec" aria-label="Filtri"><div class="seg">${['Serie A','Serie B'].map(l=>`<button aria-pressed="${st.lega===l}" data-lega="${l}">${l}</button>`).join('')}</div>
   <div class="sortr"><span style="font-size:12px;color:var(--mut)">Ordina per</span><div><button class="pill" aria-pressed="${st.sort==='p'}" data-sort="p">Rischio</button><button class="pill" aria-pressed="${st.sort==='v'}" data-sort="v">Variazione</button></div></div></nav>
   <div class="cols"><span>Allenatore</span><span>Probabilità</span></div>
-  <ol>${rows.map(a=>`<li><a class="row" href="#${slug(a.squadra)}">${badge(a.squadra)}<div class="who"><span class="nm">${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</span><span class="tm">${esc(a.squadra)}</span></div>
+  <ol>${rows.map(a=>`<li><a class="row" style="--h:${heat(a)}" href="#${slug(a.squadra)}">${badge(a.squadra)}<div class="who"><span class="nm">${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</span><span class="tm">${esc(a.squadra)}</span>${term(a)}</div>
    <div class="nums"><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</div></a></li>`).join('')}</ol>
   <footer>Il Termometro non ha talpe negli spogliatoi né la sfera di cristallo. Incrocia fattori tarati sugli esoneri delle stagioni precedenti e ne ricava una stima ragionata di quanto è probabile che un allenatore lasci la panchina prima della prossima partita. Non è un consiglio di scommessa. ▲ rischio in aumento · ▼ in calo, rispetto a 24 ore prima.<br><a href="#storico">Il nostro storico: quanto ci azzecchiamo (in arrivo)</a><br>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`;
 }
@@ -114,8 +133,9 @@ function grafico(a){
   const X=t=>8+(W-16)*(Date.parse(t)-t0)/Math.max(1,t1-t0),Y=v=>H-10-(H-20)*v/mx;
   const pts=s.map(x=>X(x[0]).toFixed(1)+','+Y(x[k]).toFixed(1)).join(' ');
   const d=t=>new Date(t).toLocaleDateString('it-IT',{day:'2-digit',month:'2-digit'});
-  return `<svg width="100%" viewBox="0 0 ${W} ${H}" role="img" aria-label="Andamento della probabilità"><line x1="0" y1="${H-10}" x2="${W}" y2="${H-10}" stroke="#262C36"/>
-   <line x1="0" y1="${Y(mx/2)}" x2="${W}" y2="${Y(mx/2)}" stroke="#1E242D" stroke-dasharray="3 4"/><polyline points="${pts}" fill="none" stroke="#E6EDF3" stroke-width="2" stroke-linejoin="round"/></svg>
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" role="img" aria-label="Andamento della probabilità"><line x1="0" y1="${H-10}" x2="${W}" y2="${H-10}" stroke="#28324D"/>
+   <line x1="0" y1="${Y(mx/2)}" x2="${W}" y2="${Y(mx/2)}" stroke="#1E242D" stroke-dasharray="3 4"/><defs><linearGradient id="lg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#4FC3F7"/><stop offset=".5" stop-color="#FFC94A"/><stop offset="1" stop-color="#FF4D4D"/></linearGradient><linearGradient id="la" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8A3D" stop-opacity=".35"/><stop offset="1" stop-color="#FF8A3D" stop-opacity="0"/></linearGradient></defs>
+   <polygon points="${X(s[0][0]).toFixed(1)},${H-10} ${pts} ${X(s[s.length-1][0]).toFixed(1)},${H-10}" fill="url(#la)"/><polyline points="${pts}" fill="none" stroke="url(#lg)" stroke-width="2.5" stroke-linejoin="round"/></svg>
    <div class="ax"><span>${d(s[0][0])}</span><span>max scala ${pct(mx)}</span><span>${d(s[s.length-1][0])}</span></div>`;
 }
 function finestra(a){
@@ -130,12 +150,12 @@ function scheda(a){
   const altro=!STAGIONE_ATTIVA?'':st.m==='s'?'Prossima partita: '+pct(a.p):(a.p_stagione!=null?'Fine stagione: '+pct(a.p_stagione):'');
   return `<div style="padding:6px 16px;border-bottom:1px solid var(--line)"><a class="back" href="#">‹ Tutte le panchine</a></div>
   ${STAGIONE_ATTIVA?`<section class="sec" style="padding-bottom:0">${metrica()}</section>`:''}
-  <section class="det"><div style="display:flex;align-items:center;gap:8px">${badge(a.squadra,true)}<span style="font-size:13px;color:var(--mut)">${esc(a.squadra)} · ${a.campionato}</span></div>
+  <section class="det" style="--h:${heat(a)}"><div style="display:flex;align-items:center;gap:8px">${badge(a.squadra,true)}<span style="font-size:13px;color:var(--mut)">${esc(a.squadra)} · ${a.campionato}</span></div>
    <h2>${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</h2>
    <div class="big"><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</div>
    <p class="sub">${a.ufficiale?'Comunicato ufficiale del club.':a.debutto_atteso?'Appena nominato: la stima parte dopo la prima partita.':st.m==='s'?'Probabilità che lasci la panchina entro la fine della stagione.':finestra(a)}${!a.ufficiale&&!a.debutto_atteso&&altro?'<br>'+altro:''}</p></section>
   <section class="box"><label for="g"><input id="g" type="checkbox" ${st.chart?'checked':''}> Mostra andamento</label>${st.chart?grafico(a):''}</section>
-  <section class="sec"><h3 class="lab">Perché si è mossa</h3><ol class="ev">${ev.map(e=>`<li><div class="c"><b>${esc(e.causa)}</b><span>${e.data.split('-').reverse().slice(0,2).join('/')}</span></div><span class="e">${st.m==='s'?(e.p_stagione==null?'—':pct(e.p_stagione)):pct(e.p)}</span></li>`).join('')}</ol>${a.ufficiale||a.debutto_atteso?'':`<p class="sub" style="margin-top:12px">Oggi ${pshow(a)}. ${st.m==='s'?'Si aggiorna dopo ogni partita e con le notizie, tenendo conto di tutte le giornate che restano.':'Senza novità la probabilità scende man mano che passano i giorni.'}</p>`}</section>
+  <section class="sec" style="--h:${heat(a)}"><h3 class="lab">Perché si è mossa</h3><ol class="ev">${ev.map(e=>`<li style="--h:${heat({p:st.m==='s'?(e.p_stagione??0):e.p})}"><div class="c"><b>${esc(e.causa)}</b><span>${e.data.split('-').reverse().slice(0,2).join('/')}</span></div><span class="e">${st.m==='s'?(e.p_stagione==null?'—':pct(e.p_stagione)):pct(e.p)}</span></li>`).join('')}</ol>${a.ufficiale||a.debutto_atteso?'':`<p class="sub" style="margin-top:12px">Oggi ${pshow(a)}. ${st.m==='s'?'Si aggiorna dopo ogni partita e con le notizie, tenendo conto di tutte le giornate che restano.':'Senza novità la probabilità scende man mano che passano i giorni.'}</p>`}</section>
   <footer>Le notizie sono pesate per affidabilità della fonte. Solo il comunicato ufficiale del club porta la probabilità al 100%.<br>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`;
 }
 function render(){
