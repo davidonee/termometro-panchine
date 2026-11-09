@@ -65,6 +65,8 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--soft
 .det h2{margin:0;font:800 30px/1.1 var(--title);letter-spacing:-.02em}
 .det{background:radial-gradient(100% 120% at 100% 0%,color-mix(in srgb,var(--h) 20%,transparent),transparent 60%)}
 .big{display:flex;align-items:baseline;gap:12px;margin-top:6px}
+.oggi{display:inline-flex;flex-direction:column;align-items:flex-end;line-height:1.05} .oggi small{font:600 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.big .oggi{align-items:flex-start} .big .oggi small{font-size:13px;margin-bottom:6px}
 .big .pp{font:600 52px/1 var(--mono);color:var(--h);text-shadow:0 0 28px color-mix(in srgb,var(--h) 45%,transparent)} .big .chg{font-size:16px}
 .box{margin:0 16px;padding:14px;border-radius:10px;background:var(--surf);border:1px solid var(--line)}
 .box label{display:flex;align-items:center;gap:10px;min-height:44px;font-size:15px;font-weight:500;cursor:pointer}
@@ -94,22 +96,24 @@ const SIG={Juventus:'JUV',Inter:'INT',Milan:'MIL','Juve Stabia':'JST','Virtus En
 const slug=s=>s.normalize('NFKD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const HEAT=[[0.5,'#4FC3F7'],[2,'#9BE15D'],[5,'#FFC94A'],[12,'#FF8A3D'],[1e9,'#FF4D4D']];
-const heat=a=>a.ufficiale?'#FF4D4D':a.debutto_atteso?'#9BA6C0':HEAT.find(([t])=>a.p<t)[1];
+const OGGI=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Rome'});
+const oggi=a=>!a.ufficiale&&!a.debutto_atteso&&a.prossima&&a.prossima.slice(0,10)===OGGI?a.prossima.slice(11,16):null;   // in campo oggi: niente numero (Davide 09/11)
+const heat=a=>oggi(a)?'#C9D1E3':a.ufficiale?'#FF4D4D':a.debutto_atteso?'#9BA6C0':HEAT.find(([t])=>a.p<t)[1];
 const fill=p=>Math.max(3,Math.min(100,100*Math.log10(1+p)/Math.log10(41)));   // scala logaritmica: 40% = pieno
-const term=a=>(a.debutto_atteso||a.ufficiale)?'':`<span class="term"><i style="width:${fill(a.p).toFixed(1)}%;--bs:${(10000/fill(a.p)).toFixed(0)}%"></i></span>`;
+const term=a=>(a.debutto_atteso||a.ufficiale||oggi(a))?'':`<span class="term"><i style="width:${fill(a.p).toFixed(1)}%;--bs:${(10000/fill(a.p)).toFixed(0)}%"></i></span>`;
 const pct=x=>(x>=0.1?x.toFixed(1):'<0,1').replace('.',',')+'%';   // mai 0%: statisticamente non è mai zero
 let D=null, st={lega:'Serie A',sort:'p',chart:false,m:'p'};
 try{const v=JSON.parse(localStorage.getItem('bp')||'{}');Object.assign(st,{lega:v.lega||st.lega,sort:v.sort||st.sort,m:STAGIONE_ATTIVA?(v.m||st.m):'p'})}catch(e){}
 const save=()=>{try{localStorage.setItem('bp',JSON.stringify({lega:st.lega,sort:st.sort,m:st.m}))}catch(e){}};
 function badge(sq,big){const [bg,fg]=COL[sq]||['#39414D','#fff'];const s=SIG[sq]||sq.slice(0,3).toUpperCase();
   return `<span class="badge${big?' lg':''}" style="background:${bg};color:${fg}"><span>${s}</span><img src="loghi/${slug(sq)}.png" alt="" style="display:none" onload="this.style.display='block';this.previousElementSibling.remove();this.parentNode.style.background='transparent'" onerror="this.remove()"></span>`;}
-function chg(x,a){if(a.ufficiale||a.debutto_atteso)return '<span class="chg">—</span>';const v=Math.round(x*10)/10;
+function chg(x,a){if(a.ufficiale||a.debutto_atteso)return '<span class="chg">—</span>';if(st.m==='p'&&oggi(a))return '';const v=Math.round(x*10)/10;
   if(Math.abs(v)<0.05)return '<span class="chg">= 0</span>';return `<span class="chg ${v>0?'up':'dn'}">${v>0?'▲ +':'▼ '}${String(v).replace('.',',')} pt</span>`}
 const V=a=>st.m==='s'?(a.p_stagione??-1):a.p, DV=a=>st.m==='s'?(a.variazione_stagione??0):a.variazione;
 const STAGIONE_ATTIVA=false;   // vista 'Fine stagione' sospesa (Davide 24/10/2026)
 const METR={p:'Prossima partita',s:'Fine stagione'};
 function metrica(){if(!STAGIONE_ATTIVA)return '';return `<div class="seg" role="group" aria-label="Orizzonte">${Object.entries(METR).map(([k,l])=>`<button aria-pressed="${st.m===k}" data-m="${k}">${l}</button>`).join('')}</div>`}
-function pshow(a){return a.ufficiale?'Esonerato':a.debutto_atteso?'—':(st.m==='s'&&a.p_stagione==null)?'—':pct(V(a))}
+function pshow(a){const o=st.m==='p'&&oggi(a);if(o)return `<span class="oggi"><small>In campo oggi</small>${o}</span>`;return a.ufficiale?'Esonerato':a.debutto_atteso?'—':(st.m==='s'&&a.p_stagione==null)?'—':pct(V(a))}
 function lista(){
   const A=D.allenatori, hot=A.filter(a=>!a.ufficiale&&!a.debutto_atteso).slice().sort((x,y)=>V(y)-V(x)).slice(0,3);
   const rows=A.filter(a=>a.campionato===st.lega).slice().sort((x,y)=>st.sort==='p'?(y.ufficiale-x.ufficiale)||(V(y)-V(x)):(DV(y)-DV(x)));
@@ -159,7 +163,7 @@ function scheda(a){
   <section class="det" style="--h:${heat(a)}"><div style="display:flex;align-items:center;gap:8px">${badge(a.squadra,true)}<span style="font-size:13px;color:var(--mut)">${esc(a.squadra)} · ${a.campionato}</span></div>
    <h2>${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</h2>
    <div class="big"><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</div>
-   <p class="sub">${a.ufficiale?'Comunicato ufficiale del club.':a.debutto_atteso?'Appena nominato: la stima parte dopo la prima partita.':st.m==='s'?'Probabilità che lasci la panchina entro la fine della stagione.':finestra(a)}${a.ufficiale||a.debutto_atteso?'':' '+(st.m==='s'?'Si aggiorna dopo ogni partita e con le notizie, tenendo conto di tutte le giornate che restano.':'Senza novità la probabilità scende man mano che passano i giorni.')}${extraCoppa(a)}${!a.ufficiale&&!a.debutto_atteso&&altro?'<br>'+altro:''}</p></section>
+   <p class="sub">${a.ufficiale?'Comunicato ufficiale del club.':a.debutto_atteso?'Appena nominato: la stima parte dopo la prima partita.':st.m==='s'?'Probabilità che lasci la panchina entro la fine della stagione.':oggi(a)?'Partita di oggi: '+esc(quandoPart(a.squadra,a.prossima,a.prossima_avversario,a.prossima_casa).split(', ').slice(1).join(', '))+'. Il giorno della partita, prima del fischio d\'inizio, la probabilità che lasci è quasi nulla.':finestra(a)}${a.ufficiale||a.debutto_atteso||oggi(a)?'':' '+(st.m==='s'?'Si aggiorna dopo ogni partita e con le notizie, tenendo conto di tutte le giornate che restano.':'Senza novità la probabilità scende man mano che passano i giorni.')}${extraCoppa(a)}${!a.ufficiale&&!a.debutto_atteso&&altro?'<br>'+altro:''}</p></section>
   <section class="box"><label for="g"><input id="g" type="checkbox" ${st.chart?'checked':''}> Mostra andamento</label>${st.chart?grafico(a):''}</section>
   <section class="sec" style="--h:${heat(a)}"><h3 class="lab">Perché si è mossa</h3><ol class="ev">${ev.map(e=>`<li style="--h:${heat({p:st.m==='s'?(e.p_stagione??0):e.p})}"><div class="c"><b>${esc(e.causa)}</b><span>${e.data.split('-').reverse().slice(0,2).join('/')}</span></div><span class="e">${st.m==='s'?(e.p_stagione==null?'—':pct(e.p_stagione)):pct(e.p)}</span></li>`).join('')}</ol></section>
   <footer>Le notizie sono pesate per affidabilità della fonte. Solo il comunicato ufficiale del club porta la probabilità al 100%.<br>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`;
