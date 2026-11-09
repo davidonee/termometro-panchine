@@ -58,7 +58,6 @@ li:nth-child(odd) .row{background:rgba(255,255,255,.015)}
 .badge img{width:100%;height:100%;object-fit:contain;background:transparent}
 .badge.lg{width:40px;height:40px;border-radius:20px;font-size:10px}
 .tag{font:600 10px var(--mono);padding:2px 6px;border-radius:4px;border:1px solid #39414D;color:var(--soft);margin-left:6px;vertical-align:2px}
-.tag.cv{border-color:#9BE15D;color:#9BE15D} .tag.cp{border-color:#9BA6C0;color:#C9D1E3} .tag.ck{border-color:#FF6B4A;color:#FF6B4A}
 footer{margin-top:auto;padding:20px 16px 28px;border-top:1px solid var(--line);font-size:12px;line-height:1.5;color:var(--mut)}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--soft);text-decoration:underline}
 .back{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-size:14px;color:var(--mut)}
@@ -124,7 +123,7 @@ function lista(){
   <nav class="sec" aria-label="Filtri"><div class="seg">${['Serie A','Serie B'].map(l=>`<button aria-pressed="${st.lega===l}" data-lega="${l}">${l}</button>`).join('')}</div>
   <div class="sortr"><span style="font-size:12px;color:var(--mut)">Ordina per</span><div><button class="pill" aria-pressed="${st.sort==='p'}" data-sort="p">Rischio</button><button class="pill" aria-pressed="${st.sort==='v'}" data-sort="v">Variazione</button></div></div></nav>
   <div class="cols"><span>Allenatore</span><span>Probabilità</span></div>
-  <ol>${rows.map(a=>`<li><a class="row" style="--h:${heat(a)}" href="#${slug(a.squadra)}">${badge(a.squadra)}<div class="who"><span class="nm">${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</span><span class="tm">${esc(a.squadra)}${coppaTag(a)}</span>${term(a)}</div>
+  <ol>${rows.map(a=>`<li><a class="row" style="--h:${heat(a)}" href="#${slug(a.squadra)}">${badge(a.squadra)}<div class="who"><span class="nm">${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</span><span class="tm">${esc(a.squadra)}</span>${term(a)}</div>
    <div class="nums"><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</div></a></li>`).join('')}</ol>
   <footer>Il Termometro non ha talpe negli spogliatoi né la sfera di cristallo. Incrocia fattori tarati sugli esoneri delle stagioni precedenti e ne ricava una stima ragionata di quanto è probabile che un allenatore lasci la panchina prima della prossima partita. Non è un consiglio di scommessa. ▲ rischio in aumento · ▼ in calo, rispetto a 24 ore prima.<br><a href="#storico">Il nostro storico: quanto ci azzecchiamo (in arrivo)</a><br>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`;
 }
@@ -139,14 +138,10 @@ function grafico(a){
    <polygon points="${X(s[0][0]).toFixed(1)},${H-10} ${pts} ${X(s[s.length-1][0]).toFixed(1)},${H-10}" fill="url(#la)"/><polyline points="${pts}" fill="none" stroke="url(#lg)" stroke-width="2.5" stroke-linejoin="round"/></svg>
    <div class="ax"><span>${d(s[0][0])}</span><span>max scala ${pct(mx)}</span><span>${d(s[s.length-1][0])}</span></div>`;
 }
-const COMP={'Champions League':'Champions','Europa League':'Europa League','Conference League':'Conference','Coppa Italia':'Coppa Italia'};
-function coppaTag(a){const e=a.coppa_esito;if(!e||a.ufficiale)return '';const k=e.esito.startsWith('KO')?'ck':e.esito==='Pareggio'?'cp':'cv';
-  return `<span class="tag ${k}">${esc(e.esito)} in ${esc(COMP[e.competizione]||e.competizione)}</span>`}
 function quandoPart(sq,q,avv,casa){const d=new Date(q.replace(' ','T'));
   return d.toLocaleDateString('it-IT',{weekday:'short',day:'2-digit',month:'2-digit'})+', '+d.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})+(avv?', '+(casa?sq+'–'+avv:avv+'–'+sq):'')}
 function extraCoppa(a){if(a.ufficiale||a.debutto_atteso)return '';let x='';
   if(a.campionato_p!=null)x+=`<br>Entro la prossima di campionato${a.campionato_prossima?' ('+esc(quandoPart(a.squadra,a.campionato_prossima,a.campionato_avversario,a.campionato_casa))+')':''}: ${pct(a.campionato_p)}`;
-  if(a.coppa_esito)x+=`<br>Ultima partita: ${esc(a.coppa_esito.esito)} in ${esc(a.coppa_esito.competizione)}, ${esc(a.coppa_esito.partita)}.`;
   return x}
 function finestra(a){
   if(!a.prossima)return 'Probabilità che lasci la panchina prima della prossima partita.';
