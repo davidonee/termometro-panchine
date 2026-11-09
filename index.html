@@ -125,7 +125,7 @@ function lista(){
   <div class="cols"><span>Allenatore</span><span>Probabilità</span></div>
   <ol>${rows.map(a=>`<li><a class="row" style="--h:${heat(a)}" href="#${slug(a.squadra)}">${badge(a.squadra)}<div class="who"><span class="nm">${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</span><span class="tm">${esc(a.squadra)}</span>${term(a)}</div>
    <div class="nums"><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</div></a></li>`).join('')}</ol>
-  <footer>Il Termometro non ha talpe negli spogliatoi né la sfera di cristallo. Incrocia fattori tarati sugli esoneri delle stagioni precedenti e ne ricava una stima ragionata di quanto è probabile che un allenatore lasci la panchina prima della prossima partita. Non è un consiglio di scommessa. ▲ rischio in aumento · ▼ in calo, rispetto a 24 ore prima.<br><a href="#storico">Il nostro storico: quanto ci azzecchiamo (in arrivo)</a><br>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`;
+  <footer>Il Termometro non ha talpe negli spogliatoi né la sfera di cristallo. Incrocia fattori tarati sugli esoneri delle stagioni precedenti e ne ricava una stima ragionata di quanto è probabile che un allenatore lasci la panchina prima della prossima partita. Non è un consiglio di scommessa. ▲ rischio in aumento · ▼ in calo, rispetto a 24 ore prima.<br>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`;
 }
 function grafico(a){
   let s=a.serie; if(!s||s.length<2)return '<p class="sub">Andamento disponibile dopo qualche aggiornamento.</p>';
