@@ -143,6 +143,7 @@ function finestra(a){
   const d=new Date(a.prossima.replace(' ','T'));
   const quando=d.toLocaleDateString('it-IT',{weekday:'short',day:'2-digit',month:'2-digit'})+', '+d.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
   const part=a.prossima_avversario?', '+(a.prossima_casa?a.squadra+'–'+a.prossima_avversario:a.prossima_avversario+'–'+a.squadra):'';
+  if(a.prossima_competizione)return `Probabilità che lasci la panchina prima della prossima partita, in ${esc(a.prossima_competizione)}: ${quando}${esc(part)}.`;
   return `Probabilità che lasci la panchina prima della prossima partita: ${quando}${esc(part)}.`;
 }
 function scheda(a){
