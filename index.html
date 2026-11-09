@@ -96,7 +96,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 const HEAT=[[0.5,'#4FC3F7'],[2,'#9BE15D'],[5,'#FFC94A'],[12,'#FF8A3D'],[1e9,'#FF4D4D']];
 const heat=a=>a.ufficiale?'#FF4D4D':a.debutto_atteso?'#9BA6C0':HEAT.find(([t])=>a.p<t)[1];
 const fill=p=>Math.max(3,Math.min(100,100*Math.log10(1+p)/Math.log10(41)));   // scala logaritmica: 40% = pieno
-const term=a=>a.debutto_atteso?'':`<span class="term"><i style="width:${a.ufficiale?100:fill(a.p).toFixed(1)}%;--bs:${(10000/(a.ufficiale?100:fill(a.p))).toFixed(0)}%"></i></span>`;
+const term=a=>(a.debutto_atteso||a.ufficiale)?'':`<span class="term"><i style="width:${fill(a.p).toFixed(1)}%;--bs:${(10000/fill(a.p)).toFixed(0)}%"></i></span>`;
 const pct=x=>(x>=0.1?x.toFixed(1):'<0,1').replace('.',',')+'%';   // mai 0%: statisticamente non è mai zero
 let D=null, st={lega:'Serie A',sort:'p',chart:false,m:'p'};
 try{const v=JSON.parse(localStorage.getItem('bp')||'{}');Object.assign(st,{lega:v.lega||st.lega,sort:v.sort||st.sort,m:STAGIONE_ATTIVA?(v.m||st.m):'p'})}catch(e){}
