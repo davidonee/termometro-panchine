@@ -20,7 +20,7 @@ button{font-family:inherit;cursor:pointer}
 header{position:relative;padding:22px 16px 16px;background:radial-gradient(120% 140% at 100% 0%,rgba(255,77,77,.22),transparent 55%),radial-gradient(120% 140% at 0% 0%,rgba(79,195,247,.18),transparent 55%),var(--bg)}
 header::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--grad)}
 .brand{display:flex;align-items:center;gap:10px}
-h1{margin:0;font:800 28px/1.05 var(--title);letter-spacing:-.02em;background:linear-gradient(90deg,#fff 0%,#FFD9C2 45%,#FF8A3D 80%,#FF4D4D);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1{margin:0;white-space:nowrap;font:800 clamp(20px,6.2vw,28px)/1.05 var(--title);letter-spacing:-.02em;background:linear-gradient(90deg,#fff 0%,#FFD9C2 45%,#FF8A3D 80%,#FF4D4D);-webkit-background-clip:text;background-clip:text;color:transparent}
 .sub{margin:4px 0 0;font-size:13px;line-height:1.4;color:var(--mut)}
 .agg{margin:4px 0 0;font:500 12px var(--mono);color:var(--mut)}
 .sec{padding:16px 16px 8px}
@@ -79,6 +79,24 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--soft
 .ev li{position:relative;padding-left:14px}
 .ev li::before{content:'';position:absolute;left:0;top:17px;width:7px;height:7px;border-radius:50%;background:var(--h)}
 .empty{padding:24px 16px;color:var(--mut);font-size:14px}
+.menub{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-left:-10px;border:0;background:transparent;color:var(--soft);border-radius:10px}
+.menub:active{background:var(--surf)}
+.topbar{display:flex;align-items:center;gap:4px;padding:6px 16px;border-bottom:1px solid var(--line)}
+.velo{position:fixed;inset:0;background:rgba(5,8,16,.6);z-index:20}
+.drawer{position:fixed;top:0;left:0;bottom:0;width:min(78vw,300px);background:var(--surf);border-right:1px solid var(--line);z-index:21;padding:14px 0;display:flex;flex-direction:column}
+.drawer .dt{padding:6px 20px 14px;font:800 20px var(--title);border-bottom:1px solid var(--line);margin-bottom:6px}
+.drawer a{display:flex;align-items:center;min-height:50px;padding:0 20px;font-size:16px;font-weight:600;color:var(--soft)}
+.drawer a[aria-current=page]{color:#fff;box-shadow:inset 3px 0 0 #FF8A3D;background:var(--surf2)}
+.pag{padding:20px 16px 8px} .pag h2{margin:0 0 6px;font:800 28px/1.1 var(--title);letter-spacing:-.02em}
+.pag p{font-size:14px;line-height:1.55;color:var(--soft);margin:8px 0}
+.pag h3{margin:22px 0 4px;font-size:15px}
+.cb{position:relative;padding:14px;margin:0 16px 10px;border-radius:12px;background:linear-gradient(180deg,color-mix(in srgb,var(--h) 16%,var(--surf)),var(--surf) 75%);border:1px solid color-mix(in srgb,var(--h) 35%,var(--line))}
+.cb .r1{display:flex;align-items:center;gap:10px} .cb .r1 div{display:flex;flex-direction:column;min-width:0}
+.cb .nm{font-weight:700;font-size:15px} .cb .tm{font-size:12px;color:var(--mut)}
+.cb .r2{display:flex;flex-direction:column;gap:2px;margin-top:10px}
+.cb .pp{font:600 28px var(--mono);color:var(--h)} .cb .rkb{font:800 22px/1.15 var(--title);letter-spacing:-.01em} .cb .rk{font-size:13px;color:var(--soft)}
+.cb .r3{font-size:12px;color:var(--mut);margin-top:4px;line-height:1.5}
+
 </style>
 </head>
 <body>
@@ -114,11 +132,38 @@ const STAGIONE_ATTIVA=false;   // vista 'Fine stagione' sospesa (Davide 24/10/20
 const METR={p:'Prossima partita',s:'Fine stagione'};
 function metrica(){if(!STAGIONE_ATTIVA)return '';return `<div class="seg" role="group" aria-label="Orizzonte">${Object.entries(METR).map(([k,l])=>`<button aria-pressed="${st.m===k}" data-m="${k}">${l}</button>`).join('')}</div>`}
 function pshow(a){const o=st.m==='p'&&oggi(a);if(o)return `<span class="oggi"><small>In campo oggi</small>${o}</span>`;return a.ufficiale?'Esonerato':a.debutto_atteso?'—':(st.m==='s'&&a.p_stagione==null)?'—':pct(V(a))}
+
+const MENU=[['','Panchine'],['cambi','Cambi di panchina'],['come','Chi siamo']];
+const ICONA='<svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+const menuBtn=()=>`<button class="menub" data-menu="1" aria-label="Menu">${ICONA}</button>`;
+function drawer(){if(!st.menu)return '';const h=location.hash.slice(1);
+  return `<div class="velo" data-chiudi="1"></div><nav class="drawer" aria-label="Menu"><div class="dt">Termometro Panchine</div>
+  ${MENU.map(([k,t])=>`<a href="#${k}" ${(h===k||(!k&&!MENU.some(([x])=>x&&x===h)&&!D.allenatori.some(a=>slug(a.squadra)===h)))?'aria-current="page"':''}>${t}</a>`).join('')}
+  <a href="mailto:richiesteinfo.davide@gmail.com">Contatti</a></nav>`}
+const barra=(indietro)=>`<div class="topbar">${menuBtn()}${indietro?'<a class="back" href="#">‹ Tutte le panchine</a>':'<a class="back" href="#">Termometro Panchine</a>'}</div>`;
+const ordinale=n=>n+'°';
+function cambi(){const C=(D.cambi||[]).slice().reverse();const top=C.filter(c=>c.rango&&c.rango<=3).length;
+  const colR=r=>!r?'#9BA6C0':r===1?'#FF4D4D':r<=3?'#FF8A3D':r<=5?'#FFC94A':'#9BE15D';     // colore dalla posizione, non dalla percentuale
+  const card=c=>`<div class="cb" style="--h:${colR(c.rango)}"><div class="r1">${badge(c.squadra)}<div><span class="nm">${esc(c.allenatore)}</span><span class="tm">${esc(c.squadra)} · ${c.campionato}</span></div></div>
+   <div class="r2"><span class="pp rkb">${c.rango===1?'Il più a rischio':c.rango?`${ordinale(c.rango)} più a rischio`:'—'}</span><span class="rk">${c.rango?`della ${c.campionato} dopo l'ultima partita`:''}</span></div>
+   <div class="r3">Ultima partita: ${esc(c.partita)} (${c.data.split('-').reverse().slice(0,2).join('/')})${c.p_comunicato!=null?`<br>Prima del comunicato: ${pct(c.p_comunicato)}`:''}
+   <br><span class="tag" style="margin-left:0">${c.pubblicata?'PUBBLICATA':'STIMA RICOSTRUITA'}</span></div></div>`;
+  return `${barra(false)}<section class="pag"><h2>Cambi di panchina</h2>
+   <p>Stagione 2026/27: ${C.length} allenatori hanno lasciato la panchina. In ${top} casi su ${C.length}, dopo l'ultima partita, il Termometro li metteva tra i 3 più a rischio del loro campionato.</p>
+   <p style="font-size:12px;color:var(--mut)">La posizione è quella nella classifica del rischio del Termometro subito dopo l'ultima partita giocata. Prima del 27/10 il sito non era online: per quei casi è la stima ricostruita, con i soli dati delle stagioni precedenti.</p></section>
+   ${C.map(card).join('')}<footer>Esoneri e addii di Serie A e Serie B, dal più recente.</footer>`}
+function come(){return `${barra(false)}<section class="pag"><h2>Niente talpe, niente clickbait</h2>
+ <p>Ogni settimana escono decine di titoli su panchine "in bilico" ed esoneri "imminenti", spesso firmati da "insider" che non devono mai rendere conto di quando sbagliano. Il Termometro fa un'altra cosa: ti dà un numero, e lo tiene aggiornato.</p>
+ <p>Il Termometro non ha talpe negli spogliatoi né la sfera di cristallo. Incrocia fattori tarati sugli esoneri delle stagioni precedenti e ne ricava una stima ragionata di quanto è probabile che un allenatore lasci la panchina prima della prossima partita.</p>
+ <p>È un progetto indipendente: non lavora per club, procuratori o agenzie di scommesse. Le percentuali riportate si basano solo sulla stima statistica.</p>
+ <p>E non nasconde i suoi errori: ogni cambio di panchina resta nella <a href="#cambi" style="text-decoration:underline">pagina dedicata</a>, con la posizione che il Termometro gli dava prima.</p>
+ <p style="font-size:12px;color:var(--mut)">Non è un consiglio di scommessa.</p></section>
+ <footer>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`}
 function lista(){
   const A=D.allenatori, hot=A.filter(a=>!a.ufficiale&&!a.debutto_atteso).slice().sort((x,y)=>V(y)-V(x)).slice(0,3);
   const rows=A.filter(a=>a.campionato===st.lega).slice().sort((x,y)=>st.sort==='p'?(y.ufficiale-x.ufficiale)||(V(y)-V(x)):(DV(y)-DV(x)));
   const ag=new Date(D.aggiornato);
-  return `<header><div class="brand"><svg width="22" height="40" viewBox="0 0 22 40" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FF4D4D"/><stop offset=".5" stop-color="#FFC94A"/><stop offset="1" stop-color="#4FC3F7"/></linearGradient></defs><rect x="7" y="2" width="8" height="26" rx="4" fill="none" stroke="#C9D1E3" stroke-width="1.5"/><rect x="9.5" y="9" width="3" height="20" rx="1.5" fill="url(#tg)"/><circle cx="11" cy="32" r="6" fill="#FF4D4D" stroke="#C9D1E3" stroke-width="1.5"/></svg><h1>Termometro Panchine</h1></div><p class="sub">Probabilità che l'allenatore lasci la panchina ${st.m==='s'?'entro la fine della stagione':'prima della prossima partita'}</p>
+  return `<header><div class="brand">${menuBtn()}<svg width="22" height="40" viewBox="0 0 22 40" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FF4D4D"/><stop offset=".5" stop-color="#FFC94A"/><stop offset="1" stop-color="#4FC3F7"/></linearGradient></defs><rect x="7" y="2" width="8" height="26" rx="4" fill="none" stroke="#C9D1E3" stroke-width="1.5"/><rect x="9.5" y="9" width="3" height="20" rx="1.5" fill="url(#tg)"/><circle cx="11" cy="32" r="6" fill="#FF4D4D" stroke="#C9D1E3" stroke-width="1.5"/></svg><h1>Termometro Panchine</h1></div><p class="sub">Probabilità che l'allenatore lasci la panchina ${st.m==='s'?'entro la fine della stagione':'prima della prossima partita'}</p>
   <p class="agg">Numeri aggiornati a ${ag.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',timeZone:'Europe/Rome'})}, ore ${ag.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Rome'})}.</p></header>
   ${STAGIONE_ATTIVA?`<section class="sec" style="padding-bottom:0">${metrica()}</section>`:''}
   <section class="sec"><h2 class="lab fire">🔥 Panchine più calde</h2><div class="hot">${hot.map(a=>`<a class="card" style="--h:${heat(a)}" href="#${slug(a.squadra)}">
@@ -158,7 +203,7 @@ function finestra(a){
 function scheda(a){
   const ev=(a.eventi||[]).slice().reverse();
   const altro=!STAGIONE_ATTIVA?'':st.m==='s'?'Prossima partita: '+pct(a.p):(a.p_stagione!=null?'Fine stagione: '+pct(a.p_stagione):'');
-  return `<div style="padding:6px 16px;border-bottom:1px solid var(--line)"><a class="back" href="#">‹ Tutte le panchine</a></div>
+  return `${barra(true)}
   ${STAGIONE_ATTIVA?`<section class="sec" style="padding-bottom:0">${metrica()}</section>`:''}
   <section class="det" style="--h:${heat(a)}"><div style="display:flex;align-items:center;gap:8px">${badge(a.squadra,true)}<span style="font-size:13px;color:var(--mut)">${esc(a.squadra)} · ${a.campionato}</span></div>
    <h2>${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</h2>
@@ -171,9 +216,10 @@ function scheda(a){
 function render(){
   const app=document.getElementById('app'); if(!D)return;
   const h=decodeURIComponent(location.hash.slice(1)); const a=h&&h!=='storico'?D.allenatori.find(x=>slug(x.squadra)===h):null;
-  app.innerHTML=a?scheda(a):lista(); if(a)window.scrollTo(0,0);
+  app.innerHTML=(h==='cambi'?cambi():h==='come'?come():a?scheda(a):lista())+drawer(); if(a||h==='cambi'||h==='come')window.scrollTo(0,0);
 }
-document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+document.addEventListener('click',e=>{if(e.target.closest('[data-chiudi]')||e.target.closest('.drawer a')){st.menu=false;render();if(!e.target.closest('.drawer a'))return}
+  const b=e.target.closest('button');if(!b)return; if(b.dataset.menu){st.menu=true;render();return}
   if(b.dataset.m){st.m=b.dataset.m;save();render()} if(b.dataset.lega){st.lega=b.dataset.lega;save();render()} if(b.dataset.sort){st.sort=b.dataset.sort;save();render()}});
 document.addEventListener('change',e=>{if(e.target.id==='g'){st.chart=e.target.checked;render()}});
 window.addEventListener('hashchange',render);
