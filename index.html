@@ -91,6 +91,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--soft
 .pag p{font-size:14px;line-height:1.55;color:var(--soft);margin:8px 0}
 .pag h3{margin:22px 0 4px;font-size:15px}
 .pag.chi{padding-top:28px} .pag.chi h2{font-size:34px;margin-bottom:14px} .pag.chi p{font-size:17px;line-height:1.6;margin:14px 0}
+.pag.chi h3{font:800 22px/1.2 var(--title);margin:28px 0 6px} .pag.chi ul{margin:0;padding-left:18px} .pag.chi li{font-size:16px;line-height:1.55;color:var(--soft);margin:10px 0} .pag.chi li b{color:#fff}
 .cb{position:relative;padding:14px;margin:0 16px 10px;border-radius:12px;background:linear-gradient(180deg,color-mix(in srgb,var(--h) 16%,var(--surf)),var(--surf) 75%);border:1px solid color-mix(in srgb,var(--h) 35%,var(--line))}
 .cb .r1{display:flex;align-items:center;gap:10px} .cb .r1 div{display:flex;flex-direction:column;min-width:0}
 .cb .nm{font-weight:700;font-size:15px} .cb .tm{font-size:12px;color:var(--mut)}
@@ -150,13 +151,23 @@ function cambi(){const C=(D.cambi||[]).slice().reverse();const top=C.filter(c=>c
    <div class="r3">Ultima partita: ${esc(c.partita)} (${c.data.split('-').reverse().slice(0,2).join('/')})${c.p_comunicato!=null?`<br>Prima del comunicato: ${pct(c.p_comunicato)}`:''}
    <br><span class="tag" style="margin-left:0">${c.pubblicata?'PUBBLICATA':'STIMA RICOSTRUITA'}</span></div></div>`;
   return `${barra(false)}<section class="pag"><h2>Cambi di panchina</h2>
+   <p>Il Termometro non nasconde i suoi errori: ogni cambio di panchina resta qui, con la posizione che gli dava prima.</p>
    <p>Stagione 2026/27: ${C.length} allenatori hanno lasciato la panchina. In ${top} casi su ${C.length}, dopo l'ultima partita, il Termometro li metteva tra i 3 più a rischio del loro campionato.</p>
    <p style="font-size:12px;color:var(--mut)">La posizione è quella nella classifica del rischio del Termometro subito dopo l'ultima partita giocata. Prima del 27/10 il sito non era online: per quei casi è la stima ricostruita, con i soli dati delle stagioni precedenti.</p></section>
    ${C.map(card).join('')}<footer>Esoneri e addii di Serie A e Serie B, dal più recente.</footer>`}
 function come(){return `${barra(false)}<section class="pag chi"><h2>Chi siamo</h2>
  <p>Ogni settimana escono decine di titoli su panchine "in bilico" ed esoneri "imminenti", spesso firmati da "insider" che non devono mai rendere conto di quando sbagliano.</p>
  <p>Il Termometro è un progetto indipendente: non lavora per club, procuratori o agenzie di scommesse. Incrocia fattori tarati sugli esoneri delle stagioni precedenti e ne ricava una stima ragionata di quanto è probabile che un allenatore lasci la panchina prima della prossima partita.</p>
- <p>Il Termometro non nasconde i suoi errori: ogni cambio di panchina resta nella <a href="#cambi" style="text-decoration:underline">pagina dedicata</a>, con la posizione che gli dava prima.</p>
+ <h3>Come funziona</h3>
+ <ul>
+  <li><b>Solo la prossima partita.</b> Ogni percentuale è una stima della probabilità che l'allenatore lasci la panchina prima della sua prossima partita. Non dice niente sulle settimane successive.</li>
+  <li><b>Colore e frecce.</b> Il colore va da freddo a rovente. ▲ e ▼ indicano la variazione rispetto a 24 ore prima.</li>
+  <li><b>La scheda.</b> Toccando un allenatore si apre la sua scheda: data e avversario della prossima partita e, in "Perché si è mossa", ogni partita e notizia con la probabilità subito dopo.</li>
+  <li><b>L'andamento.</b> Con "Mostra andamento" si vede come è cambiata la probabilità nel tempo.</li>
+  <li><b>Il tempo.</b> Senza novità la probabilità scende man mano che passano i giorni: la maggior parte degli esoneri arriva nei giorni subito dopo una partita.</li>
+  <li><b>Il giorno della partita.</b> Al posto del numero compare "In campo oggi": prima del fischio d'inizio la probabilità che lasci è quasi nulla.</li>
+  <li><b>Allenatore appena nominato.</b> La stima parte dopo la sua prima partita.</li>
+ </ul>
  <p style="font-size:13px;color:var(--mut)">Non è un consiglio di scommessa. Il sito non usa cookie.</p></section>
  <footer>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`}
 function lista(){
