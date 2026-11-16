@@ -123,14 +123,16 @@ const fill=p=>Math.max(3,Math.min(100,100*Math.log10(1+p)/Math.log10(41)));   //
 const term=a=>(a.debutto_atteso||a.ufficiale||oggi(a))?'':`<span class="term"><i style="width:${fill(a.p).toFixed(1)}%;--bs:${(10000/fill(a.p)).toFixed(0)}%"></i></span>`;
 const pct=x=>(x>=0.1?x.toFixed(1):'<0,1').replace('.',',')+'%';   // mai 0%: statisticamente non è mai zero
 let D=null, st={lega:'Serie A',sort:'p',chart:false,m:'p'};
-try{const v=JSON.parse(localStorage.getItem('bp')||'{}');Object.assign(st,{lega:v.lega||st.lega,sort:v.sort||st.sort,m:STAGIONE_ATTIVA?(v.m||st.m):'p'})}catch(e){}
+const STAGIONE_ATTIVA=false;   // vista 'Fine stagione' sospesa (Davide 24/10/2026). Va dichiarata prima di leggere le preferenze
+try{const v=JSON.parse(localStorage.getItem('bp')||'{}');Object.assign(st,{lega:v.lega==='Serie B'?'Serie B':'Serie A',sort:v.sort==='v'?'v':'p',m:STAGIONE_ATTIVA&&v.m==='s'?'s':'p'})}catch(e){}
 const save=()=>{try{localStorage.setItem('bp',JSON.stringify({lega:st.lega,sort:st.sort,m:st.m}))}catch(e){}};
-function badge(sq,big){const [bg,fg]=COL[sq]||['#39414D','#fff'];const s=SIG[sq]||sq.slice(0,3).toUpperCase();
-  return `<span class="badge${big?' lg':''}" style="background:${bg};color:${fg}"><span>${s}</span><img src="loghi/${slug(sq)}.png" alt="" style="display:none" onload="this.style.display='block';this.previousElementSibling.remove();this.parentNode.style.background='transparent'" onerror="this.remove()"></span>`;}
+const SENZA_LOGO=new Set();   // stemmi che non esistono: una richiesta sola, non a ogni ridisegno
+function badge(sq,big){const [bg,fg]=COL[sq]||['#39414D','#fff'];const s=esc(SIG[sq]||sq.slice(0,3).toUpperCase()),g=slug(sq);
+  if(SENZA_LOGO.has(g))return `<span class="badge${big?' lg':''}" style="background:${bg};color:${fg}"><span>${s}</span></span>`;
+  return `<span class="badge${big?' lg':''}" style="background:${bg};color:${fg}"><span>${s}</span><img src="loghi/${g}.png" alt="" style="display:none" onload="this.style.display='block';this.previousElementSibling.remove();this.parentNode.style.background='transparent'" onerror="SENZA_LOGO.add('${g}');this.remove()"></span>`;}
 function chg(x,a){if(a.ufficiale||a.debutto_atteso)return '<span class="chg">—</span>';if(st.m==='p'&&oggi(a))return '';const v=Math.round(x*10)/10;
   if(Math.abs(v)<0.05)return '<span class="chg">= 0</span>';return `<span class="chg ${v>0?'up':'dn'}">${v>0?'▲ +':'▼ '}${String(v).replace('.',',')} pt</span>`}
 const V=a=>st.m==='s'?(a.p_stagione??-1):a.p, DV=a=>st.m==='s'?(a.variazione_stagione??0):a.variazione;
-const STAGIONE_ATTIVA=false;   // vista 'Fine stagione' sospesa (Davide 24/10/2026)
 const METR={p:'Prossima partita',s:'Fine stagione'};
 function metrica(){if(!STAGIONE_ATTIVA)return '';return `<div class="seg" role="group" aria-label="Orizzonte">${Object.entries(METR).map(([k,l])=>`<button aria-pressed="${st.m===k}" data-m="${k}">${l}</button>`).join('')}</div>`}
 function pshow(a){const o=st.m==='p'&&oggi(a);if(o)return `<span class="oggi"><small>In campo oggi</small>${o}</span>`;return a.ufficiale?'Esonerato':a.debutto_atteso?'—':(st.m==='s'&&a.p_stagione==null)?'—':pct(V(a))}
@@ -226,7 +228,8 @@ function scheda(a){
 }
 function render(){
   const app=document.getElementById('app'); if(!D)return;
-  const h=decodeURIComponent(location.hash.slice(1)); const a=h&&h!=='storico'?D.allenatori.find(x=>slug(x.squadra)===h):null;
+  let h='';try{h=decodeURIComponent(location.hash.slice(1))}catch(e){}   // indirizzo scritto male: si torna alla lista
+  const a=h&&h!=='storico'?D.allenatori.find(x=>slug(x.squadra)===h):null;
   app.innerHTML=(h==='cambi'?cambi():h==='come'?come():a?scheda(a):lista())+drawer(); if(a||h==='cambi'||h==='come')window.scrollTo(0,0);
 }
 document.addEventListener('click',e=>{if(e.target.closest('[data-chiudi]')||e.target.closest('.drawer a')){st.menu=false;render();if(!e.target.closest('.drawer a'))return}
