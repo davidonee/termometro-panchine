@@ -351,7 +351,7 @@ function incertezza(a){const k=OR[st.m],o=a.orizzonti||{},I=o[k+'_int'];if(!I||o
   return `<section class="sec inc"><h3 class="lab">Quanto è sicura questa stima</h3><p class="it"><b>${tit}.</b> ${pint(lo)===pint(hi)?`Intorno al ${pint(o[k])}.`:`Tra il ${pint(lo)} e il ${pint(hi)}, con stima centrale ${pint(o[k])}.`}</p><p>${txt}</p>
    <p class="nb">L'intervallo misura quanto il modello è sicuro oggi. Partite e notizie dei prossimi giorni sposteranno il numero: si aggiorna dopo ogni partita.</p></section>`}
 function scheda(a){
-  const ev=(a.eventi||[]).slice().reverse();
+  const ev=(a.eventi||[]).map((e,i)=>[e,i]).sort((x,y)=>x[0].data<y[0].data?-1:x[0].data>y[0].data?1:x[1]-y[1]).map(x=>x[0]).reverse();   // Movimenti dal più recente, sempre in ordine di data (Davide 24/11)
   const o=a.orizzonti||{}, I=k=>{const J=o[k+'_int'];if(!J)return '';const lo=pint(Math.min(J[0],o[k])),hi=pint(Math.max(J[1],o[k]));return lo===hi?'':` (tra il ${lo} e il ${hi})`};
   const altro=(a.ufficiale||a.debutto_atteso)?'':[['halloween','🎃 Entro Halloween'],['natale','🎄 Entro Natale'],['pasqua','🐣 Entro Pasqua'],['fine','🏁 Entro fine stagione']].filter(([k])=>o[k]!=null&&k!==OR[st.m]).map(([k,t])=>`${t}: <b>${pint(o[k])}</b>${I(k)}`).join('<br>');
   return `${barra(true)}
@@ -361,6 +361,7 @@ function scheda(a){
    <div class="big"><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</div>
    <p class="sub">${a.ufficiale?'Comunicato ufficiale del club.':a.debutto_atteso?'Appena nominato: la stima parte dopo la prima partita.':st.m!=='p'?(V(a)<0?'Per questa data la stima non è disponibile.':'Probabilità che lasci la panchina '+ENTRO[st.m]+'.'):oggi(a)?'Partita di oggi: '+esc(quandoPart(a.squadra,a.prossima,a.prossima_avversario,a.prossima_casa).split(', ').slice(1).join(', '))+'. Il giorno della partita, prima del fischio d\'inizio, la probabilità che lasci è quasi nulla.':finestra(a)}${a.ufficiale||a.debutto_atteso||oggi(a)?'':(st.m!=='p'?(V(a)<0?'':' Si aggiorna dopo ogni partita e con le notizie, tenendo conto di tutte le giornate che restano.'):' Senza novità la probabilità scende man mano che passano i giorni.')}${extraCoppa(a)}</p>${altro?`<p class="sub oriz">${altro}</p>`:''}</section>
   ${st.m!=='p'?incertezza(a):`<section class="box"><label for="g"><input id="g" type="checkbox" ${st.chart?'checked':''}> Mostra andamento</label>${st.chart?grafico(a):''}</section>
+  <div class="legenda" style="margin:12px 16px 0"><span>fredda</span><i></i><span>rovente</span></div>   <!-- legenda dei colori del grafico e dei Movimenti (Davide 24/11/2026) -->
   ${!ev.length?'':`<section class="sec" style="--h:${heat(a)}"><h3 class="lab">Movimenti</h3><ol class="ev">${ev.map(e=>`<li style="--h:${HEAT.find(([t])=>e.p<t)[1]}"><div class="c"><b>${esc(nmTesto(e.causa))}</b><span>${e.data.split('-').reverse().slice(0,2).join('/')}</span></div><span class="e">${pct(e.p)}</span></li>`).join('')}</ol></section>`}`}
   <footer>Le notizie sono pesate per affidabilità della fonte. Solo il comunicato ufficiale del club porta la probabilità al 100%.</footer>`;
 }
