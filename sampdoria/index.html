@@ -297,7 +297,8 @@ function come(){return `${barra(false)}<section class="pag chi"><h2>Il Termometr
   <li><b>Il giorno della partita.</b> Al posto del numero compare "In campo oggi": prima del fischio d'inizio la probabilità che lasci è quasi nulla.</li>
   <li><b>Allenatore appena nominato.</b> La stima parte dopo la sua prima partita.</li>
  </ul>
- <p style="font-size:13px;color:var(--mut)">Non è un consiglio di scommessa. Il sito non usa cookie.</p></section>`}
+ <p style="font-size:13px;color:var(--mut)">Non è un consiglio di scommessa. Il sito non usa cookie.</p></section>
+ <footer>Per informazioni, curiosità, segnalazioni o richieste: <a href="mailto:info@termometropanchine.it">info@termometropanchine.it</a></footer>`}
 function lista(){
   const A=D.allenatori, hot=A.filter(a=>!a.ufficiale&&!a.debutto_atteso&&V(a)>=0).slice().sort((x,y)=>V(y)-V(x)).slice(0,3);
   const srt=st.m==='p'?st.sort:'p';
@@ -314,7 +315,7 @@ function lista(){
   <div class="cols"><span>Allenatore</span><span>Probabilità</span></div>
   <ol>${rows.map(a=>`<li><a class="row" style="--h:${heat(a)}" href="${linkSq(a.squadra)}">${badge(a.squadra)}<div class="who"><span class="nm">${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</span><span class="tm">${esc(nm(a.squadra))}</span>${term(a)}</div>
    <div class="nums"><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</div></a></li>`).join('')}</ol>
-  <footer>Il Termometro non ha talpe negli spogliatoi né la sfera di cristallo. Incrocia fattori tarati sugli esoneri delle stagioni precedenti e ne ricava una stima ragionata di quanto è probabile che un allenatore lasci la panchina ${ENTRO[st.m]}. Non è un consiglio di scommessa. ${st.m==='p'?'▲ rischio in aumento · ▼ in calo, rispetto a 24 ore prima.':'Più la data è lontana, più la stima è larga: nella scheda di ogni allenatore c\'è l\'intervallo.'}<br>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`;
+  <footer>Il Termometro non ha talpe negli spogliatoi né la sfera di cristallo. Incrocia fattori tarati sugli esoneri delle stagioni precedenti e ne ricava una stima ragionata di quanto è probabile che un allenatore lasci la panchina ${ENTRO[st.m]}. Non è un consiglio di scommessa. ${st.m==='p'?'▲ rischio in aumento · ▼ in calo, rispetto a 24 ore prima.':'Più la data è lontana, più la stima è larga: nella scheda di ogni allenatore c\'è l\'intervallo.'}</footer>`;
 }
 function grafico(a){
   let s=a.serie; if(!s||s.length<2)return '<p class="sub">Andamento disponibile dopo qualche aggiornamento.</p>';
