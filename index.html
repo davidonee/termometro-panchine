@@ -114,7 +114,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--soft
 .cb .pp{font:600 28px var(--mono);color:var(--h)} .cb .rkb{font:800 22px/1.15 var(--title);letter-spacing:-.01em} .cb .rk{font-size:13px;color:var(--soft)}
 .cb .r3{font-size:12px;color:var(--mut);margin-top:4px;line-height:1.5}
 
-/* orizzonti, campionati esteri, Perché è lì (Davide 16/11/2026) */
+/* orizzonti, campionati esteri, Motivazioni (Davide 16/11/2026; nome dal 24/11) */
 .seg.or button{font-size:16px;line-height:1.1;padding:4px 2px}.seg.or button span{display:block;font-size:10.5px;font-weight:600;margin-top:2px}
 .oriz{margin-top:8px;line-height:1.7}.oriz b{color:var(--tx)}
 .gen{margin:10px 16px 0;padding:10px 12px;border:1px dashed var(--line);border-radius:10px;font-size:12.5px;line-height:1.5;color:var(--soft)}
@@ -157,7 +157,7 @@ const RADICE=new URL(window.RADICE||'./',location.href).href.replace(/[?#].*$/,'
 const via=()=>{let h='';try{h=decodeURIComponent(location.hash.slice(1))}catch(e){} if(h)return h; const u=location.href.split(/[?#]/)[0]; return u.startsWith(RADICE)?u.slice(RADICE.length).replace(/(^|\/)index\.html$/,'').replace(/\/$/,''):''};   // /index.html = pagina principale
 const linkSq=sq=>RADICE+slug(sq)+'/';
 const NOMI_RE=new RegExp(Object.keys(NOME).sort((x,y)=>y.length-x.length).map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
-const nmTesto=t=>String(t).replace(NOMI_RE,k=>NOME[k]);   // nomi delle squadre estere dentro le righe di 'Perché si è mossa'   // nome mostrato; la chiave dei dati resta quella del motore
+const nmTesto=t=>String(t).replace(NOMI_RE,k=>NOME[k]);   // nomi delle squadre estere dentro le righe di 'Movimenti'   // nome mostrato; la chiave dei dati resta quella del motore
 const slug=s=>s.normalize('NFKD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const HEAT=[[0.5,'#4FC3F7'],[2,'#9BE15D'],[5,'#FFC94A'],[12,'#FF8A3D'],[1e9,'#FF4D4D']];
@@ -254,7 +254,7 @@ function festa(tipo){
 function pshow(a){return st.m==='p'?pprossima(a):a.ufficiale?'Esonerato':a.debutto_atteso||V(a)<0?'—':pint(V(a))}
 
 const LEGHE=[['Serie A','Serie A'],['Serie B','Serie B'],['Premier League','Premier'],['Bundesliga','Bundesliga']];
-const MENU=[['','Panchine'],['perche','Perché è lì'],['cambi','Cambi di panchina'],['come','Il Termometro']];
+const MENU=[['','Panchine'],['perche','Motivazioni'],['cambi','Cambi di panchina'],['come','Il Termometro']];
 const ICONA='<svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 const menuBtn=()=>`<button class="menub" data-menu="1" aria-label="Menu">${ICONA}</button>`;
 function drawer(){if(!st.menu)return '';const h=via();
@@ -274,7 +274,7 @@ function cambi(){const C=(D.cambi||[]).slice().reverse();const top=C.filter(c=>c
    <p style="font-size:12px;color:var(--mut)">La posizione è quella nella classifica del rischio del Termometro subito dopo l'ultima partita giocata. Prima del 27/10 il sito non era online, e Premier League e Bundesliga sono arrivate dopo: per quei casi è la stima ricostruita, con i soli dati delle stagioni precedenti.</p></section>
    ${C.map(card).join('')}<footer>Esoneri e addii di Serie A, Serie B, Premier League e Bundesliga, dal più recente.</footer>`}
 function perche(){const A=D.allenatori.filter(a=>a.campionato===st.lega&&!a.ufficiale).slice().sort((x,y)=>(x.debutto_atteso-y.debutto_atteso)||(y.p-x.p));
-  return `${barra(false)}<section class="pag"><h2>Perché è lì</h2><p>I motivi che oggi pesano di più sulla probabilità di ogni allenatore di lasciare prima della prossima partita. <span style="color:#FF8A3D">▲</span> alza il rischio, <span style="color:#4FC3F7">▼</span> lo abbassa.</p></section>
+  return `${barra(false)}<section class="pag"><h2>Motivazioni</h2><p>I motivi che oggi pesano di più sulla probabilità di ogni allenatore di lasciare prima della prossima partita. <span style="color:#FF8A3D">▲</span> alza il rischio, <span style="color:#4FC3F7">▼</span> lo abbassa.</p></section>
   <nav class="sec" aria-label="Campionato"><div class="seg">${LEGHE.map(([l,t])=>`<button aria-pressed="${st.lega===l}" data-lega="${l}">${t}</button>`).join('')}</div></nav>
   ${D.motivi_comuni?`<div class="gen">${esc(D.motivi_comuni)}</div>`:''}
   ${A.map(a=>`<a class="mc" style="--h:${a.debutto_atteso?'#9BA6C0':HEAT.find(([t])=>a.p<t)[1]}" href="${linkSq(a.squadra)}"><div class="h">${badge(a.squadra)}<div class="w"><span class="nm">${esc(a.allenatore)}</span><span class="tm">${esc(nm(a.squadra))}</span></div><span class="pp">${pprossima(a)}</span></div>
@@ -287,9 +287,9 @@ function come(){return `${barra(false)}<section class="pag chi"><h2>Il Termometr
  <ul>
   <li><b>Fino a cinque orizzonti.</b> Con ⚽ 🎃 🎄 🐣 🏁 scegli fino a quando guardare: la prossima partita, Halloween, Natale, Pasqua o la fine della stagione. Una data già passata sparisce e torna con la stagione dopo. Per le date più lontane simuliamo migliaia di volte il resto del campionato (partite, risultati, classifica) e contiamo in quante di queste simulazioni l'allenatore perde il posto.</li>
   <li><b>Un numero, con un margine.</b> Nella lista c'è la stima. Nella scheda trovi anche un intervallo: la stima ricalcolata più volte su versioni leggermente diverse degli anni passati. Un intervallo ampio vuol dire che la situazione è poco comune e la stima è più incerta del solito.</li>
-  <li><b>Perché è lì.</b> Dal menu ☰ trovi, per ogni allenatore, le due o tre ragioni principali della sua stima.</li>
+  <li><b>Motivazioni.</b> Dal menu ☰ trovi, per ogni allenatore, le due o tre ragioni principali della sua stima.</li>
   <li><b>Colore e frecce.</b> Il colore va da freddo a rovente. ▲ e ▼ indicano la variazione rispetto a 24 ore prima (solo per la prossima partita).</li>
-  <li><b>La scheda.</b> Toccando un allenatore si apre la sua scheda: data e avversario della prossima partita e, in "Perché si è mossa", ogni partita e notizia con la probabilità subito dopo.</li>
+  <li><b>La scheda.</b> Toccando un allenatore si apre la sua scheda: data e avversario della prossima partita e, in "Movimenti", ogni partita e notizia con la probabilità subito dopo.</li>
   <li><b>L'andamento.</b> Con "Mostra andamento" si vede come è cambiata la probabilità nel tempo.</li>
   <li><b>Il tempo.</b> Senza novità la probabilità scende man mano che passano i giorni: la maggior parte degli esoneri arriva nei giorni subito dopo una partita.</li>
   <li><b>Il giorno della partita.</b> Al posto del numero compare "In campo oggi": prima del fischio d'inizio la probabilità che lasci è quasi nulla.</li>
@@ -358,7 +358,7 @@ function scheda(a){
    <div class="big"><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</div>
    <p class="sub">${a.ufficiale?'Comunicato ufficiale del club.':a.debutto_atteso?'Appena nominato: la stima parte dopo la prima partita.':st.m!=='p'?(V(a)<0?'Per questa data la stima non è disponibile.':'Probabilità che lasci la panchina '+ENTRO[st.m]+'.'):oggi(a)?'Partita di oggi: '+esc(quandoPart(a.squadra,a.prossima,a.prossima_avversario,a.prossima_casa).split(', ').slice(1).join(', '))+'. Il giorno della partita, prima del fischio d\'inizio, la probabilità che lasci è quasi nulla.':finestra(a)}${a.ufficiale||a.debutto_atteso||oggi(a)?'':(st.m!=='p'?(V(a)<0?'':' Si aggiorna dopo ogni partita e con le notizie, tenendo conto di tutte le giornate che restano.'):' Senza novità la probabilità scende man mano che passano i giorni.')}${extraCoppa(a)}</p>${altro?`<p class="sub oriz">${altro}</p>`:''}</section>
   ${st.m!=='p'?incertezza(a):`<section class="box"><label for="g"><input id="g" type="checkbox" ${st.chart?'checked':''}> Mostra andamento</label>${st.chart?grafico(a):''}</section>
-  ${!ev.length?'':`<section class="sec" style="--h:${heat(a)}"><h3 class="lab">Perché si è mossa</h3><ol class="ev">${ev.map(e=>`<li style="--h:${HEAT.find(([t])=>e.p<t)[1]}"><div class="c"><b>${esc(nmTesto(e.causa))}</b><span>${e.data.split('-').reverse().slice(0,2).join('/')}</span></div><span class="e">${pct(e.p)}</span></li>`).join('')}</ol></section>`}`}
+  ${!ev.length?'':`<section class="sec" style="--h:${heat(a)}"><h3 class="lab">Movimenti</h3><ol class="ev">${ev.map(e=>`<li style="--h:${HEAT.find(([t])=>e.p<t)[1]}"><div class="c"><b>${esc(nmTesto(e.causa))}</b><span>${e.data.split('-').reverse().slice(0,2).join('/')}</span></div><span class="e">${pct(e.p)}</span></li>`).join('')}</ol></section>`}`}
   <footer>Le notizie sono pesate per affidabilità della fonte. Solo il comunicato ufficiale del club porta la probabilità al 100%.</footer>`;
 }
 function render(){
