@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-24T21:01+01:00",
+ "aggiornato": "2026-11-24T21:40+01:00",
  "allenatori": [
   {
    "squadra": "Fiorentina",
@@ -9,16 +9,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     0.6
+     "2026-11-14T12:04",
+     0.59
     ],
     [
-     "2026-11-14T16:04",
-     0.58
-    ],
-    [
-     "2026-11-14T22:04",
-     0.56
+     "2026-11-14T18:04",
+     0.57
     ],
     [
      "2026-11-15T08:02",
@@ -141,12 +137,16 @@
      2.61
     ],
     [
-     "2026-11-24T21:01",
-     3.17
+     "2026-11-24T21:34",
+     3.13
+    ],
+    [
+     "2026-11-24T21:40",
+     3.12
     ]
    ],
-   "p": 3.17,
-   "variazione": 3.17,
+   "p": 3.12,
+   "variazione": 3.12,
    "ufficiale": false,
    "prossima": "2026-11-29 12:30",
    "prossima_avversario": "Udinese",
@@ -193,31 +193,31 @@
      "p": 4.0
     },
     {
-     "data": "2026-11-24",
-     "causa": "Fiducia dalla società",
-     "p": 2.8
-    },
-    {
      "data": "2026-11-23",
      "causa": "Segnali dalla società",
      "p": 3.9
+    },
+    {
+     "data": "2026-11-24",
+     "causa": "Fiducia dalla società",
+     "p": 2.8
     }
    ],
    "orizzonti": {
-    "natale": 15.14,
+    "natale": 15.1,
     "natale_int": [
-     12.03,
-     18.86
+     11.99,
+     18.82
     ],
-    "pasqua": 32.92,
+    "pasqua": 32.89,
     "pasqua_int": [
-     27.54,
-     39.22
+     27.5,
+     39.19
     ],
-    "fine": 38.02,
+    "fine": 37.99,
     "fine_int": [
-     32.12,
-     45.02
+     32.09,
+     44.99
     ]
    },
    "motivi": [
@@ -331,12 +331,12 @@
      2.97
     ],
     [
-     "2026-11-24T21:01",
-     2.78
+     "2026-11-24T21:34",
+     2.68
     ]
    ],
-   "p": 2.78,
-   "variazione": -11.78,
+   "p": 2.68,
+   "variazione": -11.88,
    "ufficiale": false,
    "prossima": "2026-11-28 15:30",
    "prossima_avversario": "Union Berlin",
@@ -408,20 +408,20 @@
     }
    ],
    "orizzonti": {
-    "natale": 34.75,
+    "natale": 34.68,
     "natale_int": [
-     27.01,
-     44.12
+     26.93,
+     44.06
     ],
-    "pasqua": 54.57,
+    "pasqua": 54.53,
     "pasqua_int": [
-     43.02,
-     65.94
+     42.96,
+     65.9
     ],
-    "fine": 58.75,
+    "fine": 58.71,
     "fine_int": [
-     46.41,
-     69.71
+     46.35,
+     69.68
     ]
    }
   },
@@ -521,12 +521,12 @@
      1.98
     ],
     [
-     "2026-11-24T21:01",
-     1.94
+     "2026-11-24T21:34",
+     1.91
     ]
    ],
-   "p": 1.94,
-   "variazione": 1.94,
+   "p": 1.91,
+   "variazione": 1.91,
    "ufficiale": false,
    "prossima": "2026-11-29 13:00",
    "prossima_avversario": "Liverpool",
@@ -608,20 +608,20 @@
     }
    ],
    "orizzonti": {
-    "natale": 10.15,
+    "natale": 10.12,
     "natale_int": [
-     8.73,
-     11.65
+     8.7,
+     11.63
     ],
-    "pasqua": 25.08,
+    "pasqua": 25.06,
     "pasqua_int": [
-     21.71,
-     28.01
+     21.69,
+     27.99
     ],
-    "fine": 28.83,
+    "fine": 28.81,
     "fine_int": [
-     24.95,
-     32.06
+     24.93,
+     32.04
     ]
    }
   },
@@ -633,15 +633,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.03
     ],
     [
-     "2026-11-14T16:04",
-     0.03
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.03
     ],
     [
@@ -765,12 +761,16 @@
      0.93
     ],
     [
-     "2026-11-24T21:01",
-     0.63
+     "2026-11-24T21:34",
+     0.6
+    ],
+    [
+     "2026-11-24T21:40",
+     0.6
     ]
    ],
-   "p": 0.63,
-   "variazione": -2.26,
+   "p": 0.6,
+   "variazione": -2.29,
    "ufficiale": false,
    "prossima": "2026-11-27 20:45",
    "prossima_avversario": "Bologna",
@@ -808,20 +808,20 @@
     }
    ],
    "orizzonti": {
-    "natale": 8.88,
+    "natale": 8.85,
     "natale_int": [
-     6.71,
-     11.53
+     6.68,
+     11.51
     ],
-    "pasqua": 28.85,
+    "pasqua": 28.82,
     "pasqua_int": [
-     26.15,
-     32.72
+     26.13,
+     32.7
     ],
-    "fine": 36.58,
+    "fine": 36.56,
     "fine_int": [
-     34.02,
-     40.68
+     34.0,
+     40.66
     ]
    },
    "motivi": [
@@ -847,16 +847,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     0.55
+     "2026-11-14T12:04",
+     0.54
     ],
     [
-     "2026-11-14T16:04",
-     0.53
-    ],
-    [
-     "2026-11-14T22:04",
-     0.51
+     "2026-11-14T18:04",
+     0.52
     ],
     [
      "2026-11-15T08:02",
@@ -979,12 +975,16 @@
      0.48
     ],
     [
-     "2026-11-24T21:01",
-     0.41
+     "2026-11-24T21:34",
+     0.4
+    ],
+    [
+     "2026-11-24T21:40",
+     0.4
     ]
    ],
-   "p": 0.41,
-   "variazione": -0.29,
+   "p": 0.4,
+   "variazione": -0.3,
    "ufficiale": false,
    "prossima": "2026-11-28 15:00",
    "prossima_avversario": "Frosinone",
@@ -1029,7 +1029,7 @@
    "orizzonti": {
     "natale": 11.17,
     "natale_int": [
-     9.52,
+     9.51,
      15.71
     ],
     "pasqua": 48.85,
@@ -1037,7 +1037,7 @@
      43.77,
      59.65
     ],
-    "fine": 62.83,
+    "fine": 62.82,
     "fine_int": [
      58.01,
      73.81
@@ -1154,7 +1154,7 @@
      0.37
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.35
     ]
    ],
@@ -1249,14 +1249,14 @@
     "natale": 30.25,
     "natale_int": [
      24.61,
-     35.22
+     35.21
     ],
     "pasqua": 58.91,
     "pasqua_int": [
      53.7,
      64.41
     ],
-    "fine": 66.42,
+    "fine": 66.41,
     "fine_int": [
      61.92,
      71.67
@@ -1359,12 +1359,12 @@
      0.01
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.34
     ]
    ],
    "p": 0.34,
-   "variazione": -0.44,
+   "variazione": -0.45,
    "ufficiale": false,
    "prossima": "2026-11-29 17:30",
    "prossima_avversario": "Arsenal",
@@ -1466,20 +1466,20 @@
     }
    ],
    "orizzonti": {
-    "natale": 8.14,
+    "natale": 8.13,
     "natale_int": [
-     5.22,
-     10.44
+     5.21,
+     10.43
     ],
     "pasqua": 15.93,
     "pasqua_int": [
-     11.55,
+     11.54,
      18.44
     ],
     "fine": 17.59,
     "fine_int": [
      12.75,
-     20.25
+     20.24
     ]
    }
   },
@@ -1491,15 +1491,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.15
     ],
     [
-     "2026-11-14T16:04",
-     0.14
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.14
     ],
     [
@@ -1623,12 +1619,16 @@
      0.35
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.31
+    ],
+    [
+     "2026-11-24T21:40",
      0.31
     ]
    ],
    "p": 0.31,
-   "variazione": -0.38,
+   "variazione": -0.39,
    "ufficiale": false,
    "prossima": "2026-11-30 18:30",
    "prossima_avversario": "Atalanta",
@@ -1668,12 +1668,12 @@
    "orizzonti": {
     "natale": 10.94,
     "natale_int": [
-     8.52,
+     8.51,
      14.25
     ],
     "pasqua": 27.02,
     "pasqua_int": [
-     22.25,
+     22.24,
      32.97
     ],
     "fine": 33.98,
@@ -1698,6 +1698,436 @@
    ]
   },
   {
+   "squadra": "Monza",
+   "campionato": "Serie A",
+   "allenatore": "Ivan Jurić",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-11-14T12:04",
+     1.46
+    ],
+    [
+     "2026-11-14T18:04",
+     1.42
+    ],
+    [
+     "2026-11-15T08:02",
+     1.32
+    ],
+    [
+     "2026-11-15T14:04",
+     1.28
+    ],
+    [
+     "2026-11-15T20:04",
+     1.24
+    ],
+    [
+     "2026-11-16T02:12",
+     0.36
+    ],
+    [
+     "2026-11-16T09:01",
+     0.35
+    ],
+    [
+     "2026-11-16T15:01",
+     0.33
+    ],
+    [
+     "2026-11-16T21:01",
+     0.32
+    ],
+    [
+     "2026-11-17T08:01",
+     0.3
+    ],
+    [
+     "2026-11-17T14:01",
+     0.28
+    ],
+    [
+     "2026-11-17T20:01",
+     0.27
+    ],
+    [
+     "2026-11-18T08:01",
+     0.24
+    ],
+    [
+     "2026-11-18T14:01",
+     0.23
+    ],
+    [
+     "2026-11-18T20:01",
+     0.22
+    ],
+    [
+     "2026-11-19T08:04",
+     0.19
+    ],
+    [
+     "2026-11-19T15:01",
+     0.18
+    ],
+    [
+     "2026-11-19T21:01",
+     0.16
+    ],
+    [
+     "2026-11-20T08:02",
+     0.14
+    ],
+    [
+     "2026-11-20T14:02",
+     0.13
+    ],
+    [
+     "2026-11-20T20:09",
+     0.11
+    ],
+    [
+     "2026-11-21T08:02",
+     0.09
+    ],
+    [
+     "2026-11-21T15:01",
+     0.07
+    ],
+    [
+     "2026-11-21T21:01",
+     0.06
+    ],
+    [
+     "2026-11-22T08:03",
+     0.03
+    ],
+    [
+     "2026-11-22T15:03",
+     0.02
+    ],
+    [
+     "2026-11-22T21:03",
+     0.01
+    ],
+    [
+     "2026-11-23T08:04",
+     0.0
+    ],
+    [
+     "2026-11-23T15:01",
+     0.0
+    ],
+    [
+     "2026-11-23T21:01",
+     0.0
+    ],
+    [
+     "2026-11-24T08:03",
+     0.39
+    ],
+    [
+     "2026-11-24T15:02",
+     0.34
+    ],
+    [
+     "2026-11-24T21:34",
+     0.3
+    ],
+    [
+     "2026-11-24T21:40",
+     0.3
+    ]
+   ],
+   "p": 0.3,
+   "variazione": 0.3,
+   "ufficiale": false,
+   "prossima": "2026-11-29 18:00",
+   "prossima_avversario": "Roma",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-10-23",
+     "causa": "Sconfitta: Torino–Monza 3-2",
+     "p": 0.6
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Sconfitta: Monza–Napoli 1-4",
+     "p": 1.0
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Sconfitta: Bologna–Monza 2-1",
+     "p": 1.5
+    },
+    {
+     "data": "2026-11-08",
+     "causa": "Sconfitta: Monza–Atalanta 0-1",
+     "p": 6.8
+    },
+    {
+     "data": "2026-11-23",
+     "causa": "Vittoria: Monza–Fiorentina 3-0",
+     "p": 0.5
+    }
+   ],
+   "orizzonti": {
+    "natale": 3.25,
+    "natale_int": [
+     2.74,
+     4.44
+    ],
+    "pasqua": 21.45,
+    "pasqua_int": [
+     19.8,
+     24.81
+    ],
+    "fine": 29.12,
+    "fine_int": [
+     27.02,
+     33.95
+    ]
+   },
+   "motivi": [
+    {
+     "t": "Periodo negativo",
+     "d": "su"
+    },
+    {
+     "t": "Ultima partita positiva",
+     "d": "giu"
+    }
+   ]
+  },
+  {
+   "squadra": "Aston Villa",
+   "campionato": "Premier League",
+   "allenatore": "Unai Emery",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-11-18T00:37",
+     0.04
+    ],
+    [
+     "2026-11-18T08:01",
+     0.04
+    ],
+    [
+     "2026-11-18T14:01",
+     0.04
+    ],
+    [
+     "2026-11-18T20:01",
+     0.03
+    ],
+    [
+     "2026-11-19T08:01",
+     0.03
+    ],
+    [
+     "2026-11-19T14:01",
+     0.02
+    ],
+    [
+     "2026-11-19T20:01",
+     0.02
+    ],
+    [
+     "2026-11-20T08:01",
+     0.01
+    ],
+    [
+     "2026-11-20T14:01",
+     0.01
+    ],
+    [
+     "2026-11-20T20:01",
+     0.0
+    ],
+    [
+     "2026-11-21T08:01",
+     0.0
+    ],
+    [
+     "2026-11-21T14:01",
+     0.0
+    ],
+    [
+     "2026-11-21T20:01",
+     0.23
+    ],
+    [
+     "2026-11-22T08:01",
+     0.19
+    ],
+    [
+     "2026-11-22T14:01",
+     0.17
+    ],
+    [
+     "2026-11-22T20:02",
+     0.14
+    ],
+    [
+     "2026-11-23T08:02",
+     0.09
+    ],
+    [
+     "2026-11-23T15:01",
+     0.06
+    ],
+    [
+     "2026-11-23T21:01",
+     0.03
+    ],
+    [
+     "2026-11-24T08:01",
+     0.01
+    ],
+    [
+     "2026-11-24T14:01",
+     0.01
+    ],
+    [
+     "2026-11-24T20:01",
+     0.04
+    ],
+    [
+     "2026-11-24T21:34",
+     0.3
+    ]
+   ],
+   "p": 0.3,
+   "variazione": 0.23,
+   "ufficiale": false,
+   "prossima": "2026-11-28 18:30",
+   "prossima_avversario": "Ipswich",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-08-23",
+     "causa": "Sconfitta: Brighton–Aston Villa 4-0",
+     "p": 1.6
+    },
+    {
+     "data": "2026-08-31",
+     "causa": "Sconfitta: Aston Villa–Arsenal 0-1",
+     "p": 2.2
+    },
+    {
+     "data": "2026-09-05",
+     "causa": "Pareggio: Hull–Aston Villa 0-0",
+     "p": 1.6
+    },
+    {
+     "data": "2026-09-08",
+     "causa": "Vittoria in Champions League: Club Brugge–Aston Villa 2-3",
+     "p": 0.2
+    },
+    {
+     "data": "2026-09-12",
+     "causa": "Sconfitta: Aston Villa–Nott'm Forest 1-2",
+     "p": 4.5
+    },
+    {
+     "data": "2026-09-19",
+     "causa": "Vittoria: Tottenham–Aston Villa 2-3",
+     "p": 0.9
+    },
+    {
+     "data": "2026-10-10",
+     "causa": "Pareggio: Aston Villa–Brentford 2-2",
+     "p": 0.7
+    },
+    {
+     "data": "2026-10-14",
+     "causa": "Vittoria in Champions League: Aston Villa–Fenerbahçe 6-0",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-17",
+     "causa": "Vittoria: Newcastle–Aston Villa 0-1",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-21",
+     "causa": "Vittoria in Champions League: Aston Villa–Viking 3-1",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Vittoria: Aston Villa–Man City 2-1",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "KO in EFL Cup: Bournemouth–Aston Villa 3-0",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Pareggio: Aston Villa–Fulham 1-1",
+     "p": 0.2
+    },
+    {
+     "data": "2026-11-03",
+     "causa": "KO in Champions League: Barça–Aston Villa 3-0",
+     "p": 0.0
+    },
+    {
+     "data": "2026-11-08",
+     "causa": "Pareggio: Man United–Aston Villa 4-4",
+     "p": 0.6
+    },
+    {
+     "data": "2026-11-21",
+     "causa": "Pareggio: Aston Villa–Sunderland 0-0",
+     "p": 0.3
+    },
+    {
+     "data": "2026-11-24",
+     "causa": "KO in Champions League: Galatasaray–Aston Villa 1-0",
+     "p": 0.3
+    }
+   ],
+   "motivi": [
+    {
+     "t": "Buon periodo",
+     "d": "giu"
+    },
+    {
+     "t": "Ultima partita andata male",
+     "d": "su"
+    },
+    {
+     "t": "Credito dalla scorsa stagione",
+     "d": "giu"
+    }
+   ],
+   "orizzonti": {
+    "natale": 6.68,
+    "natale_int": [
+     5.26,
+     7.81
+    ],
+    "pasqua": 16.53,
+    "pasqua_int": [
+     13.82,
+     18.62
+    ],
+    "fine": 18.61,
+    "fine_int": [
+     15.38,
+     20.92
+    ]
+   }
+  },
+  {
    "squadra": "Udinese",
    "campionato": "Serie A",
    "allenatore": "Paolo Zanetti",
@@ -1705,15 +2135,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.03
     ],
     [
-     "2026-11-14T16:04",
-     0.03
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.03
     ],
     [
@@ -1837,12 +2263,16 @@
      0.42
     ],
     [
-     "2026-11-24T21:01",
-     0.3
+     "2026-11-24T21:34",
+     0.29
+    ],
+    [
+     "2026-11-24T21:40",
+     0.29
     ]
    ],
-   "p": 0.3,
-   "variazione": -0.63,
+   "p": 0.29,
+   "variazione": -0.65,
    "ufficiale": false,
    "prossima": "2026-11-29 12:30",
    "prossima_avversario": "Fiorentina",
@@ -1865,20 +2295,20 @@
     }
    ],
    "orizzonti": {
-    "natale": 12.13,
+    "natale": 12.12,
     "natale_int": [
-     8.53,
-     15.97
+     8.52,
+     15.96
     ],
-    "pasqua": 49.64,
+    "pasqua": 49.63,
     "pasqua_int": [
-     41.02,
+     41.01,
      57.69
     ],
-    "fine": 63.86,
+    "fine": 63.85,
     "fine_int": [
      56.42,
-     72.97
+     72.96
     ]
    },
    "motivi": [
@@ -1893,211 +2323,6 @@
     {
      "t": "Classifica sotto le attese",
      "d": "su"
-    }
-   ]
-  },
-  {
-   "squadra": "Monza",
-   "campionato": "Serie A",
-   "allenatore": "Ivan Jurić",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-11-14T10:01",
-     1.48
-    ],
-    [
-     "2026-11-14T16:04",
-     1.44
-    ],
-    [
-     "2026-11-14T22:04",
-     1.39
-    ],
-    [
-     "2026-11-15T08:02",
-     1.32
-    ],
-    [
-     "2026-11-15T14:04",
-     1.28
-    ],
-    [
-     "2026-11-15T20:04",
-     1.24
-    ],
-    [
-     "2026-11-16T02:12",
-     0.36
-    ],
-    [
-     "2026-11-16T09:01",
-     0.35
-    ],
-    [
-     "2026-11-16T15:01",
-     0.33
-    ],
-    [
-     "2026-11-16T21:01",
-     0.32
-    ],
-    [
-     "2026-11-17T08:01",
-     0.3
-    ],
-    [
-     "2026-11-17T14:01",
-     0.28
-    ],
-    [
-     "2026-11-17T20:01",
-     0.27
-    ],
-    [
-     "2026-11-18T08:01",
-     0.24
-    ],
-    [
-     "2026-11-18T14:01",
-     0.23
-    ],
-    [
-     "2026-11-18T20:01",
-     0.22
-    ],
-    [
-     "2026-11-19T08:04",
-     0.19
-    ],
-    [
-     "2026-11-19T15:01",
-     0.18
-    ],
-    [
-     "2026-11-19T21:01",
-     0.16
-    ],
-    [
-     "2026-11-20T08:02",
-     0.14
-    ],
-    [
-     "2026-11-20T14:02",
-     0.13
-    ],
-    [
-     "2026-11-20T20:09",
-     0.11
-    ],
-    [
-     "2026-11-21T08:02",
-     0.09
-    ],
-    [
-     "2026-11-21T15:01",
-     0.07
-    ],
-    [
-     "2026-11-21T21:01",
-     0.06
-    ],
-    [
-     "2026-11-22T08:03",
-     0.03
-    ],
-    [
-     "2026-11-22T15:03",
-     0.02
-    ],
-    [
-     "2026-11-22T21:03",
-     0.01
-    ],
-    [
-     "2026-11-23T08:04",
-     0.0
-    ],
-    [
-     "2026-11-23T15:01",
-     0.0
-    ],
-    [
-     "2026-11-23T21:01",
-     0.0
-    ],
-    [
-     "2026-11-24T08:03",
-     0.39
-    ],
-    [
-     "2026-11-24T15:02",
-     0.34
-    ],
-    [
-     "2026-11-24T21:01",
-     0.3
-    ]
-   ],
-   "p": 0.3,
-   "variazione": 0.3,
-   "ufficiale": false,
-   "prossima": "2026-11-29 18:00",
-   "prossima_avversario": "Roma",
-   "prossima_casa": false,
-   "eventi": [
-    {
-     "data": "2026-10-23",
-     "causa": "Sconfitta: Torino–Monza 3-2",
-     "p": 0.6
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Sconfitta: Monza–Napoli 1-4",
-     "p": 1.0
-    },
-    {
-     "data": "2026-10-31",
-     "causa": "Sconfitta: Bologna–Monza 2-1",
-     "p": 1.5
-    },
-    {
-     "data": "2026-11-08",
-     "causa": "Sconfitta: Monza–Atalanta 0-1",
-     "p": 6.8
-    },
-    {
-     "data": "2026-11-23",
-     "causa": "Vittoria: Monza–Fiorentina 3-0",
-     "p": 0.5
-    }
-   ],
-   "orizzonti": {
-    "natale": 3.25,
-    "natale_int": [
-     2.75,
-     4.44
-    ],
-    "pasqua": 21.45,
-    "pasqua_int": [
-     19.8,
-     24.81
-    ],
-    "fine": 29.13,
-    "fine_int": [
-     27.02,
-     33.95
-    ]
-   },
-   "motivi": [
-    {
-     "t": "Periodo negativo",
-     "d": "su"
-    },
-    {
-     "t": "Ultima partita positiva",
-     "d": "giu"
     }
    ]
   },
@@ -2197,12 +2422,12 @@
      0.27
     ],
     [
-     "2026-11-24T21:01",
-     0.25
+     "2026-11-24T21:34",
+     0.24
     ]
    ],
-   "p": 0.25,
-   "variazione": -0.71,
+   "p": 0.24,
+   "variazione": -0.72,
    "ufficiale": false,
    "prossima": "2026-11-28 15:30",
    "prossima_avversario": "Bayern Munich",
@@ -2270,20 +2495,20 @@
     }
    ],
    "orizzonti": {
-    "natale": 6.22,
+    "natale": 6.21,
     "natale_int": [
-     4.97,
-     7.59
+     4.96,
+     7.58
     ],
-    "pasqua": 20.71,
+    "pasqua": 20.7,
     "pasqua_int": [
-     17.78,
-     22.81
+     17.77,
+     22.8
     ],
-    "fine": 24.16,
+    "fine": 24.15,
     "fine_int": [
-     20.99,
-     26.57
+     20.98,
+     26.56
     ]
    }
   },
@@ -2295,16 +2520,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.28
     ],
     [
-     "2026-11-14T16:04",
+     "2026-11-14T18:04",
      0.27
-    ],
-    [
-     "2026-11-14T22:04",
-     0.26
     ],
     [
      "2026-11-15T08:02",
@@ -2427,7 +2648,11 @@
      0.26
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.23
+    ],
+    [
+     "2026-11-24T21:40",
      0.23
     ]
    ],
@@ -2477,10 +2702,10 @@
     ],
     "pasqua": 18.55,
     "pasqua_int": [
-     15.72,
+     15.71,
      20.68
     ],
-    "fine": 24.68,
+    "fine": 24.67,
     "fine_int": [
      21.22,
      27.67
@@ -2597,12 +2822,12 @@
      0.23
     ],
     [
-     "2026-11-24T21:01",
-     0.23
+     "2026-11-24T21:34",
+     0.22
     ]
    ],
-   "p": 0.23,
-   "variazione": -0.23,
+   "p": 0.22,
+   "variazione": -0.24,
    "ufficiale": false,
    "prossima": "2026-11-28 15:30",
    "prossima_avversario": "Mainz",
@@ -2674,7 +2899,7 @@
     }
    ],
    "orizzonti": {
-    "natale": 17.13,
+    "natale": 17.12,
     "natale_int": [
      13.37,
      20.62
@@ -2787,11 +3012,11 @@
      0.24
     ],
     [
-     "2026-11-24T21:01",
-     0.23
+     "2026-11-24T21:34",
+     0.22
     ]
    ],
-   "p": 0.23,
+   "p": 0.22,
    "variazione": -0.48,
    "ufficiale": false,
    "prossima": "2026-11-28 15:30",
@@ -2874,10 +3099,10 @@
      49.61,
      64.12
     ],
-    "fine": 61.42,
+    "fine": 61.41,
     "fine_int": [
      56.42,
-     69.33
+     69.32
     ]
    }
   },
@@ -2977,12 +3202,12 @@
      0.22
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.21
     ]
    ],
    "p": 0.21,
-   "variazione": 0.07,
+   "variazione": 0.06,
    "ufficiale": false,
    "prossima": "2026-11-28 15:30",
    "prossima_avversario": "Elversberg",
@@ -3067,7 +3292,7 @@
     "pasqua": 39.11,
     "pasqua_int": [
      35.46,
-     41.41
+     41.4
     ],
     "fine": 45.86,
     "fine_int": [
@@ -3172,7 +3397,7 @@
      0.19
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.19
     ]
    ],
@@ -3261,8 +3486,8 @@
    "orizzonti": {
     "natale": 7.29,
     "natale_int": [
-     6.44,
-     9.33
+     6.43,
+     9.32
     ],
     "pasqua": 29.92,
     "pasqua_int": [
@@ -3277,6 +3502,371 @@
    }
   },
   {
+   "squadra": "M'gladbach",
+   "campionato": "Bundesliga",
+   "allenatore": "Alexander Blessin",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-11-18T00:37",
+     0.09
+    ],
+    [
+     "2026-11-18T08:01",
+     0.08
+    ],
+    [
+     "2026-11-18T14:01",
+     0.07
+    ],
+    [
+     "2026-11-18T20:01",
+     0.07
+    ],
+    [
+     "2026-11-19T08:01",
+     0.05
+    ],
+    [
+     "2026-11-19T14:01",
+     0.04
+    ],
+    [
+     "2026-11-19T20:01",
+     0.04
+    ],
+    [
+     "2026-11-20T08:01",
+     0.02
+    ],
+    [
+     "2026-11-20T14:01",
+     0.01
+    ],
+    [
+     "2026-11-20T20:01",
+     0.01
+    ],
+    [
+     "2026-11-21T08:01",
+     0.0
+    ],
+    [
+     "2026-11-21T14:01",
+     0.0
+    ],
+    [
+     "2026-11-21T20:01",
+     3.2
+    ],
+    [
+     "2026-11-22T08:01",
+     2.77
+    ],
+    [
+     "2026-11-22T14:01",
+     2.47
+    ],
+    [
+     "2026-11-22T20:02",
+     2.18
+    ],
+    [
+     "2026-11-23T08:02",
+     1.54
+    ],
+    [
+     "2026-11-23T15:01",
+     1.15
+    ],
+    [
+     "2026-11-23T21:01",
+     0.9
+    ],
+    [
+     "2026-11-24T08:01",
+     0.25
+    ],
+    [
+     "2026-11-24T14:01",
+     0.21
+    ],
+    [
+     "2026-11-24T20:01",
+     0.18
+    ],
+    [
+     "2026-11-24T21:34",
+     0.17
+    ]
+   ],
+   "p": 0.17,
+   "variazione": -0.73,
+   "ufficiale": false,
+   "prossima": "2026-11-27 20:30",
+   "prossima_avversario": "Werder Bremen",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-10-11",
+     "causa": "Sconfitta: FC Koln–M'gladbach 2-1",
+     "p": 0.2
+    },
+    {
+     "data": "2026-10-18",
+     "causa": "Sconfitta: M'gladbach–Hoffenheim 1-2",
+     "p": 5.9
+    },
+    {
+     "data": "2026-10-23",
+     "causa": "Vittoria: Stuttgart–M'gladbach 2-3",
+     "p": 0.2
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Pareggio: M'gladbach–Paderborn 0-0",
+     "p": 0.8
+    },
+    {
+     "data": "2026-11-06",
+     "causa": "Sconfitta: Hamburg–M'gladbach 3-1",
+     "p": 2.9
+    },
+    {
+     "data": "2026-11-21",
+     "causa": "Sconfitta: M'gladbach–Dortmund 0-1",
+     "p": 5.1
+    }
+   ],
+   "motivi": [
+    {
+     "t": "Periodo negativo",
+     "d": "su"
+    },
+    {
+     "t": "Giorni passati senza novità",
+     "d": "giu"
+    },
+    {
+     "t": "Classifica sotto le attese",
+     "d": "su"
+    }
+   ],
+   "orizzonti": {
+    "natale": 19.52,
+    "natale_int": [
+     16.2,
+     24.82
+    ],
+    "pasqua": 50.58,
+    "pasqua_int": [
+     45.53,
+     57.26
+    ],
+    "fine": 58.0,
+    "fine_int": [
+     53.22,
+     63.86
+    ]
+   }
+  },
+  {
+   "squadra": "Augsburg",
+   "campionato": "Bundesliga",
+   "allenatore": "Manuel Baum",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-11-18T00:37",
+     0.5
+    ],
+    [
+     "2026-11-18T08:01",
+     0.46
+    ],
+    [
+     "2026-11-18T14:01",
+     0.43
+    ],
+    [
+     "2026-11-18T20:01",
+     0.4
+    ],
+    [
+     "2026-11-19T08:01",
+     0.33
+    ],
+    [
+     "2026-11-19T14:01",
+     0.3
+    ],
+    [
+     "2026-11-19T20:01",
+     0.27
+    ],
+    [
+     "2026-11-20T08:01",
+     0.21
+    ],
+    [
+     "2026-11-20T14:01",
+     0.18
+    ],
+    [
+     "2026-11-20T20:01",
+     0.15
+    ],
+    [
+     "2026-11-21T08:01",
+     0.08
+    ],
+    [
+     "2026-11-21T14:01",
+     0.05
+    ],
+    [
+     "2026-11-21T20:01",
+     0.02
+    ],
+    [
+     "2026-11-22T08:01",
+     0.0
+    ],
+    [
+     "2026-11-22T14:01",
+     0.0
+    ],
+    [
+     "2026-11-22T20:02",
+     0.79
+    ],
+    [
+     "2026-11-23T08:02",
+     0.68
+    ],
+    [
+     "2026-11-23T15:01",
+     0.6
+    ],
+    [
+     "2026-11-23T21:01",
+     0.52
+    ],
+    [
+     "2026-11-24T08:01",
+     0.33
+    ],
+    [
+     "2026-11-24T14:01",
+     0.26
+    ],
+    [
+     "2026-11-24T20:01",
+     0.18
+    ],
+    [
+     "2026-11-24T21:34",
+     0.17
+    ]
+   ],
+   "p": 0.17,
+   "variazione": -0.35,
+   "ufficiale": false,
+   "prossima": "2026-11-29 17:30",
+   "prossima_avversario": "Hoffenheim",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-08-30",
+     "causa": "Vittoria: Augsburg–Schalke 04 3-0",
+     "p": 0.0
+    },
+    {
+     "data": "2026-09-06",
+     "causa": "Vittoria: Ein Frankfurt–Augsburg 1-4",
+     "p": 0.0
+    },
+    {
+     "data": "2026-09-12",
+     "causa": "Pareggio: Augsburg–Leverkusen 2-2",
+     "p": 0.1
+    },
+    {
+     "data": "2026-09-19",
+     "causa": "Sconfitta: Werder Bremen–Augsburg 3-2",
+     "p": 0.2
+    },
+    {
+     "data": "2026-10-10",
+     "causa": "Pareggio: Augsburg–Bayern Munich 2-2",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-17",
+     "causa": "Sconfitta: Elversberg–Augsburg 4-3",
+     "p": 0.4
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Pareggio: Augsburg–Union Berlin 1-1",
+     "p": 1.0
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Sconfitta: Augsburg–Freiburg 1-2",
+     "p": 4.4
+    },
+    {
+     "data": "2026-11-07",
+     "causa": "Sconfitta: RB Leipzig–Augsburg 5-2",
+     "p": 17.8
+    },
+    {
+     "data": "2026-11-18",
+     "causa": "Fiducia dalla società",
+     "p": 0.5
+    },
+    {
+     "data": "2026-11-22",
+     "causa": "Vittoria: Augsburg–Mainz 3-1 (chiusa fiducia)",
+     "p": 0.6
+    }
+   ],
+   "motivi": [
+    {
+     "t": "Periodo negativo",
+     "d": "su"
+    },
+    {
+     "t": "Ultima partita positiva",
+     "d": "giu"
+    },
+    {
+     "t": "Credito dalla scorsa stagione",
+     "d": "giu"
+    }
+   ],
+   "orizzonti": {
+    "natale": 5.41,
+    "natale_int": [
+     4.6,
+     6.51
+    ],
+    "pasqua": 21.03,
+    "pasqua_int": [
+     17.93,
+     24.45
+    ],
+    "fine": 25.44,
+    "fine_int": [
+     21.92,
+     30.0
+    ]
+   }
+  },
+  {
    "squadra": "Atalanta",
    "campionato": "Serie A",
    "allenatore": "Maurizio Sarri",
@@ -3284,16 +3874,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     0.38
+     "2026-11-14T12:04",
+     0.37
     ],
     [
-     "2026-11-14T16:04",
+     "2026-11-14T18:04",
      0.36
-    ],
-    [
-     "2026-11-14T22:04",
-     0.35
     ],
     [
      "2026-11-15T08:02",
@@ -3416,12 +4002,16 @@
      0.26
     ],
     [
-     "2026-11-24T21:01",
-     0.17
+     "2026-11-24T21:34",
+     0.16
+    ],
+    [
+     "2026-11-24T21:40",
+     0.16
     ]
    ],
-   "p": 0.17,
-   "variazione": -2.92,
+   "p": 0.16,
+   "variazione": -2.93,
    "ufficiale": false,
    "prossima": "2026-11-26 21:00",
    "prossima_avversario": "Borac",
@@ -3473,7 +4063,7 @@
      "p": 0.8
     }
    ],
-   "campionato_p": 0.26,
+   "campionato_p": 0.25,
    "campionato_prossima": "2026-11-30 18:30",
    "campionato_avversario": "Lecce",
    "campionato_casa": false,
@@ -3481,17 +4071,17 @@
    "orizzonti": {
     "natale": 9.22,
     "natale_int": [
-     7.23,
+     7.22,
      12.38
     ],
-    "pasqua": 38.48,
+    "pasqua": 38.47,
     "pasqua_int": [
      33.23,
      47.02
     ],
     "fine": 48.41,
     "fine_int": [
-     41.93,
+     41.92,
      57.99
     ]
    },
@@ -3511,15 +4101,15 @@
    ]
   },
   {
-   "squadra": "M'gladbach",
-   "campionato": "Bundesliga",
-   "allenatore": "Alexander Blessin",
+   "squadra": "Ipswich",
+   "campionato": "Premier League",
+   "allenatore": "Gary O'Neil",
    "interim": 0,
    "debutto_atteso": false,
    "serie": [
     [
      "2026-11-18T00:37",
-     0.09
+     0.08
     ],
     [
      "2026-11-18T08:01",
@@ -3531,7 +4121,7 @@
     ],
     [
      "2026-11-18T20:01",
-     0.07
+     0.06
     ],
     [
      "2026-11-19T08:01",
@@ -3543,7 +4133,7 @@
     ],
     [
      "2026-11-19T20:01",
-     0.04
+     0.03
     ],
     [
      "2026-11-20T08:01",
@@ -3567,85 +4157,110 @@
     ],
     [
      "2026-11-21T20:01",
-     3.2
+     3.13
     ],
     [
      "2026-11-22T08:01",
-     2.77
+     2.72
     ],
     [
      "2026-11-22T14:01",
-     2.47
+     2.44
     ],
     [
      "2026-11-22T20:02",
-     2.18
+     2.16
     ],
     [
      "2026-11-23T08:02",
-     1.54
+     1.55
     ],
     [
      "2026-11-23T15:01",
-     1.15
+     1.18
     ],
     [
      "2026-11-23T21:01",
-     0.9
+     0.82
     ],
     [
      "2026-11-24T08:01",
-     0.25
+     0.23
     ],
     [
      "2026-11-24T14:01",
-     0.21
+     0.2
     ],
     [
      "2026-11-24T20:01",
-     0.18
+     0.17
     ],
     [
-     "2026-11-24T21:01",
-     0.17
+     "2026-11-24T21:34",
+     0.16
     ]
    ],
-   "p": 0.17,
-   "variazione": -0.73,
+   "p": 0.16,
+   "variazione": -0.66,
    "ufficiale": false,
-   "prossima": "2026-11-27 20:30",
-   "prossima_avversario": "Werder Bremen",
-   "prossima_casa": false,
+   "prossima": "2026-11-28 18:30",
+   "prossima_avversario": "Aston Villa",
+   "prossima_casa": true,
    "eventi": [
     {
-     "data": "2026-10-11",
-     "causa": "Sconfitta: FC Koln–M'gladbach 2-1",
+     "data": "2026-08-22",
+     "causa": "Vittoria: Ipswich–Sunderland 2-1",
      "p": 0.2
     },
     {
-     "data": "2026-10-18",
-     "causa": "Sconfitta: M'gladbach–Hoffenheim 1-2",
-     "p": 5.9
+     "data": "2026-08-30",
+     "causa": "Sconfitta: Man United–Ipswich 5-2",
+     "p": 0.1
+    },
+    {
+     "data": "2026-09-04",
+     "causa": "Sconfitta: Ipswich–Liverpool 0-2",
+     "p": 0.2
+    },
+    {
+     "data": "2026-09-12",
+     "causa": "Vittoria: Crystal Palace–Ipswich 2-3",
+     "p": 0.0
+    },
+    {
+     "data": "2026-09-19",
+     "causa": "Sconfitta: Everton–Ipswich 1-0",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-10",
+     "causa": "Vittoria: Ipswich–Fulham 2-1",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-17",
+     "causa": "Sconfitta: Man City–Ipswich 3-2",
+     "p": 0.1
     },
     {
      "data": "2026-10-23",
-     "causa": "Vittoria: Stuttgart–M'gladbach 2-3",
+     "causa": "Pareggio: Ipswich–Nott'm Forest 1-1",
      "p": 0.2
     },
     {
      "data": "2026-10-31",
-     "causa": "Pareggio: M'gladbach–Paderborn 0-0",
-     "p": 0.8
+     "causa": "Pareggio: Hull–Ipswich 2-2",
+     "p": 0.3
     },
     {
-     "data": "2026-11-06",
-     "causa": "Sconfitta: Hamburg–M'gladbach 3-1",
-     "p": 2.9
+     "data": "2026-11-08",
+     "causa": "Sconfitta: Ipswich–Bournemouth 1-2",
+     "p": 0.9
     },
     {
      "data": "2026-11-21",
-     "causa": "Sconfitta: M'gladbach–Dortmund 0-1",
-     "p": 5.1
+     "causa": "Sconfitta: Tottenham–Ipswich 2-0",
+     "p": 3.9
     }
    ],
    "motivi": [
@@ -3658,220 +4273,25 @@
      "d": "giu"
     },
     {
-     "t": "Classifica sotto le attese",
+     "t": "Ultima partita andata male",
      "d": "su"
     }
    ],
    "orizzonti": {
-    "natale": 19.52,
+    "natale": 7.59,
     "natale_int": [
-     16.2,
-     24.82
+     5.33,
+     9.44
     ],
-    "pasqua": 50.58,
+    "pasqua": 25.35,
     "pasqua_int": [
-     45.53,
-     57.26
+     22.98,
+     27.73
     ],
-    "fine": 58.01,
+    "fine": 31.64,
     "fine_int": [
-     53.22,
-     63.86
-    ]
-   }
-  },
-  {
-   "squadra": "Augsburg",
-   "campionato": "Bundesliga",
-   "allenatore": "Manuel Baum",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-11-18T00:37",
-     0.5
-    ],
-    [
-     "2026-11-18T08:01",
-     0.46
-    ],
-    [
-     "2026-11-18T14:01",
-     0.43
-    ],
-    [
-     "2026-11-18T20:01",
-     0.4
-    ],
-    [
-     "2026-11-19T08:01",
-     0.33
-    ],
-    [
-     "2026-11-19T14:01",
-     0.3
-    ],
-    [
-     "2026-11-19T20:01",
-     0.27
-    ],
-    [
-     "2026-11-20T08:01",
-     0.21
-    ],
-    [
-     "2026-11-20T14:01",
-     0.18
-    ],
-    [
-     "2026-11-20T20:01",
-     0.15
-    ],
-    [
-     "2026-11-21T08:01",
-     0.08
-    ],
-    [
-     "2026-11-21T14:01",
-     0.05
-    ],
-    [
-     "2026-11-21T20:01",
-     0.02
-    ],
-    [
-     "2026-11-22T08:01",
-     0.0
-    ],
-    [
-     "2026-11-22T14:01",
-     0.0
-    ],
-    [
-     "2026-11-22T20:02",
-     0.79
-    ],
-    [
-     "2026-11-23T08:02",
-     0.68
-    ],
-    [
-     "2026-11-23T15:01",
-     0.6
-    ],
-    [
-     "2026-11-23T21:01",
-     0.52
-    ],
-    [
-     "2026-11-24T08:01",
-     0.33
-    ],
-    [
-     "2026-11-24T14:01",
-     0.26
-    ],
-    [
-     "2026-11-24T20:01",
-     0.18
-    ],
-    [
-     "2026-11-24T21:01",
-     0.17
-    ]
-   ],
-   "p": 0.17,
-   "variazione": -0.34,
-   "ufficiale": false,
-   "prossima": "2026-11-29 17:30",
-   "prossima_avversario": "Hoffenheim",
-   "prossima_casa": false,
-   "eventi": [
-    {
-     "data": "2026-08-30",
-     "causa": "Vittoria: Augsburg–Schalke 04 3-0",
-     "p": 0.0
-    },
-    {
-     "data": "2026-09-06",
-     "causa": "Vittoria: Ein Frankfurt–Augsburg 1-4",
-     "p": 0.0
-    },
-    {
-     "data": "2026-09-12",
-     "causa": "Pareggio: Augsburg–Leverkusen 2-2",
-     "p": 0.1
-    },
-    {
-     "data": "2026-09-19",
-     "causa": "Sconfitta: Werder Bremen–Augsburg 3-2",
-     "p": 0.2
-    },
-    {
-     "data": "2026-10-10",
-     "causa": "Pareggio: Augsburg–Bayern Munich 2-2",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-17",
-     "causa": "Sconfitta: Elversberg–Augsburg 4-3",
-     "p": 0.4
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Pareggio: Augsburg–Union Berlin 1-1",
-     "p": 1.0
-    },
-    {
-     "data": "2026-10-31",
-     "causa": "Sconfitta: Augsburg–Freiburg 1-2",
-     "p": 4.4
-    },
-    {
-     "data": "2026-11-07",
-     "causa": "Sconfitta: RB Leipzig–Augsburg 5-2",
-     "p": 17.8
-    },
-    {
-     "data": "2026-11-18",
-     "causa": "Fiducia dalla società",
-     "p": 0.5
-    },
-    {
-     "data": "2026-11-22",
-     "causa": "Vittoria: Augsburg–Mainz 3-1 (chiusa fiducia)",
-     "p": 0.6
-    }
-   ],
-   "motivi": [
-    {
-     "t": "Periodo negativo",
-     "d": "su"
-    },
-    {
-     "t": "Ultima partita positiva",
-     "d": "giu"
-    },
-    {
-     "t": "Credito dalla scorsa stagione",
-     "d": "giu"
-    }
-   ],
-   "orizzonti": {
-    "natale": 5.42,
-    "natale_int": [
-     4.6,
-     6.51
-    ],
-    "pasqua": 21.04,
-    "pasqua_int": [
-     17.94,
-     24.45
-    ],
-    "fine": 25.45,
-    "fine_int": [
-     21.93,
-     30.0
+     29.37,
+     34.73
     ]
    }
   },
@@ -3883,15 +4303,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.17
     ],
     [
-     "2026-11-14T16:04",
-     0.16
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.16
     ],
     [
@@ -4015,11 +4431,15 @@
      0.18
     ],
     [
-     "2026-11-24T21:01",
-     0.16
+     "2026-11-24T21:34",
+     0.15
+    ],
+    [
+     "2026-11-24T21:40",
+     0.15
     ]
    ],
-   "p": 0.16,
+   "p": 0.15,
    "variazione": -0.23,
    "ufficiale": false,
    "prossima": "2026-11-28 18:00",
@@ -4065,7 +4485,7 @@
     ],
     "fine": 34.27,
     "fine_int": [
-     31.73,
+     31.72,
      38.04
     ]
    },
@@ -4083,201 +4503,6 @@
      "d": "su"
     }
    ]
-  },
-  {
-   "squadra": "Ipswich",
-   "campionato": "Premier League",
-   "allenatore": "Gary O'Neil",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-11-18T00:37",
-     0.08
-    ],
-    [
-     "2026-11-18T08:01",
-     0.08
-    ],
-    [
-     "2026-11-18T14:01",
-     0.07
-    ],
-    [
-     "2026-11-18T20:01",
-     0.06
-    ],
-    [
-     "2026-11-19T08:01",
-     0.05
-    ],
-    [
-     "2026-11-19T14:01",
-     0.04
-    ],
-    [
-     "2026-11-19T20:01",
-     0.03
-    ],
-    [
-     "2026-11-20T08:01",
-     0.02
-    ],
-    [
-     "2026-11-20T14:01",
-     0.01
-    ],
-    [
-     "2026-11-20T20:01",
-     0.01
-    ],
-    [
-     "2026-11-21T08:01",
-     0.0
-    ],
-    [
-     "2026-11-21T14:01",
-     0.0
-    ],
-    [
-     "2026-11-21T20:01",
-     3.13
-    ],
-    [
-     "2026-11-22T08:01",
-     2.72
-    ],
-    [
-     "2026-11-22T14:01",
-     2.44
-    ],
-    [
-     "2026-11-22T20:02",
-     2.16
-    ],
-    [
-     "2026-11-23T08:02",
-     1.55
-    ],
-    [
-     "2026-11-23T15:01",
-     1.18
-    ],
-    [
-     "2026-11-23T21:01",
-     0.82
-    ],
-    [
-     "2026-11-24T08:01",
-     0.23
-    ],
-    [
-     "2026-11-24T14:01",
-     0.2
-    ],
-    [
-     "2026-11-24T20:01",
-     0.17
-    ],
-    [
-     "2026-11-24T21:01",
-     0.16
-    ]
-   ],
-   "p": 0.16,
-   "variazione": -0.66,
-   "ufficiale": false,
-   "prossima": "2026-11-28 18:30",
-   "prossima_avversario": "Aston Villa",
-   "prossima_casa": true,
-   "eventi": [
-    {
-     "data": "2026-08-22",
-     "causa": "Vittoria: Ipswich–Sunderland 2-1",
-     "p": 0.2
-    },
-    {
-     "data": "2026-08-30",
-     "causa": "Sconfitta: Man United–Ipswich 5-2",
-     "p": 0.1
-    },
-    {
-     "data": "2026-09-04",
-     "causa": "Sconfitta: Ipswich–Liverpool 0-2",
-     "p": 0.2
-    },
-    {
-     "data": "2026-09-12",
-     "causa": "Vittoria: Crystal Palace–Ipswich 2-3",
-     "p": 0.0
-    },
-    {
-     "data": "2026-09-19",
-     "causa": "Sconfitta: Everton–Ipswich 1-0",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-10",
-     "causa": "Vittoria: Ipswich–Fulham 2-1",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-17",
-     "causa": "Sconfitta: Man City–Ipswich 3-2",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-23",
-     "causa": "Pareggio: Ipswich–Nott'm Forest 1-1",
-     "p": 0.2
-    },
-    {
-     "data": "2026-10-31",
-     "causa": "Pareggio: Hull–Ipswich 2-2",
-     "p": 0.3
-    },
-    {
-     "data": "2026-11-08",
-     "causa": "Sconfitta: Ipswich–Bournemouth 1-2",
-     "p": 0.9
-    },
-    {
-     "data": "2026-11-21",
-     "causa": "Sconfitta: Tottenham–Ipswich 2-0",
-     "p": 3.9
-    }
-   ],
-   "motivi": [
-    {
-     "t": "Periodo negativo",
-     "d": "su"
-    },
-    {
-     "t": "Giorni passati senza novità",
-     "d": "giu"
-    },
-    {
-     "t": "Ultima partita andata male",
-     "d": "su"
-    }
-   ],
-   "orizzonti": {
-    "natale": 7.59,
-    "natale_int": [
-     5.33,
-     9.44
-    ],
-    "pasqua": 25.35,
-    "pasqua_int": [
-     22.98,
-     27.74
-    ],
-    "fine": 31.64,
-    "fine_int": [
-     29.38,
-     34.73
-    ]
-   }
   },
   {
    "squadra": "Nott'm Forest",
@@ -4375,7 +4600,7 @@
      0.15
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.15
     ]
    ],
@@ -4465,12 +4690,217 @@
     "pasqua": 45.41,
     "pasqua_int": [
      40.84,
-     48.91
+     48.9
     ],
-    "fine": 52.24,
+    "fine": 52.23,
     "fine_int": [
      48.19,
      55.75
+    ]
+   }
+  },
+  {
+   "squadra": "Brighton",
+   "campionato": "Premier League",
+   "allenatore": "Fabian Hürzeler",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-11-18T00:37",
+     0.0
+    ],
+    [
+     "2026-11-18T08:01",
+     0.0
+    ],
+    [
+     "2026-11-18T14:01",
+     0.0
+    ],
+    [
+     "2026-11-18T20:01",
+     0.0
+    ],
+    [
+     "2026-11-19T08:01",
+     0.0
+    ],
+    [
+     "2026-11-19T14:01",
+     0.0
+    ],
+    [
+     "2026-11-19T20:01",
+     0.0
+    ],
+    [
+     "2026-11-20T08:01",
+     0.0
+    ],
+    [
+     "2026-11-20T14:01",
+     0.0
+    ],
+    [
+     "2026-11-20T20:01",
+     0.0
+    ],
+    [
+     "2026-11-21T08:01",
+     0.0
+    ],
+    [
+     "2026-11-21T14:01",
+     0.0
+    ],
+    [
+     "2026-11-21T20:01",
+     0.0
+    ],
+    [
+     "2026-11-22T08:01",
+     0.0
+    ],
+    [
+     "2026-11-22T14:01",
+     0.0
+    ],
+    [
+     "2026-11-22T20:02",
+     0.7
+    ],
+    [
+     "2026-11-23T08:02",
+     0.6
+    ],
+    [
+     "2026-11-23T15:01",
+     0.52
+    ],
+    [
+     "2026-11-23T21:01",
+     0.45
+    ],
+    [
+     "2026-11-24T08:01",
+     0.28
+    ],
+    [
+     "2026-11-24T14:01",
+     0.21
+    ],
+    [
+     "2026-11-24T20:01",
+     0.14
+    ],
+    [
+     "2026-11-24T21:34",
+     0.12
+    ]
+   ],
+   "p": 0.12,
+   "variazione": -0.33,
+   "ufficiale": false,
+   "prossima": "2026-11-26 18:45",
+   "prossima_avversario": "Universitatea Craiova",
+   "prossima_casa": true,
+   "eventi": [
+    {
+     "data": "2026-08-23",
+     "causa": "Vittoria: Brighton–Aston Villa 4-0",
+     "p": 0.1
+    },
+    {
+     "data": "2026-08-30",
+     "causa": "Sconfitta: Chelsea–Brighton 4-3",
+     "p": 0.4
+    },
+    {
+     "data": "2026-09-05",
+     "causa": "Pareggio: Brighton–Leeds 1-1",
+     "p": 0.5
+    },
+    {
+     "data": "2026-09-13",
+     "causa": "Vittoria: Coventry–Brighton 0-5",
+     "p": 0.1
+    },
+    {
+     "data": "2026-09-19",
+     "causa": "Vittoria: Brighton–Arsenal 3-0",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-10",
+     "causa": "Vittoria: Sunderland–Brighton 0-2",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-18",
+     "causa": "Vittoria: Brighton–Crystal Palace 5-0",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Sconfitta: Liverpool–Brighton 2-0",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Pareggio in EFL Cup: Man City–Brighton 0-0, fuori ai rigori",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Vittoria: Man City–Brighton 0-1",
+     "p": 0.0
+    },
+    {
+     "data": "2026-11-08",
+     "causa": "Vittoria: Brighton–Brentford 2-0",
+     "p": 0.0
+    },
+    {
+     "data": "2026-11-22",
+     "causa": "Sconfitta: Hull–Brighton 2-0",
+     "p": 0.7
+    }
+   ],
+   "motivi": [
+    {
+     "t": "Ultima partita andata male",
+     "d": "su"
+    },
+    {
+     "t": "Classifica in linea con le attese",
+     "d": "giu"
+    },
+    {
+     "t": "Buon periodo",
+     "d": "giu"
+    }
+   ],
+   "campionato_p": 0.18,
+   "campionato_prossima": "2026-11-29 15:05",
+   "campionato_avversario": "Newcastle",
+   "campionato_casa": true,
+   "prossima_competizione": "Conference League",
+   "orizzonti": {
+    "natale": 5.58,
+    "natale_int": [
+     3.94,
+     7.37
+    ],
+    "pasqua": 13.18,
+    "pasqua_int": [
+     8.82,
+     16.53
+    ],
+    "fine": 15.19,
+    "fine_int": [
+     10.23,
+     19.14
     ]
    }
   },
@@ -4482,16 +4912,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     1.11
+     "2026-11-14T12:04",
+     1.1
     ],
     [
-     "2026-11-14T16:04",
-     1.08
-    ],
-    [
-     "2026-11-14T22:04",
-     1.04
+     "2026-11-14T18:04",
+     1.06
     ],
     [
      "2026-11-15T08:02",
@@ -4614,12 +5040,16 @@
      0.41
     ],
     [
-     "2026-11-24T21:01",
-     0.14
+     "2026-11-24T21:34",
+     0.11
+    ],
+    [
+     "2026-11-24T21:40",
+     0.11
     ]
    ],
-   "p": 0.14,
-   "variazione": -1.58,
+   "p": 0.11,
+   "variazione": -1.61,
    "ufficiale": false,
    "prossima": "2026-11-25 20:00",
    "prossima_avversario": "Arezzo",
@@ -4652,20 +5082,20 @@
     }
    ],
    "orizzonti": {
-    "natale": 16.82,
+    "natale": 16.8,
     "natale_int": [
-     13.54,
-     21.61
+     13.51,
+     21.59
     ],
-    "pasqua": 39.41,
+    "pasqua": 39.4,
     "pasqua_int": [
-     34.44,
-     46.56
+     34.43,
+     46.54
     ],
-    "fine": 44.59,
+    "fine": 44.57,
     "fine_int": [
-     38.9,
-     52.67
+     38.88,
+     52.66
     ]
    },
    "motivi": [
@@ -4684,211 +5114,6 @@
    ]
   },
   {
-   "squadra": "Brighton",
-   "campionato": "Premier League",
-   "allenatore": "Fabian Hürzeler",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-11-18T00:37",
-     0.0
-    ],
-    [
-     "2026-11-18T08:01",
-     0.0
-    ],
-    [
-     "2026-11-18T14:01",
-     0.0
-    ],
-    [
-     "2026-11-18T20:01",
-     0.0
-    ],
-    [
-     "2026-11-19T08:01",
-     0.0
-    ],
-    [
-     "2026-11-19T14:01",
-     0.0
-    ],
-    [
-     "2026-11-19T20:01",
-     0.0
-    ],
-    [
-     "2026-11-20T08:01",
-     0.0
-    ],
-    [
-     "2026-11-20T14:01",
-     0.0
-    ],
-    [
-     "2026-11-20T20:01",
-     0.0
-    ],
-    [
-     "2026-11-21T08:01",
-     0.0
-    ],
-    [
-     "2026-11-21T14:01",
-     0.0
-    ],
-    [
-     "2026-11-21T20:01",
-     0.0
-    ],
-    [
-     "2026-11-22T08:01",
-     0.0
-    ],
-    [
-     "2026-11-22T14:01",
-     0.0
-    ],
-    [
-     "2026-11-22T20:02",
-     0.7
-    ],
-    [
-     "2026-11-23T08:02",
-     0.6
-    ],
-    [
-     "2026-11-23T15:01",
-     0.52
-    ],
-    [
-     "2026-11-23T21:01",
-     0.45
-    ],
-    [
-     "2026-11-24T08:01",
-     0.28
-    ],
-    [
-     "2026-11-24T14:01",
-     0.21
-    ],
-    [
-     "2026-11-24T20:01",
-     0.14
-    ],
-    [
-     "2026-11-24T21:01",
-     0.13
-    ]
-   ],
-   "p": 0.13,
-   "variazione": -0.32,
-   "ufficiale": false,
-   "prossima": "2026-11-26 18:45",
-   "prossima_avversario": "Universitatea Craiova",
-   "prossima_casa": true,
-   "eventi": [
-    {
-     "data": "2026-08-23",
-     "causa": "Vittoria: Brighton–Aston Villa 4-0",
-     "p": 0.1
-    },
-    {
-     "data": "2026-08-30",
-     "causa": "Sconfitta: Chelsea–Brighton 4-3",
-     "p": 0.4
-    },
-    {
-     "data": "2026-09-05",
-     "causa": "Pareggio: Brighton–Leeds 1-1",
-     "p": 0.5
-    },
-    {
-     "data": "2026-09-13",
-     "causa": "Vittoria: Coventry–Brighton 0-5",
-     "p": 0.1
-    },
-    {
-     "data": "2026-09-19",
-     "causa": "Vittoria: Brighton–Arsenal 3-0",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-10",
-     "causa": "Vittoria: Sunderland–Brighton 0-2",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-18",
-     "causa": "Vittoria: Brighton–Crystal Palace 5-0",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Sconfitta: Liverpool–Brighton 2-0",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Pareggio in EFL Cup: Man City–Brighton 0-0, fuori ai rigori",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-31",
-     "causa": "Vittoria: Man City–Brighton 0-1",
-     "p": 0.0
-    },
-    {
-     "data": "2026-11-08",
-     "causa": "Vittoria: Brighton–Brentford 2-0",
-     "p": 0.0
-    },
-    {
-     "data": "2026-11-22",
-     "causa": "Sconfitta: Hull–Brighton 2-0",
-     "p": 0.7
-    }
-   ],
-   "motivi": [
-    {
-     "t": "Ultima partita andata male",
-     "d": "su"
-    },
-    {
-     "t": "Classifica in linea con le attese",
-     "d": "giu"
-    },
-    {
-     "t": "Buon periodo",
-     "d": "giu"
-    }
-   ],
-   "campionato_p": 0.18,
-   "campionato_prossima": "2026-11-29 15:05",
-   "campionato_avversario": "Newcastle",
-   "campionato_casa": true,
-   "prossima_competizione": "Conference League",
-   "orizzonti": {
-    "natale": 5.59,
-    "natale_int": [
-     3.94,
-     7.37
-    ],
-    "pasqua": 13.19,
-    "pasqua_int": [
-     8.82,
-     16.54
-    ],
-    "fine": 15.2,
-    "fine_int": [
-     10.24,
-     19.14
-    ]
-   }
-  },
-  {
    "squadra": "Napoli",
    "campionato": "Serie A",
    "allenatore": "Massimiliano Allegri",
@@ -4896,16 +5121,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     1.44
+     "2026-11-14T12:04",
+     1.42
     ],
     [
-     "2026-11-14T16:04",
-     1.38
-    ],
-    [
-     "2026-11-14T22:04",
-     1.33
+     "2026-11-14T18:04",
+     1.36
     ],
     [
      "2026-11-15T08:02",
@@ -5028,7 +5249,11 @@
      0.01
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.09
+    ],
+    [
+     "2026-11-24T21:40",
      0.09
     ]
    ],
@@ -5143,240 +5368,6 @@
    ]
   },
   {
-   "squadra": "Arezzo",
-   "campionato": "Serie B",
-   "allenatore": "Cristian Bucchi",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-11-14T10:01",
-     0.55
-    ],
-    [
-     "2026-11-14T16:04",
-     0.53
-    ],
-    [
-     "2026-11-14T22:04",
-     0.51
-    ],
-    [
-     "2026-11-15T08:02",
-     0.48
-    ],
-    [
-     "2026-11-15T14:04",
-     0.46
-    ],
-    [
-     "2026-11-15T20:04",
-     0.44
-    ],
-    [
-     "2026-11-16T02:12",
-     0.43
-    ],
-    [
-     "2026-11-16T09:01",
-     0.4
-    ],
-    [
-     "2026-11-16T15:01",
-     0.39
-    ],
-    [
-     "2026-11-16T21:01",
-     0.37
-    ],
-    [
-     "2026-11-17T08:01",
-     0.34
-    ],
-    [
-     "2026-11-17T14:01",
-     0.32
-    ],
-    [
-     "2026-11-17T20:01",
-     0.3
-    ],
-    [
-     "2026-11-18T08:01",
-     0.26
-    ],
-    [
-     "2026-11-18T14:01",
-     0.25
-    ],
-    [
-     "2026-11-18T20:01",
-     0.23
-    ],
-    [
-     "2026-11-19T08:04",
-     0.19
-    ],
-    [
-     "2026-11-19T15:01",
-     0.17
-    ],
-    [
-     "2026-11-19T21:01",
-     0.15
-    ],
-    [
-     "2026-11-20T08:02",
-     0.12
-    ],
-    [
-     "2026-11-20T14:02",
-     0.1
-    ],
-    [
-     "2026-11-20T20:09",
-     0.08
-    ],
-    [
-     "2026-11-21T08:02",
-     0.05
-    ],
-    [
-     "2026-11-21T15:01",
-     0.03
-    ],
-    [
-     "2026-11-21T21:01",
-     0.01
-    ],
-    [
-     "2026-11-22T08:03",
-     0.0
-    ],
-    [
-     "2026-11-22T15:03",
-     0.0
-    ],
-    [
-     "2026-11-22T21:03",
-     1.54
-    ],
-    [
-     "2026-11-23T08:04",
-     1.28
-    ],
-    [
-     "2026-11-23T15:01",
-     1.07
-    ],
-    [
-     "2026-11-23T21:01",
-     0.89
-    ],
-    [
-     "2026-11-24T08:03",
-     0.53
-    ],
-    [
-     "2026-11-24T15:02",
-     0.24
-    ],
-    [
-     "2026-11-24T21:01",
-     0.08
-    ]
-   ],
-   "p": 0.08,
-   "variazione": -0.81,
-   "ufficiale": false,
-   "prossima": "2026-11-25 20:00",
-   "prossima_avversario": "Mantova",
-   "prossima_casa": false,
-   "eventi": [
-    {
-     "data": "2026-10-18",
-     "causa": "Vittoria: Sampdoria–Arezzo 1-2",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Sconfitta: Arezzo–Benevento 0-3",
-     "p": 1.5
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Sconfitta: Carrarese–Arezzo 2-1",
-     "p": 3.9
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Panchina in discussione",
-     "p": 7.5
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Segnali dalla società",
-     "p": 12.7
-    },
-    {
-     "data": "2026-11-01",
-     "causa": "Pareggio: Arezzo–Ascoli 0-0",
-     "p": 1.2
-    },
-    {
-     "data": "2026-11-03",
-     "causa": "Fiducia dalla società",
-     "p": 0.2
-    },
-    {
-     "data": "2026-11-07",
-     "causa": "Sconfitta: Juve Stabia–Arezzo 1-0 (chiusa fiducia)",
-     "p": 5.7
-    },
-    {
-     "data": "2026-11-07",
-     "causa": "Fiducia dalla società",
-     "p": 2.9
-    },
-    {
-     "data": "2026-11-22",
-     "causa": "Pareggio: Arezzo–Padova 1-1",
-     "p": 1.3
-    }
-   ],
-   "orizzonti": {
-    "natale": 9.56,
-    "natale_int": [
-     5.91,
-     14.18
-    ],
-    "pasqua": 31.03,
-    "pasqua_int": [
-     19.4,
-     41.45
-    ],
-    "fine": 36.13,
-    "fine_int": [
-     23.16,
-     47.91
-    ]
-   },
-   "motivi": [
-    {
-     "t": "Periodo negativo",
-     "d": "su"
-    },
-    {
-     "t": "Credito dalla scorsa stagione",
-     "d": "giu"
-    },
-    {
-     "t": "Classifica sotto le attese",
-     "d": "su"
-    }
-   ]
-  },
-  {
    "squadra": "Stuttgart",
    "campionato": "Bundesliga",
    "allenatore": "Sebastian Hoeneß",
@@ -5472,7 +5463,7 @@
      0.09
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.08
     ]
    ],
@@ -5581,7 +5572,7 @@
     ],
     "pasqua": 46.79,
     "pasqua_int": [
-     41.47,
+     41.46,
      52.46
     ],
     "fine": 52.23,
@@ -5599,15 +5590,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.01
     ],
     [
-     "2026-11-14T16:04",
-     0.01
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.01
     ],
     [
@@ -5731,7 +5718,11 @@
      0.1
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.07
+    ],
+    [
+     "2026-11-24T21:40",
      0.07
     ]
    ],
@@ -5776,13 +5767,13 @@
    "orizzonti": {
     "natale": 1.38,
     "natale_int": [
-     0.81,
-     2.19
+     0.8,
+     2.18
     ],
-    "pasqua": 3.07,
+    "pasqua": 3.06,
     "pasqua_int": [
      1.74,
-     4.94
+     4.93
     ],
     "fine": 3.61,
     "fine_int": [
@@ -5801,250 +5792,6 @@
     },
     {
      "t": "Credito dalla scorsa stagione",
-     "d": "giu"
-    }
-   ]
-  },
-  {
-   "squadra": "Juventus",
-   "campionato": "Serie A",
-   "allenatore": "Luciano Spalletti",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-11-14T10:01",
-     2.06
-    ],
-    [
-     "2026-11-14T16:04",
-     1.99
-    ],
-    [
-     "2026-11-14T22:04",
-     1.92
-    ],
-    [
-     "2026-11-15T08:02",
-     1.81
-    ],
-    [
-     "2026-11-15T14:04",
-     1.75
-    ],
-    [
-     "2026-11-15T20:04",
-     1.68
-    ],
-    [
-     "2026-11-16T02:12",
-     0.49
-    ],
-    [
-     "2026-11-16T09:01",
-     0.46
-    ],
-    [
-     "2026-11-16T15:01",
-     0.45
-    ],
-    [
-     "2026-11-16T21:01",
-     0.42
-    ],
-    [
-     "2026-11-17T08:01",
-     0.39
-    ],
-    [
-     "2026-11-17T14:01",
-     0.37
-    ],
-    [
-     "2026-11-17T20:01",
-     0.34
-    ],
-    [
-     "2026-11-18T08:01",
-     0.3
-    ],
-    [
-     "2026-11-18T14:01",
-     0.28
-    ],
-    [
-     "2026-11-18T20:01",
-     0.26
-    ],
-    [
-     "2026-11-19T08:04",
-     0.22
-    ],
-    [
-     "2026-11-19T15:01",
-     0.2
-    ],
-    [
-     "2026-11-19T21:01",
-     0.18
-    ],
-    [
-     "2026-11-20T08:02",
-     0.14
-    ],
-    [
-     "2026-11-20T14:02",
-     0.12
-    ],
-    [
-     "2026-11-20T20:09",
-     0.1
-    ],
-    [
-     "2026-11-21T08:02",
-     0.06
-    ],
-    [
-     "2026-11-21T15:01",
-     0.03
-    ],
-    [
-     "2026-11-21T21:01",
-     0.01
-    ],
-    [
-     "2026-11-22T08:03",
-     0.0
-    ],
-    [
-     "2026-11-22T15:03",
-     0.29
-    ],
-    [
-     "2026-11-22T21:03",
-     0.28
-    ],
-    [
-     "2026-11-23T08:04",
-     0.24
-    ],
-    [
-     "2026-11-23T15:01",
-     0.21
-    ],
-    [
-     "2026-11-23T21:01",
-     0.18
-    ],
-    [
-     "2026-11-24T08:03",
-     0.13
-    ],
-    [
-     "2026-11-24T15:02",
-     0.1
-    ],
-    [
-     "2026-11-24T21:01",
-     0.07
-    ]
-   ],
-   "p": 0.07,
-   "variazione": -0.12,
-   "ufficiale": false,
-   "prossima": "2026-11-26 21:00",
-   "prossima_avversario": "Omonia",
-   "prossima_casa": true,
-   "eventi": [
-    {
-     "data": "2026-10-18",
-     "causa": "Sconfitta: Juventus–Lazio 0-3",
-     "p": 12.6
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Vittoria: Lecce–Juventus 0-2",
-     "p": 1.2
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Sconfitta: Genoa–Juventus 2-0",
-     "p": 13.4
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "Panchina in discussione",
-     "p": 15.4
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Notizie sul sostituto",
-     "p": 17.3
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "Segnali dalla società",
-     "p": 24.0
-    },
-    {
-     "data": "2026-10-30",
-     "causa": "Ultimatum: decisiva la prossima partita",
-     "p": 16.5
-    },
-    {
-     "data": "2026-10-31",
-     "causa": "Fiducia dalla società",
-     "p": 1.2
-    },
-    {
-     "data": "2026-11-01",
-     "causa": "Vittoria: Juventus–Napoli 2-0 (chiusi ultimatum e fiducia)",
-     "p": 1.2
-    },
-    {
-     "data": "2026-11-08",
-     "causa": "Pareggio: Fiorentina–Juventus 2-2",
-     "p": 9.9
-    },
-    {
-     "data": "2026-11-22",
-     "causa": "Vittoria: Juventus–Venezia 4-0",
-     "p": 0.3
-    }
-   ],
-   "campionato_p": 0.09,
-   "campionato_prossima": "2026-11-29 20:45",
-   "campionato_avversario": "Como",
-   "campionato_casa": false,
-   "prossima_competizione": "Europa League",
-   "orizzonti": {
-    "natale": 10.56,
-    "natale_int": [
-     8.65,
-     13.38
-    ],
-    "pasqua": 35.68,
-    "pasqua_int": [
-     31.28,
-     42.76
-    ],
-    "fine": 43.08,
-    "fine_int": [
-     38.35,
-     50.74
-    ]
-   },
-   "motivi": [
-    {
-     "t": "Buon periodo",
-     "d": "giu"
-    },
-    {
-     "t": "Classifica sotto le attese",
-     "d": "su"
-    },
-    {
-     "t": "Ultima partita positiva",
      "d": "giu"
     }
    ]
@@ -6145,7 +5892,7 @@
      0.07
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.07
     ]
    ],
@@ -6370,7 +6117,7 @@
      0.07
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.07
     ]
    ],
@@ -6447,12 +6194,12 @@
     }
    ],
    "orizzonti": {
-    "natale": 5.3,
+    "natale": 5.29,
     "natale_int": [
      4.0,
      6.99
     ],
-    "pasqua": 16.91,
+    "pasqua": 16.9,
     "pasqua_int": [
      14.23,
      19.39
@@ -6472,15 +6219,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.02
     ],
     [
-     "2026-11-14T16:04",
-     0.02
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.02
     ],
     [
@@ -6604,12 +6347,16 @@
      0.11
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.06
+    ],
+    [
+     "2026-11-24T21:40",
      0.06
     ]
    ],
    "p": 0.06,
-   "variazione": 0.04,
+   "variazione": 0.03,
    "ufficiale": false,
    "prossima": "2026-11-25 21:00",
    "prossima_avversario": "Stoccarda",
@@ -6652,14 +6399,14 @@
    "campionato_casa": true,
    "prossima_competizione": "Champions League",
    "orizzonti": {
-    "natale": 3.57,
+    "natale": 3.56,
     "natale_int": [
-     2.81,
+     2.8,
      4.24
     ],
     "pasqua": 8.88,
     "pasqua_int": [
-     6.69,
+     6.68,
      10.26
     ],
     "fine": 10.65,
@@ -6684,204 +6431,482 @@
    ]
   },
   {
-   "squadra": "Newcastle",
-   "campionato": "Premier League",
-   "allenatore": "Matthias Jaissle",
+   "squadra": "Arezzo",
+   "campionato": "Serie B",
+   "allenatore": "Cristian Bucchi",
    "interim": 0,
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-18T00:37",
-     0.08
+     "2026-11-14T12:04",
+     0.54
     ],
     [
-     "2026-11-18T08:01",
-     0.07
+     "2026-11-14T18:04",
+     0.52
     ],
     [
-     "2026-11-18T14:01",
-     0.07
+     "2026-11-15T08:02",
+     0.48
     ],
     [
-     "2026-11-18T20:01",
-     0.06
+     "2026-11-15T14:04",
+     0.46
     ],
     [
-     "2026-11-19T08:01",
-     0.05
+     "2026-11-15T20:04",
+     0.44
     ],
     [
-     "2026-11-19T14:01",
-     0.04
+     "2026-11-16T02:12",
+     0.43
     ],
     [
-     "2026-11-19T20:01",
-     0.03
+     "2026-11-16T09:01",
+     0.4
     ],
     [
-     "2026-11-20T08:01",
-     0.02
+     "2026-11-16T15:01",
+     0.39
     ],
     [
-     "2026-11-20T14:01",
-     0.01
+     "2026-11-16T21:01",
+     0.37
     ],
     [
-     "2026-11-20T20:01",
-     0.01
+     "2026-11-17T08:01",
+     0.34
     ],
     [
-     "2026-11-21T08:01",
-     0.0
-    ],
-    [
-     "2026-11-21T14:01",
-     0.0
-    ],
-    [
-     "2026-11-21T20:01",
-     0.0
-    ],
-    [
-     "2026-11-22T08:01",
+     "2026-11-17T14:01",
      0.32
     ],
     [
-     "2026-11-22T14:01",
-     0.29
+     "2026-11-17T20:01",
+     0.3
     ],
     [
-     "2026-11-22T20:02",
+     "2026-11-18T08:01",
      0.26
     ],
     [
-     "2026-11-23T08:02",
+     "2026-11-18T14:01",
+     0.25
+    ],
+    [
+     "2026-11-18T20:01",
+     0.23
+    ],
+    [
+     "2026-11-19T08:04",
      0.19
     ],
     [
+     "2026-11-19T15:01",
+     0.17
+    ],
+    [
+     "2026-11-19T21:01",
+     0.15
+    ],
+    [
+     "2026-11-20T08:02",
+     0.12
+    ],
+    [
+     "2026-11-20T14:02",
+     0.1
+    ],
+    [
+     "2026-11-20T20:09",
+     0.08
+    ],
+    [
+     "2026-11-21T08:02",
+     0.05
+    ],
+    [
+     "2026-11-21T15:01",
+     0.03
+    ],
+    [
+     "2026-11-21T21:01",
+     0.01
+    ],
+    [
+     "2026-11-22T08:03",
+     0.0
+    ],
+    [
+     "2026-11-22T15:03",
+     0.0
+    ],
+    [
+     "2026-11-22T21:03",
+     1.54
+    ],
+    [
+     "2026-11-23T08:04",
+     1.28
+    ],
+    [
      "2026-11-23T15:01",
-     0.14
+     1.07
     ],
     [
      "2026-11-23T21:01",
-     0.11
+     0.89
     ],
     [
-     "2026-11-24T08:01",
+     "2026-11-24T08:03",
+     0.53
+    ],
+    [
+     "2026-11-24T15:02",
+     0.24
+    ],
+    [
+     "2026-11-24T21:34",
      0.07
     ],
     [
-     "2026-11-24T14:01",
-     0.06
-    ],
-    [
-     "2026-11-24T20:01",
-     0.06
-    ],
-    [
-     "2026-11-24T21:01",
+     "2026-11-24T21:40",
      0.06
     ]
    ],
    "p": 0.06,
-   "variazione": -0.05,
+   "variazione": -0.83,
    "ufficiale": false,
-   "prossima": "2026-11-29 15:05",
-   "prossima_avversario": "Brighton",
+   "prossima": "2026-11-25 20:00",
+   "prossima_avversario": "Mantova",
    "prossima_casa": false,
    "eventi": [
     {
-     "data": "2026-08-23",
-     "causa": "Pareggio: Newcastle–Liverpool 2-2",
-     "p": 0.2
+     "data": "2026-10-18",
+     "causa": "Vittoria: Sampdoria–Arezzo 1-2",
+     "p": 0.1
     },
     {
-     "data": "2026-08-29",
-     "causa": "Vittoria: Tottenham–Newcastle 0-2",
-     "p": 0.0
-    },
-    {
-     "data": "2026-09-05",
-     "causa": "Pareggio: Newcastle–Bournemouth 2-2",
-     "p": 0.0
-    },
-    {
-     "data": "2026-09-14",
-     "causa": "Sconfitta: Leeds–Newcastle 4-1",
-     "p": 0.2
-    },
-    {
-     "data": "2026-09-19",
-     "causa": "Vittoria: Newcastle–Hull 2-1",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-12",
-     "causa": "Sconfitta: Coventry–Newcastle 4-1",
-     "p": 0.6
-    },
-    {
-     "data": "2026-10-17",
-     "causa": "Sconfitta: Newcastle–Aston Villa 0-1",
-     "p": 2.5
-    },
-    {
-     "data": "2026-10-25",
-     "causa": "Vittoria: Crystal Palace–Newcastle 0-2",
-     "p": 0.3
-    },
-    {
-     "data": "2026-10-29",
-     "causa": "KO in EFL Cup: Everton–Newcastle 3-1",
-     "p": 0.0
-    },
-    {
-     "data": "2026-11-02",
-     "causa": "Sconfitta: Newcastle–Everton 0-1",
+     "data": "2026-10-24",
+     "causa": "Sconfitta: Arezzo–Benevento 0-3",
      "p": 1.5
     },
     {
-     "data": "2026-11-07",
-     "causa": "Pareggio: Fulham–Newcastle 1-1",
-     "p": 3.0
+     "data": "2026-10-28",
+     "causa": "Sconfitta: Carrarese–Arezzo 2-1",
+     "p": 3.9
     },
     {
-     "data": "2026-11-21",
-     "causa": "Pareggio: Newcastle–Arsenal 2-2",
-     "p": 0.3
+     "data": "2026-10-28",
+     "causa": "Panchina in discussione",
+     "p": 7.5
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Segnali dalla società",
+     "p": 12.7
+    },
+    {
+     "data": "2026-11-01",
+     "causa": "Pareggio: Arezzo–Ascoli 0-0",
+     "p": 1.2
+    },
+    {
+     "data": "2026-11-03",
+     "causa": "Fiducia dalla società",
+     "p": 0.2
+    },
+    {
+     "data": "2026-11-07",
+     "causa": "Sconfitta: Juve Stabia–Arezzo 1-0 (chiusa fiducia)",
+     "p": 5.7
+    },
+    {
+     "data": "2026-11-07",
+     "causa": "Fiducia dalla società",
+     "p": 2.9
+    },
+    {
+     "data": "2026-11-22",
+     "causa": "Pareggio: Arezzo–Padova 1-1",
+     "p": 1.3
     }
    ],
+   "orizzonti": {
+    "natale": 9.55,
+    "natale_int": [
+     5.89,
+     14.16
+    ],
+    "pasqua": 31.02,
+    "pasqua_int": [
+     19.38,
+     41.44
+    ],
+    "fine": 36.12,
+    "fine_int": [
+     23.15,
+     47.9
+    ]
+   },
    "motivi": [
-    {
-     "t": "Ultima partita positiva",
-     "d": "giu"
-    },
     {
      "t": "Periodo negativo",
      "d": "su"
     },
     {
+     "t": "Credito dalla scorsa stagione",
+     "d": "giu"
+    },
+    {
      "t": "Classifica sotto le attese",
      "d": "su"
     }
-   ],
-   "orizzonti": {
-    "natale": 7.06,
-    "natale_int": [
-     5.43,
-     8.24
+   ]
+  },
+  {
+   "squadra": "Juventus",
+   "campionato": "Serie A",
+   "allenatore": "Luciano Spalletti",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-11-14T12:04",
+     2.04
     ],
-    "pasqua": 32.37,
-    "pasqua_int": [
-     30.65,
-     36.56
+    [
+     "2026-11-14T18:04",
+     1.97
     ],
-    "fine": 39.97,
-    "fine_int": [
-     38.07,
-     44.85
+    [
+     "2026-11-15T08:02",
+     1.81
+    ],
+    [
+     "2026-11-15T14:04",
+     1.75
+    ],
+    [
+     "2026-11-15T20:04",
+     1.68
+    ],
+    [
+     "2026-11-16T02:12",
+     0.49
+    ],
+    [
+     "2026-11-16T09:01",
+     0.46
+    ],
+    [
+     "2026-11-16T15:01",
+     0.45
+    ],
+    [
+     "2026-11-16T21:01",
+     0.42
+    ],
+    [
+     "2026-11-17T08:01",
+     0.39
+    ],
+    [
+     "2026-11-17T14:01",
+     0.37
+    ],
+    [
+     "2026-11-17T20:01",
+     0.34
+    ],
+    [
+     "2026-11-18T08:01",
+     0.3
+    ],
+    [
+     "2026-11-18T14:01",
+     0.28
+    ],
+    [
+     "2026-11-18T20:01",
+     0.26
+    ],
+    [
+     "2026-11-19T08:04",
+     0.22
+    ],
+    [
+     "2026-11-19T15:01",
+     0.2
+    ],
+    [
+     "2026-11-19T21:01",
+     0.18
+    ],
+    [
+     "2026-11-20T08:02",
+     0.14
+    ],
+    [
+     "2026-11-20T14:02",
+     0.12
+    ],
+    [
+     "2026-11-20T20:09",
+     0.1
+    ],
+    [
+     "2026-11-21T08:02",
+     0.06
+    ],
+    [
+     "2026-11-21T15:01",
+     0.03
+    ],
+    [
+     "2026-11-21T21:01",
+     0.01
+    ],
+    [
+     "2026-11-22T08:03",
+     0.0
+    ],
+    [
+     "2026-11-22T15:03",
+     0.29
+    ],
+    [
+     "2026-11-22T21:03",
+     0.28
+    ],
+    [
+     "2026-11-23T08:04",
+     0.24
+    ],
+    [
+     "2026-11-23T15:01",
+     0.21
+    ],
+    [
+     "2026-11-23T21:01",
+     0.18
+    ],
+    [
+     "2026-11-24T08:03",
+     0.13
+    ],
+    [
+     "2026-11-24T15:02",
+     0.1
+    ],
+    [
+     "2026-11-24T21:34",
+     0.06
+    ],
+    [
+     "2026-11-24T21:40",
+     0.06
     ]
-   }
+   ],
+   "p": 0.06,
+   "variazione": -0.12,
+   "ufficiale": false,
+   "prossima": "2026-11-26 21:00",
+   "prossima_avversario": "Omonia",
+   "prossima_casa": true,
+   "eventi": [
+    {
+     "data": "2026-10-18",
+     "causa": "Sconfitta: Juventus–Lazio 0-3",
+     "p": 12.6
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Vittoria: Lecce–Juventus 0-2",
+     "p": 1.2
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Sconfitta: Genoa–Juventus 2-0",
+     "p": 13.4
+    },
+    {
+     "data": "2026-10-28",
+     "causa": "Panchina in discussione",
+     "p": 15.4
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Notizie sul sostituto",
+     "p": 17.3
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "Segnali dalla società",
+     "p": 24.0
+    },
+    {
+     "data": "2026-10-30",
+     "causa": "Ultimatum: decisiva la prossima partita",
+     "p": 16.5
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Fiducia dalla società",
+     "p": 1.2
+    },
+    {
+     "data": "2026-11-01",
+     "causa": "Vittoria: Juventus–Napoli 2-0 (chiusi ultimatum e fiducia)",
+     "p": 1.2
+    },
+    {
+     "data": "2026-11-08",
+     "causa": "Pareggio: Fiorentina–Juventus 2-2",
+     "p": 9.9
+    },
+    {
+     "data": "2026-11-22",
+     "causa": "Vittoria: Juventus–Venezia 4-0",
+     "p": 0.3
+    }
+   ],
+   "campionato_p": 0.09,
+   "campionato_prossima": "2026-11-29 20:45",
+   "campionato_avversario": "Como",
+   "campionato_casa": false,
+   "prossima_competizione": "Europa League",
+   "orizzonti": {
+    "natale": 10.56,
+    "natale_int": [
+     8.65,
+     13.37
+    ],
+    "pasqua": 35.67,
+    "pasqua_int": [
+     31.27,
+     42.76
+    ],
+    "fine": 43.07,
+    "fine_int": [
+     38.34,
+     50.74
+    ]
+   },
+   "motivi": [
+    {
+     "t": "Buon periodo",
+     "d": "giu"
+    },
+    {
+     "t": "Classifica sotto le attese",
+     "d": "su"
+    },
+    {
+     "t": "Ultima partita positiva",
+     "d": "giu"
+    }
+   ]
   },
   {
    "squadra": "Hoffenheim",
@@ -6979,7 +7004,7 @@
      0.06
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.06
     ]
    ],
@@ -7081,7 +7106,7 @@
    "campionato_casa": true,
    "prossima_competizione": "Europa League",
    "orizzonti": {
-    "natale": 11.71,
+    "natale": 11.7,
     "natale_int": [
      9.62,
      14.96
@@ -7089,12 +7114,402 @@
     "pasqua": 29.09,
     "pasqua_int": [
      23.31,
-     33.25
+     33.24
     ],
     "fine": 31.69,
     "fine_int": [
      25.17,
-     36.36
+     36.35
+    ]
+   }
+  },
+  {
+   "squadra": "Newcastle",
+   "campionato": "Premier League",
+   "allenatore": "Matthias Jaissle",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-11-18T00:37",
+     0.08
+    ],
+    [
+     "2026-11-18T08:01",
+     0.07
+    ],
+    [
+     "2026-11-18T14:01",
+     0.07
+    ],
+    [
+     "2026-11-18T20:01",
+     0.06
+    ],
+    [
+     "2026-11-19T08:01",
+     0.05
+    ],
+    [
+     "2026-11-19T14:01",
+     0.04
+    ],
+    [
+     "2026-11-19T20:01",
+     0.03
+    ],
+    [
+     "2026-11-20T08:01",
+     0.02
+    ],
+    [
+     "2026-11-20T14:01",
+     0.01
+    ],
+    [
+     "2026-11-20T20:01",
+     0.01
+    ],
+    [
+     "2026-11-21T08:01",
+     0.0
+    ],
+    [
+     "2026-11-21T14:01",
+     0.0
+    ],
+    [
+     "2026-11-21T20:01",
+     0.0
+    ],
+    [
+     "2026-11-22T08:01",
+     0.32
+    ],
+    [
+     "2026-11-22T14:01",
+     0.29
+    ],
+    [
+     "2026-11-22T20:02",
+     0.26
+    ],
+    [
+     "2026-11-23T08:02",
+     0.19
+    ],
+    [
+     "2026-11-23T15:01",
+     0.14
+    ],
+    [
+     "2026-11-23T21:01",
+     0.11
+    ],
+    [
+     "2026-11-24T08:01",
+     0.07
+    ],
+    [
+     "2026-11-24T14:01",
+     0.06
+    ],
+    [
+     "2026-11-24T20:01",
+     0.06
+    ],
+    [
+     "2026-11-24T21:34",
+     0.05
+    ]
+   ],
+   "p": 0.05,
+   "variazione": -0.05,
+   "ufficiale": false,
+   "prossima": "2026-11-29 15:05",
+   "prossima_avversario": "Brighton",
+   "prossima_casa": false,
+   "eventi": [
+    {
+     "data": "2026-08-23",
+     "causa": "Pareggio: Newcastle–Liverpool 2-2",
+     "p": 0.2
+    },
+    {
+     "data": "2026-08-29",
+     "causa": "Vittoria: Tottenham–Newcastle 0-2",
+     "p": 0.0
+    },
+    {
+     "data": "2026-09-05",
+     "causa": "Pareggio: Newcastle–Bournemouth 2-2",
+     "p": 0.0
+    },
+    {
+     "data": "2026-09-14",
+     "causa": "Sconfitta: Leeds–Newcastle 4-1",
+     "p": 0.2
+    },
+    {
+     "data": "2026-09-19",
+     "causa": "Vittoria: Newcastle–Hull 2-1",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-12",
+     "causa": "Sconfitta: Coventry–Newcastle 4-1",
+     "p": 0.6
+    },
+    {
+     "data": "2026-10-17",
+     "causa": "Sconfitta: Newcastle–Aston Villa 0-1",
+     "p": 2.5
+    },
+    {
+     "data": "2026-10-25",
+     "causa": "Vittoria: Crystal Palace–Newcastle 0-2",
+     "p": 0.3
+    },
+    {
+     "data": "2026-10-29",
+     "causa": "KO in EFL Cup: Everton–Newcastle 3-1",
+     "p": 0.0
+    },
+    {
+     "data": "2026-11-02",
+     "causa": "Sconfitta: Newcastle–Everton 0-1",
+     "p": 1.5
+    },
+    {
+     "data": "2026-11-07",
+     "causa": "Pareggio: Fulham–Newcastle 1-1",
+     "p": 3.0
+    },
+    {
+     "data": "2026-11-21",
+     "causa": "Pareggio: Newcastle–Arsenal 2-2",
+     "p": 0.3
+    }
+   ],
+   "motivi": [
+    {
+     "t": "Ultima partita positiva",
+     "d": "giu"
+    },
+    {
+     "t": "Periodo negativo",
+     "d": "su"
+    },
+    {
+     "t": "Classifica sotto le attese",
+     "d": "su"
+    }
+   ],
+   "orizzonti": {
+    "natale": 7.06,
+    "natale_int": [
+     5.42,
+     8.24
+    ],
+    "pasqua": 32.37,
+    "pasqua_int": [
+     30.65,
+     36.56
+    ],
+    "fine": 39.97,
+    "fine_int": [
+     38.07,
+     44.85
+    ]
+   }
+  },
+  {
+   "squadra": "Paderborn",
+   "campionato": "Bundesliga",
+   "allenatore": "Ralf Kettemann",
+   "interim": 0,
+   "debutto_atteso": false,
+   "serie": [
+    [
+     "2026-11-18T00:37",
+     0.05
+    ],
+    [
+     "2026-11-18T08:01",
+     0.05
+    ],
+    [
+     "2026-11-18T14:01",
+     0.04
+    ],
+    [
+     "2026-11-18T20:01",
+     0.04
+    ],
+    [
+     "2026-11-19T08:01",
+     0.03
+    ],
+    [
+     "2026-11-19T14:01",
+     0.02
+    ],
+    [
+     "2026-11-19T20:01",
+     0.02
+    ],
+    [
+     "2026-11-20T08:01",
+     0.01
+    ],
+    [
+     "2026-11-20T14:01",
+     0.01
+    ],
+    [
+     "2026-11-20T20:01",
+     0.0
+    ],
+    [
+     "2026-11-21T08:01",
+     0.0
+    ],
+    [
+     "2026-11-21T14:01",
+     0.0
+    ],
+    [
+     "2026-11-21T20:01",
+     0.56
+    ],
+    [
+     "2026-11-22T08:01",
+     0.48
+    ],
+    [
+     "2026-11-22T14:01",
+     0.43
+    ],
+    [
+     "2026-11-22T20:02",
+     0.38
+    ],
+    [
+     "2026-11-23T08:02",
+     0.27
+    ],
+    [
+     "2026-11-23T15:01",
+     0.21
+    ],
+    [
+     "2026-11-23T21:01",
+     0.15
+    ],
+    [
+     "2026-11-24T08:01",
+     0.07
+    ],
+    [
+     "2026-11-24T14:01",
+     0.06
+    ],
+    [
+     "2026-11-24T20:01",
+     0.05
+    ],
+    [
+     "2026-11-24T21:34",
+     0.05
+    ]
+   ],
+   "p": 0.05,
+   "variazione": -0.1,
+   "ufficiale": false,
+   "prossima": "2026-11-28 15:30",
+   "prossima_avversario": "Schalke 04",
+   "prossima_casa": true,
+   "eventi": [
+    {
+     "data": "2026-08-29",
+     "causa": "Pareggio: Mainz–Paderborn 0-0",
+     "p": 0.2
+    },
+    {
+     "data": "2026-09-05",
+     "causa": "Sconfitta: Paderborn–Freiburg 0-1",
+     "p": 0.1
+    },
+    {
+     "data": "2026-09-12",
+     "causa": "Sconfitta: Dortmund–Paderborn 3-0",
+     "p": 0.4
+    },
+    {
+     "data": "2026-09-20",
+     "causa": "Vittoria: Paderborn–Hoffenheim 3-1",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-10",
+     "causa": "Sconfitta: Paderborn–Stuttgart 0-2",
+     "p": 0.2
+    },
+    {
+     "data": "2026-10-17",
+     "causa": "Pareggio: Werder Bremen–Paderborn 2-2",
+     "p": 0.1
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Vittoria: Paderborn–Hamburg 1-0",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-31",
+     "causa": "Pareggio: M'gladbach–Paderborn 0-0",
+     "p": 0.1
+    },
+    {
+     "data": "2026-11-07",
+     "causa": "Pareggio: Paderborn–Ein Frankfurt 2-2",
+     "p": 0.6
+    },
+    {
+     "data": "2026-11-21",
+     "causa": "Sconfitta: Leverkusen–Paderborn 4-0",
+     "p": 0.4
+    }
+   ],
+   "motivi": [
+    {
+     "t": "Ultima partita andata male",
+     "d": "su"
+    },
+    {
+     "t": "Arrivato da poco",
+     "d": "giu"
+    },
+    {
+     "t": "Classifica in linea con le attese",
+     "d": "giu"
+    }
+   ],
+   "orizzonti": {
+    "natale": 5.42,
+    "natale_int": [
+     4.19,
+     6.91
+    ],
+    "pasqua": 19.41,
+    "pasqua_int": [
+     17.32,
+     21.27
+    ],
+    "fine": 23.83,
+    "fine_int": [
+     21.22,
+     26.33
     ]
    }
   },
@@ -7106,15 +7521,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.0
     ],
     [
-     "2026-11-14T16:04",
-     0.0
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.0
     ],
     [
@@ -7238,11 +7649,15 @@
      0.06
     ],
     [
-     "2026-11-24T21:01",
-     0.05
+     "2026-11-24T21:34",
+     0.04
+    ],
+    [
+     "2026-11-24T21:40",
+     0.04
     ]
    ],
-   "p": 0.05,
+   "p": 0.04,
    "variazione": -0.07,
    "ufficiale": false,
    "prossima": "2026-11-29 15:00",
@@ -7261,10 +7676,10 @@
     }
    ],
    "orizzonti": {
-    "natale": 10.37,
+    "natale": 10.36,
     "natale_int": [
      7.39,
-     13.05
+     13.04
     ],
     "pasqua": 30.68,
     "pasqua_int": [
@@ -7273,8 +7688,8 @@
     ],
     "fine": 41.27,
     "fine_int": [
-     35.73,
-     48.55
+     35.72,
+     48.54
     ]
    },
    "motivi": [
@@ -7291,421 +7706,6 @@
      "d": "su"
     }
    ]
-  },
-  {
-   "squadra": "Paderborn",
-   "campionato": "Bundesliga",
-   "allenatore": "Ralf Kettemann",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-11-18T00:37",
-     0.05
-    ],
-    [
-     "2026-11-18T08:01",
-     0.05
-    ],
-    [
-     "2026-11-18T14:01",
-     0.04
-    ],
-    [
-     "2026-11-18T20:01",
-     0.04
-    ],
-    [
-     "2026-11-19T08:01",
-     0.03
-    ],
-    [
-     "2026-11-19T14:01",
-     0.02
-    ],
-    [
-     "2026-11-19T20:01",
-     0.02
-    ],
-    [
-     "2026-11-20T08:01",
-     0.01
-    ],
-    [
-     "2026-11-20T14:01",
-     0.01
-    ],
-    [
-     "2026-11-20T20:01",
-     0.0
-    ],
-    [
-     "2026-11-21T08:01",
-     0.0
-    ],
-    [
-     "2026-11-21T14:01",
-     0.0
-    ],
-    [
-     "2026-11-21T20:01",
-     0.56
-    ],
-    [
-     "2026-11-22T08:01",
-     0.48
-    ],
-    [
-     "2026-11-22T14:01",
-     0.43
-    ],
-    [
-     "2026-11-22T20:02",
-     0.38
-    ],
-    [
-     "2026-11-23T08:02",
-     0.27
-    ],
-    [
-     "2026-11-23T15:01",
-     0.21
-    ],
-    [
-     "2026-11-23T21:01",
-     0.15
-    ],
-    [
-     "2026-11-24T08:01",
-     0.07
-    ],
-    [
-     "2026-11-24T14:01",
-     0.06
-    ],
-    [
-     "2026-11-24T20:01",
-     0.05
-    ],
-    [
-     "2026-11-24T21:01",
-     0.05
-    ]
-   ],
-   "p": 0.05,
-   "variazione": -0.1,
-   "ufficiale": false,
-   "prossima": "2026-11-28 15:30",
-   "prossima_avversario": "Schalke 04",
-   "prossima_casa": true,
-   "eventi": [
-    {
-     "data": "2026-08-29",
-     "causa": "Pareggio: Mainz–Paderborn 0-0",
-     "p": 0.2
-    },
-    {
-     "data": "2026-09-05",
-     "causa": "Sconfitta: Paderborn–Freiburg 0-1",
-     "p": 0.1
-    },
-    {
-     "data": "2026-09-12",
-     "causa": "Sconfitta: Dortmund–Paderborn 3-0",
-     "p": 0.4
-    },
-    {
-     "data": "2026-09-20",
-     "causa": "Vittoria: Paderborn–Hoffenheim 3-1",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-10",
-     "causa": "Sconfitta: Paderborn–Stuttgart 0-2",
-     "p": 0.2
-    },
-    {
-     "data": "2026-10-17",
-     "causa": "Pareggio: Werder Bremen–Paderborn 2-2",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Vittoria: Paderborn–Hamburg 1-0",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-31",
-     "causa": "Pareggio: M'gladbach–Paderborn 0-0",
-     "p": 0.1
-    },
-    {
-     "data": "2026-11-07",
-     "causa": "Pareggio: Paderborn–Ein Frankfurt 2-2",
-     "p": 0.6
-    },
-    {
-     "data": "2026-11-21",
-     "causa": "Sconfitta: Leverkusen–Paderborn 4-0",
-     "p": 0.4
-    }
-   ],
-   "motivi": [
-    {
-     "t": "Ultima partita andata male",
-     "d": "su"
-    },
-    {
-     "t": "Arrivato da poco",
-     "d": "giu"
-    },
-    {
-     "t": "Classifica in linea con le attese",
-     "d": "giu"
-    }
-   ],
-   "orizzonti": {
-    "natale": 5.42,
-    "natale_int": [
-     4.2,
-     6.91
-    ],
-    "pasqua": 19.41,
-    "pasqua_int": [
-     17.32,
-     21.27
-    ],
-    "fine": 23.83,
-    "fine_int": [
-     21.23,
-     26.33
-    ]
-   }
-  },
-  {
-   "squadra": "Aston Villa",
-   "campionato": "Premier League",
-   "allenatore": "Unai Emery",
-   "interim": 0,
-   "debutto_atteso": false,
-   "serie": [
-    [
-     "2026-11-18T00:37",
-     0.04
-    ],
-    [
-     "2026-11-18T08:01",
-     0.04
-    ],
-    [
-     "2026-11-18T14:01",
-     0.04
-    ],
-    [
-     "2026-11-18T20:01",
-     0.03
-    ],
-    [
-     "2026-11-19T08:01",
-     0.03
-    ],
-    [
-     "2026-11-19T14:01",
-     0.02
-    ],
-    [
-     "2026-11-19T20:01",
-     0.02
-    ],
-    [
-     "2026-11-20T08:01",
-     0.01
-    ],
-    [
-     "2026-11-20T14:01",
-     0.01
-    ],
-    [
-     "2026-11-20T20:01",
-     0.0
-    ],
-    [
-     "2026-11-21T08:01",
-     0.0
-    ],
-    [
-     "2026-11-21T14:01",
-     0.0
-    ],
-    [
-     "2026-11-21T20:01",
-     0.23
-    ],
-    [
-     "2026-11-22T08:01",
-     0.19
-    ],
-    [
-     "2026-11-22T14:01",
-     0.17
-    ],
-    [
-     "2026-11-22T20:02",
-     0.14
-    ],
-    [
-     "2026-11-23T08:02",
-     0.09
-    ],
-    [
-     "2026-11-23T15:01",
-     0.06
-    ],
-    [
-     "2026-11-23T21:01",
-     0.03
-    ],
-    [
-     "2026-11-24T08:01",
-     0.01
-    ],
-    [
-     "2026-11-24T14:01",
-     0.01
-    ],
-    [
-     "2026-11-24T20:01",
-     0.04
-    ],
-    [
-     "2026-11-24T21:01",
-     0.04
-    ]
-   ],
-   "p": 0.04,
-   "variazione": -0.03,
-   "ufficiale": false,
-   "prossima": "2026-11-28 18:30",
-   "prossima_avversario": "Ipswich",
-   "prossima_casa": false,
-   "eventi": [
-    {
-     "data": "2026-08-23",
-     "causa": "Sconfitta: Brighton–Aston Villa 4-0",
-     "p": 1.6
-    },
-    {
-     "data": "2026-08-31",
-     "causa": "Sconfitta: Aston Villa–Arsenal 0-1",
-     "p": 2.2
-    },
-    {
-     "data": "2026-09-05",
-     "causa": "Pareggio: Hull–Aston Villa 0-0",
-     "p": 1.6
-    },
-    {
-     "data": "2026-09-08",
-     "causa": "Vittoria in Champions League: Club Brugge–Aston Villa 2-3",
-     "p": 0.2
-    },
-    {
-     "data": "2026-09-12",
-     "causa": "Sconfitta: Aston Villa–Nott'm Forest 1-2",
-     "p": 4.5
-    },
-    {
-     "data": "2026-09-19",
-     "causa": "Vittoria: Tottenham–Aston Villa 2-3",
-     "p": 0.9
-    },
-    {
-     "data": "2026-10-10",
-     "causa": "Pareggio: Aston Villa–Brentford 2-2",
-     "p": 0.7
-    },
-    {
-     "data": "2026-10-14",
-     "causa": "Vittoria in Champions League: Aston Villa–Fenerbahçe 6-0",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-17",
-     "causa": "Vittoria: Newcastle–Aston Villa 0-1",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-21",
-     "causa": "Vittoria in Champions League: Aston Villa–Viking 3-1",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Vittoria: Aston Villa–Man City 2-1",
-     "p": 0.1
-    },
-    {
-     "data": "2026-10-28",
-     "causa": "KO in EFL Cup: Bournemouth–Aston Villa 3-0",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-31",
-     "causa": "Pareggio: Aston Villa–Fulham 1-1",
-     "p": 0.2
-    },
-    {
-     "data": "2026-11-03",
-     "causa": "KO in Champions League: Barça–Aston Villa 3-0",
-     "p": 0.0
-    },
-    {
-     "data": "2026-11-08",
-     "causa": "Pareggio: Man United–Aston Villa 4-4",
-     "p": 0.6
-    },
-    {
-     "data": "2026-11-21",
-     "causa": "Pareggio: Aston Villa–Sunderland 0-0",
-     "p": 0.3
-    },
-    {
-     "data": "2026-11-24",
-     "causa": "Pareggio in Champions League: Galatasaray–Aston Villa 0-0",
-     "p": 0.0
-    }
-   ],
-   "motivi": [
-    {
-     "t": "Buon periodo",
-     "d": "giu"
-    },
-    {
-     "t": "Ultima partita andata male",
-     "d": "su"
-    },
-    {
-     "t": "Credito dalla scorsa stagione",
-     "d": "giu"
-    }
-   ],
-   "orizzonti": {
-    "natale": 6.43,
-    "natale_int": [
-     5.01,
-     7.56
-    ],
-    "pasqua": 16.31,
-    "pasqua_int": [
-     13.59,
-     18.4
-    ],
-    "fine": 18.4,
-    "fine_int": [
-     15.16,
-     20.71
-    ]
-   }
   },
   {
    "squadra": "Leeds",
@@ -7803,7 +7803,7 @@
      0.03
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.03
     ]
    ],
@@ -7998,7 +7998,7 @@
      0.03
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.03
     ]
    ],
@@ -8189,7 +8189,7 @@
      0.03
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.03
     ]
    ],
@@ -8273,7 +8273,7 @@
    "orizzonti": {
     "natale": 1.94,
     "natale_int": [
-     1.62,
+     1.61,
      2.82
     ],
     "pasqua": 21.89,
@@ -8296,16 +8296,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     0.4
-    ],
-    [
-     "2026-11-14T16:04",
+     "2026-11-14T12:04",
      0.39
     ],
     [
-     "2026-11-14T22:04",
-     0.37
+     "2026-11-14T18:04",
+     0.38
     ],
     [
      "2026-11-15T08:02",
@@ -8428,12 +8424,16 @@
      0.07
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.02
+    ],
+    [
+     "2026-11-24T21:40",
      0.02
     ]
    ],
    "p": 0.02,
-   "variazione": -0.15,
+   "variazione": -0.16,
    "ufficiale": false,
    "prossima": "2026-11-25 20:00",
    "prossima_avversario": "Sampdoria",
@@ -8483,7 +8483,7 @@
     ],
     "fine": 65.2,
     "fine_int": [
-     62.29,
+     62.28,
      67.93
     ]
    },
@@ -8598,7 +8598,7 @@
      0.02
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.02
     ]
    ],
@@ -8748,7 +8748,7 @@
      0.03
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.02
     ]
    ],
@@ -8788,7 +8788,7 @@
     "natale": 8.4,
     "natale_int": [
      6.1,
-     9.44
+     9.43
     ],
     "pasqua": 28.67,
     "pasqua_int": [
@@ -8898,7 +8898,7 @@
      0.02
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.02
     ]
    ],
@@ -9010,7 +9010,7 @@
      20.02,
      24.81
     ],
-    "fine": 25.58,
+    "fine": 25.57,
     "fine_int": [
      23.7,
      28.33
@@ -9025,15 +9025,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.01
     ],
     [
-     "2026-11-14T16:04",
-     0.01
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.01
     ],
     [
@@ -9157,7 +9153,11 @@
      0.02
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.01
+    ],
+    [
+     "2026-11-24T21:40",
      0.01
     ]
    ],
@@ -9212,8 +9212,8 @@
     ],
     "fine": 37.06,
     "fine_int": [
-     34.26,
-     40.92
+     34.25,
+     40.91
     ]
    },
    "motivi": [
@@ -9239,16 +9239,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     1.04
+     "2026-11-14T12:04",
+     1.03
     ],
     [
-     "2026-11-14T16:04",
-     1.0
-    ],
-    [
-     "2026-11-14T22:04",
-     0.96
+     "2026-11-14T18:04",
+     0.99
     ],
     [
      "2026-11-15T08:02",
@@ -9371,7 +9367,11 @@
      0.02
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.01
+    ],
+    [
+     "2026-11-24T21:40",
      0.01
     ]
    ],
@@ -9453,16 +9453,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.11
     ],
     [
-     "2026-11-14T16:04",
+     "2026-11-14T18:04",
      0.11
-    ],
-    [
-     "2026-11-14T22:04",
-     0.1
     ],
     [
      "2026-11-15T08:02",
@@ -9585,12 +9581,16 @@
      0.03
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.01
+    ],
+    [
+     "2026-11-24T21:40",
      0.01
     ]
    ],
    "p": 0.01,
-   "variazione": -0.11,
+   "variazione": -0.12,
    "ufficiale": false,
    "prossima": "2026-11-25 19:00",
    "prossima_avversario": "Avellino",
@@ -9641,7 +9641,7 @@
     "pasqua": 67.46,
     "pasqua_int": [
      58.37,
-     73.13
+     73.12
     ],
     "fine": 73.74,
     "fine_int": [
@@ -9672,15 +9672,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.03
     ],
     [
-     "2026-11-14T16:04",
-     0.03
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.03
     ],
     [
@@ -9804,7 +9800,11 @@
      0.02
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.01
+    ],
+    [
+     "2026-11-24T21:40",
      0.01
     ]
    ],
@@ -9822,17 +9822,17 @@
     },
     {
      "data": "2026-10-24",
+     "causa": "Ultimatum: decisiva la prossima partita",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-24",
+     "causa": "Ultimatum: decisiva la prossima partita",
+     "p": 0.0
+    },
+    {
+     "data": "2026-10-24",
      "causa": "Segnali dalla società",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Ultimatum: decisiva la prossima partita",
-     "p": 0.0
-    },
-    {
-     "data": "2026-10-24",
-     "causa": "Ultimatum: decisiva la prossima partita",
      "p": 0.0
     },
     {
@@ -10019,7 +10019,7 @@
      0.01
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.01
     ]
    ],
@@ -10219,7 +10219,7 @@
      0.01
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.01
     ]
    ],
@@ -10414,7 +10414,7 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.01
     ]
    ],
@@ -10634,7 +10634,7 @@
      0.01
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.01
     ]
    ],
@@ -10849,7 +10849,7 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.01
     ]
    ],
@@ -11059,7 +11059,7 @@
      0.01
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.01
     ]
    ],
@@ -11254,7 +11254,7 @@
      0.01
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.01
     ]
    ],
@@ -11361,15 +11361,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.26
     ],
     [
-     "2026-11-14T16:04",
-     0.25
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.24
     ],
     [
@@ -11493,7 +11489,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -11575,16 +11575,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     1.88
+     "2026-11-14T12:04",
+     1.85
     ],
     [
-     "2026-11-14T16:04",
-     1.81
-    ],
-    [
-     "2026-11-14T22:04",
-     1.74
+     "2026-11-14T18:04",
+     1.79
     ],
     [
      "2026-11-15T08:02",
@@ -11707,7 +11703,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -11779,15 +11779,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.02
     ],
     [
-     "2026-11-14T16:04",
-     0.02
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.02
     ],
     [
@@ -11911,7 +11907,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -11993,15 +11993,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.29
     ],
     [
-     "2026-11-14T16:04",
-     0.28
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.27
     ],
     [
@@ -12125,7 +12121,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -12202,16 +12202,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     11.35
+     "2026-11-14T12:04",
+     11.22
     ],
     [
-     "2026-11-14T16:04",
-     10.96
-    ],
-    [
-     "2026-11-14T22:04",
-     10.57
+     "2026-11-14T18:04",
+     10.83
     ],
     [
      "2026-11-15T08:02",
@@ -12334,7 +12330,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -12411,16 +12411,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     1.41
+     "2026-11-14T12:04",
+     1.4
     ],
     [
-     "2026-11-14T16:04",
-     1.36
-    ],
-    [
-     "2026-11-14T22:04",
-     1.31
+     "2026-11-14T18:04",
+     1.34
     ],
     [
      "2026-11-15T08:02",
@@ -12543,7 +12539,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -12625,15 +12625,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.03
     ],
     [
-     "2026-11-14T16:04",
-     0.03
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.03
     ],
     [
@@ -12757,7 +12753,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -12839,15 +12839,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.03
     ],
     [
-     "2026-11-14T16:04",
-     0.03
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.03
     ],
     [
@@ -12971,7 +12967,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -13053,15 +13053,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     0.11
-    ],
-    [
-     "2026-11-14T16:04",
+     "2026-11-14T12:04",
      0.1
     ],
     [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.1
     ],
     [
@@ -13185,7 +13181,11 @@
      0.01
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.01
+    ],
+    [
+     "2026-11-24T21:40",
      0.01
     ]
    ],
@@ -13267,15 +13267,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.01
     ],
     [
-     "2026-11-14T16:04",
-     0.01
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.01
     ],
     [
@@ -13399,7 +13395,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -13441,7 +13441,7 @@
      "p": 0.0
     }
    ],
-   "campionato_p": 0.01,
+   "campionato_p": 0.0,
    "campionato_prossima": "2026-11-29 18:00",
    "campionato_avversario": "Monza",
    "campionato_casa": true,
@@ -13486,16 +13486,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     0.7
+     "2026-11-14T12:04",
+     0.69
     ],
     [
-     "2026-11-14T16:04",
-     0.67
-    ],
-    [
-     "2026-11-14T22:04",
-     0.64
+     "2026-11-14T18:04",
+     0.66
     ],
     [
      "2026-11-15T08:02",
@@ -13618,7 +13614,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -13696,16 +13696,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.04
     ],
     [
-     "2026-11-14T16:04",
+     "2026-11-14T18:04",
      0.04
-    ],
-    [
-     "2026-11-14T22:04",
-     0.03
     ],
     [
      "2026-11-15T08:02",
@@ -13828,7 +13824,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -13902,15 +13902,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.0
     ],
     [
-     "2026-11-14T16:04",
-     0.0
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.0
     ],
     [
@@ -14034,7 +14030,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -14116,15 +14116,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.11
     ],
     [
-     "2026-11-14T16:04",
-     0.11
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.1
     ],
     [
@@ -14248,7 +14244,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -14326,15 +14326,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.17
     ],
     [
-     "2026-11-14T16:04",
-     0.17
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.16
     ],
     [
@@ -14458,7 +14454,11 @@
      0.01
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -14511,7 +14511,7 @@
      26.51,
      32.16
     ],
-    "fine": 36.51,
+    "fine": 36.5,
     "fine_int": [
      32.35,
      38.8
@@ -14540,16 +14540,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.11
     ],
     [
-     "2026-11-14T16:04",
+     "2026-11-14T18:04",
      0.11
-    ],
-    [
-     "2026-11-14T22:04",
-     0.1
     ],
     [
      "2026-11-15T08:02",
@@ -14672,7 +14668,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -14754,15 +14754,11 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
+     "2026-11-14T12:04",
      0.0
     ],
     [
-     "2026-11-14T16:04",
-     0.0
-    ],
-    [
-     "2026-11-14T22:04",
+     "2026-11-14T18:04",
      0.0
     ],
     [
@@ -14886,7 +14882,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -14978,16 +14978,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     2.65
+     "2026-11-14T12:04",
+     2.61
     ],
     [
-     "2026-11-14T16:04",
-     2.55
-    ],
-    [
-     "2026-11-14T22:04",
-     2.45
+     "2026-11-14T18:04",
+     2.51
     ],
     [
      "2026-11-15T08:02",
@@ -15110,7 +15106,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -15187,16 +15187,12 @@
    "debutto_atteso": false,
    "serie": [
     [
-     "2026-11-14T10:01",
-     3.39
+     "2026-11-14T12:04",
+     3.35
     ],
     [
-     "2026-11-14T16:04",
-     3.27
-    ],
-    [
-     "2026-11-14T22:04",
-     3.14
+     "2026-11-14T18:04",
+     3.23
     ],
     [
      "2026-11-15T08:02",
@@ -15319,7 +15315,11 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
+     0.0
+    ],
+    [
+     "2026-11-24T21:40",
      0.0
     ]
    ],
@@ -15504,7 +15504,7 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.0
     ]
    ],
@@ -15729,7 +15729,7 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.0
     ]
    ],
@@ -15954,7 +15954,7 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.0
     ]
    ],
@@ -16144,7 +16144,7 @@
      0.0
     ],
     [
-     "2026-11-24T21:01",
+     "2026-11-24T21:34",
      0.0
     ]
    ],
