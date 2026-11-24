@@ -95,6 +95,12 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--soft
 .ev li{position:relative;padding-left:14px}
 .ev li::before{content:'';position:absolute;left:0;top:17px;width:7px;height:7px;border-radius:50%;background:var(--h)}
 .empty{padding:24px 16px;color:var(--mut);font-size:14px}
+.sk{padding:12px 16px;opacity:0;animation:skv .2s .3s forwards}   /* sagoma della lista mentre arrivano i dati: compare solo se tardano, così non lampeggia a ogni apertura (Davide 24/11) */
+.sk i{display:block;height:48px;margin:0 0 10px;border-radius:10px;background:var(--surf);animation:skp 1.1s ease-in-out infinite alternate}
+.sk i:first-child{height:110px;margin-bottom:18px}
+@keyframes skv{to{opacity:1}} @keyframes skp{to{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.sk i{animation:none}}
+.offline{margin:0;padding:8px 16px;background:#3a2a12;color:#FFC94A;font-size:13px;line-height:1.4;text-align:center}
 .menub{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-left:-10px;border:0;background:transparent;color:var(--soft);border-radius:10px}
 .menub:active{background:var(--surf)}
 .topbar{display:flex;align-items:center;gap:4px;padding:6px 16px;border-bottom:1px solid var(--line)}
@@ -128,7 +134,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--soft
 </style>
 </head>
 <body>
-<script>window.RADICE='../'</script><div class="wrap" id="app" data-pagina-squadra="brentford"><section class="pag seo"><h2>Keith Andrews</h2><p>Brentford · Premier League</p><p>Probabilità di esonero o addio di Keith Andrews: prima della prossima partita ed entro varie finestre temporali.</p><p>Prossima partita: 28/11, ore 16:00, contro Manchester United.</p></section><div class="empty">Caricamento…</div></div>   <!-- testo fisso per i motori di ricerca: sparisce quando arrivano i dati -->
+<script>window.RADICE='../'</script><div class="wrap" id="app" data-pagina-squadra="brentford"><section class="pag seo"><h2>Keith Andrews</h2><p>Brentford · Premier League</p><p>Probabilità di esonero o addio di Keith Andrews: prima della prossima partita ed entro varie finestre temporali.</p><p>Prossima partita: 28/11, ore 16:00, contro Manchester United.</p></section><span class="seo">Caricamento…</span><div class="sk" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><!--/app-->   <!-- testo fisso per i motori di ricerca: sparisce quando arrivano i dati -->
 <script>
 const COL={Atalanta:['#1E71B8','#fff'],Bologna:['#A21C26','#fff'],Cagliari:['#A6192E','#fff'],Como:['#1B3E8A','#fff'],Fiorentina:['#5B2A86','#fff'],
 Frosinone:['#FFD100','#0E2A5C'],Genoa:['#A3172F','#fff'],Inter:['#0A2A6B','#fff'],Juventus:['#F2F2F2','#111'],Lazio:['#87CEEB','#0D1117'],Lecce:['#F5D300','#111'],
@@ -372,7 +378,7 @@ function render(){
   document.title=a0?`${a0.allenatore} (${nm(a0.squadra)}): probabilità di esonero – Termometro Panchine`:'Termometro Panchine – probabilità di addio degli allenatori di calcio';
   const a=h?D.allenatori.find(x=>slug(x.squadra)===h):null;
   document.documentElement.dataset.m=(!h||a)?st.m:'p';   // lo sfondo dell'orizzonte vale per la lista e le schede, non per le altre pagine
-  app.innerHTML=(h==='cambi'?cambi():h==='come'?come():h==='perche'?perche():a?scheda(a):lista())+drawer(); if(a||h==='cambi'||h==='come'||h==='perche')window.scrollTo(0,0);
+  app.innerHTML=(VECCHI?`<p class="offline" role="status">Connessione assente: numeri ${quando(D.aggiornato)}.</p>`:'')+(h==='cambi'?cambi():h==='come'?come():h==='perche'?perche():a?scheda(a):lista())+drawer(); if(a||h==='cambi'||h==='come'||h==='perche')window.scrollTo(0,0);
 }
 document.addEventListener('click',e=>{if(e.target.closest('[data-chiudi]')||e.target.closest('.drawer a')){st.menu=false;render();if(!e.target.closest('.drawer a'))return}
   const b=e.target.closest('button');if(!b)return; if(b.dataset.menu){st.menu=true;render();return}
@@ -382,7 +388,17 @@ window.addEventListener('hashchange',render); window.addEventListener('popstate'
 // link interni senza # (squadre, pagina principale): si cambia indirizzo senza ricaricare; se il browser non lo permette, si carica la pagina
 document.addEventListener('click',e=>{const l=e.target.closest('a[href]');if(!l||e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
   const u=l.href;if(!u.startsWith(RADICE)||u.includes('#'))return;try{history.pushState(null,'',u);e.preventDefault();render()}catch(err){}});
-fetch(RADICE+'dati.json?'+Date.now()).then(r=>r.json()).then(j=>{if(!j||!Array.isArray(j.allenatori))throw new Error('dati incompleti');D=j;render()}).catch(()=>{document.getElementById('app').innerHTML='<div class="empty">Dati non disponibili al momento.</div>'});
+// dati.json (Davide 24/11): se non arriva si riprova una volta dopo 2 secondi; se manca anche così, gli ultimi numeri visti in questo browser, con l'avviso
+const CACHE='bp_dati'; let VECCHI=false;
+const buoni=j=>!!j&&Array.isArray(j.allenatori);
+function prendi(){return fetch(RADICE+'dati.json?'+Date.now()).then(r=>{if(!r.ok)throw new Error('dati.json '+r.status);return r.json()}).then(j=>{if(!buoni(j))throw new Error('dati incompleti');return j})}
+function quando(t){const d=new Date(t);if(isNaN(d))return "dell'ultima visita";const g=x=>x.toLocaleDateString('sv-SE',{timeZone:'Europe/Rome'}),o={timeZone:'Europe/Rome'};
+  const gg=g(d)===g(new Date())?'di oggi':g(d)===g(new Date(Date.now()-864e5))?'di ieri':Date.now()-d<6*864e5?'di '+d.toLocaleDateString('it-IT',{...o,weekday:'long'}):'del '+d.toLocaleDateString('it-IT',{...o,day:'numeric',month:'long'});
+  return gg+' alle '+d.toLocaleTimeString('it-IT',{...o,hour:'2-digit',minute:'2-digit'})}
+prendi().catch(()=>new Promise(f=>setTimeout(f,2000)).then(prendi))
+  .then(j=>{D=j;try{localStorage.setItem(CACHE,JSON.stringify(j))}catch(e){}render()})
+  .catch(()=>{let j=null;try{j=JSON.parse(localStorage.getItem(CACHE))}catch(e){}
+    if(buoni(j)){D=j;VECCHI=true;render()}else document.getElementById('app').innerHTML='<div class="empty">Dati non disponibili al momento.</div>'});
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "42052c0d34a048b8b9bc2b96d995be38"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
