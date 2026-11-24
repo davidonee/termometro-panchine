@@ -151,6 +151,11 @@ const NOME={'Man United':'Manchester United','Man City':'Manchester City',"Nott'
 'Bayern Munich':'Bayern Monaco',Dortmund:'Borussia Dortmund','Ein Frankfurt':'Eintracht Francoforte','FC Koln':'Colonia',"M'gladbach":'Mönchengladbach',Leverkusen:'Bayer Leverkusen',
 'RB Leipzig':'Lipsia',Stuttgart:'Stoccarda',Freiburg:'Friburgo',Hamburg:'Amburgo','Werder Bremen':'Werder Brema','Union Berlin':'Union Berlino'};
 const nm=s=>NOME[s]||s;
+// pagine vere per squadra (Davide 24/11/2026, per Google): /inter/ apre la scheda dell'Inter. RADICE = indirizzo della pagina principale;
+// le pagine delle squadre stanno un livello sotto (window.RADICE='../', messo dal generatore live/pagine_squadre.py)
+const RADICE=new URL(window.RADICE||'./',location.href).href.replace(/[?#].*$/,'');
+const via=()=>{let h='';try{h=decodeURIComponent(location.hash.slice(1))}catch(e){} if(h)return h; const u=location.href.split(/[?#]/)[0]; return u.startsWith(RADICE)?u.slice(RADICE.length).replace(/(^|\/)index\.html$/,'').replace(/\/$/,''):''};   // /index.html = pagina principale
+const linkSq=sq=>RADICE+slug(sq)+'/';
 const NOMI_RE=new RegExp(Object.keys(NOME).sort((x,y)=>y.length-x.length).map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
 const nmTesto=t=>String(t).replace(NOMI_RE,k=>NOME[k]);   // nomi delle squadre estere dentro le righe di 'Perché si è mossa'   // nome mostrato; la chiave dei dati resta quella del motore
 const slug=s=>s.normalize('NFKD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -171,7 +176,7 @@ const save=()=>{try{localStorage.setItem('bp',JSON.stringify({lega:st.lega,sort:
 const SENZA_LOGO=new Set();
 function badge(sq,big){const [bg,fg]=COL[sq]||['#39414D','#fff'];const s=esc(SIG[sq]||sq.slice(0,3).toUpperCase()),g=slug(sq);
   if(SENZA_LOGO.has(g))return `<span class="badge${big?' lg':''}" style="background:${bg};color:${fg}"><span>${s}</span></span>`;
-  return `<span class="badge${big?' lg':''}" style="background:${bg};color:${fg}"><span>${s}</span><img src="loghi/${g}.png" alt="" style="display:none" onload="this.style.display='block';this.previousElementSibling.remove();this.parentNode.style.background='transparent'" onerror="SENZA_LOGO.add('${g}');this.remove()"></span>`;}
+  return `<span class="badge${big?' lg':''}" style="background:${bg};color:${fg}"><span>${s}</span><img src="${RADICE}loghi/${g}.png" alt="" style="display:none" onload="this.style.display='block';this.previousElementSibling.remove();this.parentNode.style.background='transparent'" onerror="SENZA_LOGO.add('${g}');this.remove()"></span>`;}
 function chg(x,a){if(x==null)return '';if(a.ufficiale||a.debutto_atteso)return '<span class="chg">—</span>';if(st.m==='p'&&oggi(a))return '';const v=Math.round(x*10)/10;
   if(Math.abs(v)<0.05)return '<span class="chg">= 0</span>';return `<span class="chg ${v>0?'up':'dn'}">${v>0?'▲ +':'▼ '}${String(v).replace('.',',')} pt</span>`}
 const OR={h:'halloween',n:'natale',q:'pasqua',s:'fine'};
@@ -252,10 +257,10 @@ const LEGHE=[['Serie A','Serie A'],['Serie B','Serie B'],['Premier League','Prem
 const MENU=[['','Panchine'],['perche','Perché è lì'],['cambi','Cambi di panchina'],['come','Il Termometro']];
 const ICONA='<svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 const menuBtn=()=>`<button class="menub" data-menu="1" aria-label="Menu">${ICONA}</button>`;
-function drawer(){if(!st.menu)return '';const h=location.hash.slice(1);
+function drawer(){if(!st.menu)return '';const h=via();
   return `<div class="velo" data-chiudi="1"></div><nav class="drawer" aria-label="Menu"><div class="dt">Termometro Panchine</div>
-  ${MENU.map(([k,t])=>`<a href="#${k}" ${(h===k||(!k&&!MENU.some(([x])=>x&&x===h)&&!D.allenatori.some(a=>slug(a.squadra)===h)))?'aria-current="page"':''}>${t}</a>`).join('')}</nav>`}
-const barra=(indietro)=>`<div class="topbar">${menuBtn()}${indietro?'<a class="back" href="#">‹ Tutte le panchine</a>':'<a class="back" href="#">Termometro Panchine</a>'}</div>`;
+  ${MENU.map(([k,t])=>`<a href="${k?'#'+k:RADICE}" ${(h===k||(!k&&!MENU.some(([x])=>x&&x===h)&&!D.allenatori.some(a=>slug(a.squadra)===h)))?'aria-current="page"':''}>${t}</a>`).join('')}</nav>`}
+const barra=(indietro)=>`<div class="topbar">${menuBtn()}${indietro?`<a class="back" href="${RADICE}">‹ Tutte le panchine</a>`:`<a class="back" href="${RADICE}">Termometro Panchine</a>`}</div>`;
 const ordinale=n=>n+'°';
 function cambi(){const C=(D.cambi||[]).slice().reverse();const top=C.filter(c=>c.rango&&c.rango<=3).length;
   const colR=r=>!r?'#9BA6C0':r===1?'#FF4D4D':r<=3?'#FF8A3D':r<=5?'#FFC94A':'#9BE15D';     // colore dalla posizione, non dalla percentuale
@@ -272,7 +277,7 @@ function perche(){const A=D.allenatori.filter(a=>a.campionato===st.lega&&!a.uffi
   return `${barra(false)}<section class="pag"><h2>Perché è lì</h2><p>I motivi che oggi pesano di più sulla probabilità di ogni allenatore di lasciare prima della prossima partita. <span style="color:#FF8A3D">▲</span> alza il rischio, <span style="color:#4FC3F7">▼</span> lo abbassa.</p></section>
   <nav class="sec" aria-label="Campionato"><div class="seg">${LEGHE.map(([l,t])=>`<button aria-pressed="${st.lega===l}" data-lega="${l}">${t}</button>`).join('')}</div></nav>
   ${D.motivi_comuni?`<div class="gen">${esc(D.motivi_comuni)}</div>`:''}
-  ${A.map(a=>`<a class="mc" style="--h:${a.debutto_atteso?'#9BA6C0':HEAT.find(([t])=>a.p<t)[1]}" href="#${slug(a.squadra)}"><div class="h">${badge(a.squadra)}<div class="w"><span class="nm">${esc(a.allenatore)}</span><span class="tm">${esc(nm(a.squadra))}</span></div><span class="pp">${pprossima(a)}</span></div>
+  ${A.map(a=>`<a class="mc" style="--h:${a.debutto_atteso?'#9BA6C0':HEAT.find(([t])=>a.p<t)[1]}" href="${linkSq(a.squadra)}"><div class="h">${badge(a.squadra)}<div class="w"><span class="nm">${esc(a.allenatore)}</span><span class="tm">${esc(nm(a.squadra))}</span></div><span class="pp">${pprossima(a)}</span></div>
    <div class="mot">${(a.motivi||[]).map(m=>`<span class="chip ${m.d}"><i>${m.d==='su'?'▲':'▼'}</i>${esc(m.t)}</span>`).join('')||'<span class="chip">Niente di particolare</span>'}</div></a>`).join('')}
   <footer>I motivi sono in ordine di peso. Non sono tutti i fattori considerati, solo i principali.</footer>`}
 function come(){return `${barra(false)}<section class="pag chi"><h2>Il Termometro</h2>
@@ -299,13 +304,13 @@ function lista(){
   return `<div class="banda"><header>${st.m==='n'?luci():''}<div class="brand">${menuBtn()}<svg width="22" height="40" viewBox="0 0 22 40" aria-hidden="true"><defs><linearGradient id="tg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FF4D4D"/><stop offset=".5" stop-color="#FFC94A"/><stop offset="1" stop-color="#4FC3F7"/></linearGradient></defs><rect x="7" y="2" width="8" height="26" rx="4" fill="none" stroke="#C9D1E3" stroke-width="1.5"/><rect x="9.5" y="9" width="3" height="20" rx="1.5" fill="url(#tg)"/><circle cx="11" cy="32" r="6" fill="#FF4D4D" stroke="#C9D1E3" stroke-width="1.5"/></svg><h1>Termometro Panchine</h1></div><p class="sub">Probabilità che l'allenatore lasci la panchina ${ENTRO[st.m]}</p>
   <p class="agg">Numeri aggiornati a ${ag.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',timeZone:'Europe/Rome'})}, ore ${ag.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Rome'})}.</p></header>
   ${metrica()}
-  <section class="sec"><h2 class="lab fire">🔥 Panchine più calde</h2><div class="hot">${hot.map(a=>`<a class="card" style="--h:${heat(a)}" href="#${slug(a.squadra)}">
+  <section class="sec"><h2 class="lab fire">🔥 Panchine più calde</h2><div class="hot">${hot.map(a=>`<a class="card" style="--h:${heat(a)}" href="${linkSq(a.squadra)}">
    <div style="display:flex;align-items:center;gap:6px">${badge(a.squadra)}<span style="font-size:12px;color:var(--mut)">${esc(a.campionato)}</span></div>
    <span class="nm">${esc(a.allenatore)}</span><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</a>`).join('')}</div><div class="legenda"><span>fredda</span><i></i><span>rovente</span></div></section>
   <nav class="sec" aria-label="Filtri"><div class="seg">${LEGHE.map(([l,t])=>`<button aria-pressed="${st.lega===l}" data-lega="${l}">${t}</button>`).join('')}</div>
   <div class="sortr" ${st.m==='p'?'':'style="display:none"'}><span style="font-size:12px;color:var(--mut)">Ordina per</span><div><button class="pill" aria-pressed="${st.sort==='p'}" data-sort="p">Rischio</button><button class="pill" aria-pressed="${st.sort==='v'}" data-sort="v">Variazione</button></div></div></nav></div>
   <div class="cols"><span>Allenatore</span><span>Probabilità</span></div>
-  <ol>${rows.map(a=>`<li><a class="row" style="--h:${heat(a)}" href="#${slug(a.squadra)}">${badge(a.squadra)}<div class="who"><span class="nm">${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</span><span class="tm">${esc(nm(a.squadra))}</span>${term(a)}</div>
+  <ol>${rows.map(a=>`<li><a class="row" style="--h:${heat(a)}" href="${linkSq(a.squadra)}">${badge(a.squadra)}<div class="who"><span class="nm">${esc(a.allenatore)}${a.interim?'<span class="tag">INTERIM</span>':''}</span><span class="tm">${esc(nm(a.squadra))}</span>${term(a)}</div>
    <div class="nums"><span class="pp">${pshow(a)}</span>${chg(DV(a),a)}</div></a></li>`).join('')}</ol>
   <footer>Il Termometro non ha talpe negli spogliatoi né la sfera di cristallo. Incrocia fattori tarati sugli esoneri delle stagioni precedenti e ne ricava una stima ragionata di quanto è probabile che un allenatore lasci la panchina ${ENTRO[st.m]}. Non è un consiglio di scommessa. ${st.m==='p'?'▲ rischio in aumento · ▼ in calo, rispetto a 24 ore prima.':'Più la data è lontana, più la stima è larga: nella scheda di ogni allenatore c\'è l\'intervallo.'}<br>Per saperne di più sul funzionamento: <a href="mailto:richiesteinfo.davide@gmail.com">richiesteinfo.davide@gmail.com</a></footer>`;
 }
@@ -358,7 +363,9 @@ function scheda(a){
 }
 function render(){
   const app=document.getElementById('app'); if(!D)return; if(!attivi().includes(st.m))st.m='p'; if(!LEGHE.some(([l])=>l===st.lega))st.lega='Serie A';
-  let h='';try{h=decodeURIComponent(location.hash.slice(1))}catch(e){}   // indirizzo scritto male: si torna alla lista
+  const h=via();   // indirizzo scritto male: si torna alla lista
+  const a0=h?D.allenatori.find(x=>slug(x.squadra)===h):null;   // titolo della scheda del browser come quello della pagina vera della squadra
+  document.title=a0?`${a0.allenatore} (${nm(a0.squadra)}): probabilità di esonero – Termometro Panchine`:'Termometro Panchine – probabilità di addio degli allenatori di calcio';
   const a=h?D.allenatori.find(x=>slug(x.squadra)===h):null;
   document.documentElement.dataset.m=(!h||a)?st.m:'p';   // lo sfondo dell'orizzonte vale per la lista e le schede, non per le altre pagine
   app.innerHTML=(h==='cambi'?cambi():h==='come'?come():h==='perche'?perche():a?scheda(a):lista())+drawer(); if(a||h==='cambi'||h==='come'||h==='perche')window.scrollTo(0,0);
@@ -367,8 +374,11 @@ document.addEventListener('click',e=>{if(e.target.closest('[data-chiudi]')||e.ta
   const b=e.target.closest('button');if(!b)return; if(b.dataset.menu){st.menu=true;render();return}
   if(b.dataset.m){const prima=st.m;st.m=b.dataset.m;save();render();if(st.m!==prima){const f=document.getElementById('festa');if(f)f.remove();if(st.m==='n'||st.m==='q'||st.m==='h')festa(st.m)}}   /* cambiando orizzonte l'animazione in corso sparisce subito */ if(b.dataset.lega){st.lega=b.dataset.lega;save();render()} if(b.dataset.sort){st.sort=b.dataset.sort;save();render()}});
 document.addEventListener('change',e=>{if(e.target.id==='g'){st.chart=e.target.checked;render()}});
-window.addEventListener('hashchange',render);
-fetch('dati.json?'+Date.now()).then(r=>r.json()).then(j=>{if(!j||!Array.isArray(j.allenatori))throw new Error('dati incompleti');D=j;render()}).catch(()=>{document.getElementById('app').innerHTML='<div class="empty">Dati non disponibili al momento.</div>'});
+window.addEventListener('hashchange',render); window.addEventListener('popstate',render);
+// link interni senza # (squadre, pagina principale): si cambia indirizzo senza ricaricare; se il browser non lo permette, si carica la pagina
+document.addEventListener('click',e=>{const l=e.target.closest('a[href]');if(!l||e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+  const u=l.href;if(!u.startsWith(RADICE)||u.includes('#'))return;try{history.pushState(null,'',u);e.preventDefault();render()}catch(err){}});
+fetch(RADICE+'dati.json?'+Date.now()).then(r=>r.json()).then(j=>{if(!j||!Array.isArray(j.allenatori))throw new Error('dati incompleti');D=j;render()}).catch(()=>{document.getElementById('app').innerHTML='<div class="empty">Dati non disponibili al momento.</div>'});
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "42052c0d34a048b8b9bc2b96d995be38"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
