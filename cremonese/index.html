@@ -304,7 +304,7 @@ function come(){return `${barra(false)}<section class="pag chi"><h2>Il Termometr
   <li><b>Allenatore appena nominato.</b> La stima parte dopo la sua prima partita.</li>
  </ul>
  <p style="font-size:13px;color:var(--mut)">Non è un consiglio di scommessa. Il sito non usa cookie.</p></section>
- <footer>Per informazioni, curiosità, segnalazioni o richieste: <a href="mailto:info@termometropanchine.it">info@termometropanchine.it</a> oppure scrivici su Instagram <a href="https://www.instagram.com/termometropanchine/" target="_blank" rel="noopener">@termometropanchine</a></footer>`}
+ <footer>Per informazioni, curiosità, segnalazioni o richieste: <a href="mailto:info@termometropanchine.it">info@termometropanchine.it</a></footer>`}
 function lista(){
   const A=D.allenatori, hot=A.filter(a=>!a.ufficiale&&!a.debutto_atteso&&V(a)>=0).slice().sort((x,y)=>V(y)-V(x)).slice(0,3);
   const srt=st.m==='p'?st.sort:'p';
